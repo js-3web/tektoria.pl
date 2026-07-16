@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dziękuję za zgłoszenie — K-Tools</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a1016;--bg2:#0d151d;--panel-line:#1d2f3e;
+    --grid:rgba(72,132,182,.09);
+    --txt:#d7e3ec;--txt-dim:#8ba3b5;
+    --cyan:#3fe0c5;--cyan-dim:#2a9c8b;--orange:#ff6b35;--green:#7be07b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    background:var(--bg);color:var(--txt);
+    font-family:'Space Grotesk',sans-serif;line-height:1.6;
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:34px 34px;
+    padding:24px;
+  }
+  .card{
+    max-width:560px;background:var(--bg2);border:1px solid var(--panel-line);
+    border-radius:6px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.5);
+  }
+  .bar{
+    display:flex;align-items:center;gap:8px;background:#131f2a;
+    padding:8px 12px;border-bottom:1px solid var(--panel-line);
+    font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--txt-dim);
+  }
+  .dot{width:9px;height:9px;border-radius:50%;}
+  .dot.r{background:#e0564d;}.dot.y{background:#e0a53f;}.dot.g{background:#4fbf6b;}
+  .body{padding:36px 34px;}
+  .ok{
+    width:52px;height:52px;border:2px solid var(--green);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--green);font-size:1.5rem;margin-bottom:20px;
+  }
+  h1{font-size:1.6rem;margin:0 0 12px;letter-spacing:-0.01em;}
+  p{color:var(--txt-dim);margin:0 0 12px;}
+  p strong{color:var(--txt);font-weight:500;}
+  .cmd{
+    font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--green);
+    background:#0a1219;border:1px solid var(--panel-line);border-radius:3px;
+    padding:10px 12px;margin:18px 0;
+  }
+  .cmd .dim{color:#5d7788;}
+  a.btn{
+    display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.82rem;
+    padding:12px 22px;border-radius:3px;text-decoration:none;
+    color:var(--cyan);border:1.5px solid var(--cyan-dim);transition:all .15s;
+  }
+  a.btn:hover{border-color:var(--cyan);background:rgba(63,224,197,.08);}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="bar">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      <span style="margin-left:6px;">K-TOOLS — zgłoszenie przyjęte</span>
+    </div>
+    <div class="body">
+      <div class="ok">✓</div>
+      <h1>Dziękuję za zgłoszenie</h1>
+      <p>Twoja deklaracja dotarła. Odpowiadam zwykle <strong>w ciągu kilku godzin</strong>, a najpóźniej <strong>do 24 godzin</strong> — odpowiedź przyjdzie na podany adres e-mail.</p>
+      <div class="cmd"><span class="dim">Polecenie:</span> ODPOWIEDZ<br><span class="dim">Status:</span> w kolejce · max 24 h</div>
+      <a class="btn" href="index.html">‹ wróć na stronę główną</a>
+    </div>
+  </div>
+</body>
+</html>
