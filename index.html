@@ -7,7 +7,7 @@
 <meta name="description" content="Rosnąca biblioteka skryptów LISP dla ZWCAD i kalkulatorów inżynierskich: wstawianie przekrojów profili stalowych (IPN, IPE, HEA/HEB, UPN, kątowniki, rury, SHS/RHS), zestawienia stali z eksportem do Excela, darmowe skrypty do pobrania. Działa na ZWCAD Standard.">
 <meta name="keywords" content="LISP ZWCAD, skrypt LISP profile stalowe, wstawianie przekroju stalowego CAD, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulatory inżynierskie">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.js-3web.github.io/ktools/">
+<link rel="canonical" href="https://www.js-3web.github.io/k-tools/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="K-Tools — biblioteka skryptów LISP do ZWCAD i kalkulatorów inżynierskich">
@@ -438,10 +438,7 @@
 </head>
 <body>
 
-<!-- ==== NOTATKA ROBOCZA — usuń przed publikacją ==== -->
-<div class="setup-note">
-  ⚠ SZKIC — przed publikacją wykonaj kroki z pliku PUBLIKACJA.md: (1) klucz Web3Forms, (2) canonical + redirect na docelowy adres, (3) ceny, (4) powtórka screenów instalacji 01/03/04 (nazwisko w ścieżkach!), (5) finalne PDF-y w /docs/ po uzupełnieniu danych licencjodawcy i e-maila, (6) usuń ten pasek.
-</div>
+
 
 <header class="top">
   <div class="brand">
@@ -754,7 +751,7 @@
     <form class="order rv" action="https://api.web3forms.com/submit" method="POST" id="orderForm">
       <input type="hidden" name="access_key" value="WKLEJ_TU_SWOJ_WEB3FORMS_ACCESS_KEY">
       <input type="hidden" name="subject" value="K-Tools — nowe zgłoszenie zainteresowania">
-      <input type="hidden" name="redirect" value="https://www.js-3web.github.io/ktools/dziekuje.html">
+      <input type="hidden" name="redirect" value="https://www.js-3web.github.io/k-tools/dziekuje.html">
       <input type="checkbox" name="botcheck" style="display:none;">
 
       <div class="form-row">
@@ -982,7 +979,7 @@ function preselect(which){
 document.getElementById('orderForm').addEventListener('submit', function(e){
   var status = document.getElementById('formStatus');
   var key = this.querySelector('input[name="access_key"]').value;
-  if(key === 'WKLEJ_TU_SWOJ_WEB3FORMS_ACCESS_KEY'){
+  if(key === 'eeee67ec-6c4b-4cbf-9eb5-e0e413849437'){
     e.preventDefault();
     status.textContent = 'Skonfiguruj Web3Forms access key przed publikacją.';
     status.style.color = 'var(--orange)';
