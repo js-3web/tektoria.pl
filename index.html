@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>K-Tools — biblioteka skryptów LISP do ZWCAD i kalkulatorów inżynierskich | profile stalowe, zestawienia stali, darmowe LISP-y</title>
-<meta name="description" content="Rosnąca biblioteka skryptów LISP dla ZWCAD i kalkulatorów inżynierskich: wstawianie przekrojów profili stalowych (IPN, IPE, HEA/HEB, UPN, kątowniki, rury, SHS/RHS), zestawienia stali z eksportem do Excela, darmowe skrypty do pobrania. Działa na ZWCAD Standard.">
-<meta name="keywords" content="LISP ZWCAD, skrypt LISP profile stalowe, wstawianie przekroju stalowego CAD, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulatory inżynierskie">
+<title>TEKTORIA — narzędzia LISP dla ZWCAD i kalkulatory inżynierskie | profile stalowe, zestawienia stali, darmowe LISP-y</title>
+<meta name="description" content="TEKTORIA — rosnąca biblioteka skryptów LISP dla ZWCAD i kalkulatorów inżynierskich: wstawianie przekrojów profili stalowych (IPN, IPE, HEA/HEB, UPN, kątowniki, rury, SHS/RHS), zestawienia stali z eksportem do Excela, darmowe skrypty do pobrania. Działa na ZWCAD Standard.">
+<meta name="keywords" content="TEKTORIA, LISP ZWCAD, skrypt LISP profile stalowe, wstawianie przekroju stalowego CAD, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulatory inżynierskie">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://js-3web.github.io/k-tools/">
+<link rel="canonical" href="https://tektoria.pl/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="K-Tools — biblioteka skryptów LISP do ZWCAD i kalkulatorów inżynierskich">
-<meta property="og:description" content="Skrypty LISP dla ZWCAD i kalkulatory inżynierskie — profile stalowe, zestawienia do Excela, darmowe narzędzia. Pisane przez inżyniera konstruktora.">
+<meta property="og:title" content="TEKTORIA — narzędzia LISP dla ZWCAD i kalkulatory inżynierskie">
+<meta property="og:description" content="TEKTORIA — skrypty LISP dla ZWCAD i kalkulatory inżynierskie: profile stalowe, zestawienia do Excela, darmowe narzędzia. Pisane przez inżyniera konstruktora.">
 <meta property="og:locale" content="pl_PL">
+<meta property="og:url" content="https://tektoria.pl/">
+<meta property="og:site_name" content="TEKTORIA">
 
 <script type="application/ld+json">
 {
@@ -20,13 +22,13 @@
   "@graph": [
     {
       "@type": "Organization",
-      "name": "K-Tools",
+      "name": "TEKTORIA",
       "description": "Biblioteka skryptów LISP do ZWCAD i kalkulatorów inżynierskich, tworzona przez inżyniera z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń.",
       "areaServed": "PL"
     },
     {
       "@type": "SoftwareApplication",
-      "name": "PROFIL — k-tools_profil.lsp",
+      "name": "TEK-PROFIL — tek-profil.lsp",
       "applicationCategory": "DesignApplication",
       "operatingSystem": "ZWCAD 2022+",
       "description": "Skrypt LISP do ZWCAD automatycznie wstawiający przekroje profili stalowych (IPN, IPE, HEA/HEB/HEM, UPN, kątowniki, rury, SHS, RHS) wraz z tabelką parametrów.",
@@ -34,7 +36,7 @@
     },
     {
       "@type": "SoftwareApplication",
-      "name": "STAL — k-tools_stal.lsp",
+      "name": "TEK-STAL — tek-stal.lsp",
       "applicationCategory": "DesignApplication",
       "operatingSystem": "ZWCAD 2022+",
       "description": "Skrypt LISP do ZWCAD tworzący zestawienie profili stalowych z rysunku z eksportem do Excela.",
@@ -61,7 +63,7 @@
         {
           "@type": "Question",
           "name": "Czy eksport zestawienia stali wymaga zainstalowanego Excela?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Eksport do Excela wymaga Microsoft Excel na tym samym komputerze (komunikacja przez COM, bez pośrednich plików CSV). Alternatywnie STAL wygeneruje tabelkę zestawienia bezpośrednio w rysunku CAD." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Eksport do Excela wymaga Microsoft Excel na tym samym komputerze (komunikacja przez COM, bez pośrednich plików CSV). Alternatywnie TEK-STAL wygeneruje tabelkę zestawienia bezpośrednio w rysunku CAD." }
         },
         {
           "@type": "Question",
@@ -442,16 +444,16 @@
 
 <header class="top">
   <div class="brand">
-    <div class="mark">K</div>
+    <div class="mark">T</div>
     <div>
-      <div class="name">K-<span>TOOLS</span></div>
-      <div class="tag">LISP · ZWCAD · STAL · KALKULATORY INŻYNIERSKIE</div>
+      <div class="name">TEK<span>TORIA</span></div>
+      <div class="tag">NARZĘDZIA CAD I OBLICZENIOWE DLA KONSTRUKTORÓW</div>
     </div>
   </div>
   <nav>
-    <a href="#profil">PROFIL</a>
-    <a href="#stalja">STAL</a>
-    <a href="#komplet">KOMPLET</a>
+    <a href="#profil">TEK-PROFIL</a>
+    <a href="#stalja">TEK-STAL</a>
+    <a href="#komplet">TEK-KOMPLET</a>
     <a href="#darmowe">DARMOWE</a>
     <a href="#faq">FAQ</a>
     <a href="#zamow" class="cta">ZAMAWIAM</a>
@@ -463,7 +465,7 @@
   <div class="hero-inner">
     <div>
       <h1><span class="strike">Rysowanie profili ręcznie</span><br>to strata Twoich pieniędzy. <span class="hl">Wpisz komendę.</span></h1>
-      <p class="lead">K-Tools to rosnąca biblioteka skryptów LISP do ZWCAD i kalkulatorów inżynierskich. Na start: gotowe przekroje profili stalowych z tabelką parametrów, zestawienie stali prosto do Excela i darmowe narzędzia do pobrania. Pisane przez czynnego konstruktora z uprawnieniami — nie przez firmę od wtyczek.</p>
+      <p class="lead">TEKTORIA to rosnąca biblioteka narzędzi dla konstruktorów: skrypty LISP do ZWCAD i kalkulatory inżynierskie. Na start: gotowe przekroje profili stalowych z tabelką parametrów, zestawienie stali prosto do Excela i darmowe narzędzia do pobrania. Pisane przez czynnego konstruktora z uprawnieniami — nie przez firmę od wtyczek.</p>
       <div class="ctas">
         <a href="#zamow" class="btn btn-primary">Zgłoś zainteresowanie</a>
         <a href="#profil" class="btn btn-ghost">Zobacz w akcji ↓</a>
@@ -476,7 +478,7 @@
     </div>
 
     <!-- fake ZWCAD window with self-drawing HEB -->
-    <div class="cadwin" aria-label="Animacja: skrypt PROFIL rysuje przekrój HEB 220 w ZWCAD">
+    <div class="cadwin" aria-label="Animacja: skrypt TEK-PROFIL rysuje przekrój HEB 220 w ZWCAD">
       <div class="bar">
         <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
         <span class="ttl">ZWCAD 2022 — [hala_stalowa.dwg]</span>
@@ -536,7 +538,7 @@
   <div class="wrap">
     <div class="rv">
       <div class="eyebrow">produkt 01</div>
-      <h2 class="sec">PROFIL — biblioteka przekrojów stalowych</h2>
+      <h2 class="sec">TEK-PROFIL — biblioteka przekrojów stalowych</h2>
       <p class="sec-lead">Wybierasz typ i rozmiar z okna dialogowego, wskazujesz punkt — na rysunku ląduje gotowy przekrój jako jedna scalona polilinia, z osiami i tabelką parametrów. Geometria z zaokrągleniami wg normy, nie przybliżenia.</p>
     </div>
 
@@ -544,7 +546,7 @@
       <div class="rv">
         <span class="cmd-chip">Polecenie: PROFIL / PS</span>
         <h3>Przekrój w 12 sekund zamiast 12 minut</h3>
-        <div class="file">k-tools_profil.lsp · v4.11</div>
+        <div class="file">tek-profil.lsp · v4.11</div>
         <ul class="feats">
           <li>12 typów: IPN, IPE, HEA, HEB, HEM, UPN, kątowniki równo- i nierównoramienne, teowniki, rury okrągłe, SHS, RHS, płaskowniki, pręty</li>
           <li>Tabelka parametrów przekroju (A, G, Ix, Wx, ix, Iy, Wy, iy) wstawiana automatycznie</li>
@@ -554,11 +556,11 @@
         </ul>
         <div class="priceline">
           <div class="price">219 zł<small>licencja bezterminowa · 1 stanowisko</small></div>
-          <a href="#zamow" class="btn btn-primary" onclick="preselect('profil')">Chcę PROFIL</a>
+          <a href="#zamow" class="btn btn-primary" onclick="preselect('profil')">Chcę TEK-PROFIL</a>
         </div>
         <div class="doc-links">
-          <a class="doc-link" href="docs/Instrukcja_instalacji_K-Tools_PROFIL.pdf">⬇ Instrukcja instalacji (PDF)</a>
-          <a class="doc-link" href="docs/EULA_K-Tools.pdf">⬇ EULA (PDF)</a>
+          <a class="doc-link" href="docs/Instrukcja_instalacji_TEK-PROFIL.pdf">⬇ Instrukcja instalacji (PDF)</a>
+          <a class="doc-link" href="docs/EULA_TEKTORIA.pdf">⬇ EULA (PDF)</a>
         </div>
         <div class="compat">testowano na build 22.20_2023.10.12(#8730-af782e2d2ee)_x64_S</div>
       </div>
@@ -591,7 +593,7 @@
   <div class="wrap">
     <div class="rv">
       <div class="eyebrow">produkt 02</div>
-      <h2 class="sec">STAL — zestawienie stali prosto do Excela</h2>
+      <h2 class="sec">TEK-STAL — zestawienie stali prosto do Excela</h2>
       <p class="sec-lead">Zestawienie profili z rysunku — z opisami elementów, zliczaniem długości i masy — eksportowane bezpośrednio do Excela przez COM. Bez pośredniego CSV, bez przepisywania ręcznego. Zbiorcze zestawienie z wielu arkuszy jednym poleceniem.</p>
     </div>
 
@@ -620,7 +622,7 @@
       <div class="rv">
         <span class="cmd-chip">Polecenia: NPR / OPR / ZPR / ZESTPRC / ZESTPRX / SUMAPR</span>
         <h3>Koniec przepisywania do Excela</h3>
-        <div class="file">k-tools_stal.lsp · v1.8</div>
+        <div class="file">tek-stal.lsp · v1.8</div>
         <ul class="feats">
           <li>Bloki opisów tworzą się same przy pierwszym użyciu — zero szablonów DWG</li>
           <li>Automatyczne zestawienie profili z rysunku (BOM)</li>
@@ -631,11 +633,11 @@
         </ul>
         <div class="priceline">
           <div class="price">219 zł<small>licencja bezterminowa · 1 stanowisko</small></div>
-          <a href="#zamow" class="btn btn-primary" onclick="preselect('stalja')">Chcę STAL</a>
+          <a href="#zamow" class="btn btn-primary" onclick="preselect('stalja')">Chcę TEK-STAL</a>
         </div>
         <div class="doc-links">
-          <a class="doc-link" href="docs/Instrukcja_instalacji_K-Tools_STAL.pdf">⬇ Instrukcja instalacji (PDF)</a>
-          <a class="doc-link" href="docs/EULA_K-Tools.pdf">⬇ EULA (PDF)</a>
+          <a class="doc-link" href="docs/Instrukcja_instalacji_TEK-STAL.pdf">⬇ Instrukcja instalacji (PDF)</a>
+          <a class="doc-link" href="docs/EULA_TEKTORIA.pdf">⬇ EULA (PDF)</a>
         </div>
         <div class="compat">testowano na build 22.20_2023.10.12(#8730-af782e2d2ee)_x64_S</div>
       </div>
@@ -645,12 +647,12 @@
     <div id="komplet" class="bundle rv">
       <div>
         <span class="save">OSZCZĘDZASZ 89 ZŁ</span>
-        <h3>K-Tools Stal — komplet</h3>
-        <p>PROFIL + STAL razem: wspólne menu K-Tools i pasek narzędzi z ikonami w ZWCAD (komenda KTMENU — raz i zostaje). Projektujesz i zestawiasz w jednym biurze? To naturalny zestaw.</p>
+        <h3>TEK-KOMPLET</h3>
+        <p>TEK-PROFIL + TEK-STAL razem: wspólne menu TEKTORIA i pasek narzędzi z ikonami w ZWCAD (komenda KTMENU — raz i zostaje). Projektujesz i zestawiasz w jednym biurze? To naturalny zestaw.</p>
       </div>
       <div>
         <div class="bprice">349 zł<small>zamiast 438 zł osobno</small></div>
-        <a href="#zamow" class="btn btn-primary" style="margin-top:14px;" onclick="preselect('komplet')">Chcę komplet</a>
+        <a href="#zamow" class="btn btn-primary" style="margin-top:14px;" onclick="preselect('komplet')">Chcę TEK-KOMPLET</a>
       </div>
     </div>
   </div>
@@ -662,29 +664,29 @@
     <div class="rv">
       <div class="eyebrow">darmowe narzędzia</div>
       <h2 class="sec">Darmowe LISP-y do pobrania</h2>
-      <p class="sec-lead">Kilka prostych skryptów za darmo — bez rejestracji, bez podawania e-maila. Pobierz, wczytaj przez APPLOAD i sprawdź, jak pracują narzędzia K-Tools, zanim kupisz te większe.</p>
+      <p class="sec-lead">Kilka prostych skryptów za darmo — bez rejestracji, bez podawania e-maila. Pobierz, wczytaj przez APPLOAD i sprawdź, jak pracują narzędzia TEKTORIA, zanim kupisz te większe.</p>
     </div>
     <div class="freegrid rv">
       <div class="freecard">
-        <div class="fname">k-tools_PrintAll.lsp · v0.6</div>
+        <div class="fname">tek-printall.lsp · v0.6</div>
         <h3>Wydruk wszystkich arkuszy do PDF</h3>
         <p>Jedno polecenie PDFALL drukuje wszystkie arkusze (Layout) do osobnych plików PDF — każdy ze swoim page setupem (format, skala, CTB), bez zmiany ustawień rysunku. PDF1 drukuje bieżący arkusz. Cichy wydruk przez COM.</p>
-        <a class="dl" href="darmowe/k-tools_PrintAll.lsp" download>⬇ pobierz .lsp</a>
+        <a class="dl" href="darmowe/tek-printall.lsp" download>⬇ pobierz .lsp</a>
       </div>
       <div class="freecard">
-        <div class="fname">k-tools_draworder.lsp · v1.0</div>
+        <div class="fname">tek-draworder.lsp · v1.0</div>
         <h3>Pod spód / na wierzch dwoma literami</h3>
         <p>DB przesuwa zaznaczone obiekty pod spód, DF — na wierzch. Działa na wcześniejszym zaznaczeniu albo poprosi o wybór. Koniec klikania po menu przy porządkowaniu kreskowań i podkładów.</p>
-        <a class="dl" href="darmowe/k-tools_draworder.lsp" download>⬇ pobierz .lsp</a>
+        <a class="dl" href="darmowe/tek-draworder.lsp" download>⬇ pobierz .lsp</a>
       </div>
       <div class="freecard">
-        <div class="fname">k-tools_warstwa.lsp · v1.0</div>
+        <div class="fname">tek-warstwa.lsp · v1.0</div>
         <h3>Przejmij warstwę z elementu</h3>
         <p>Wpisujesz SS, wskazujesz dowolny element — jego warstwa staje się warstwą aktualną. Rysujesz dalej od razu na właściwej warstwie, bez szukania jej na liście.</p>
-        <a class="dl" href="darmowe/k-tools_warstwa.lsp" download>⬇ pobierz .lsp</a>
+        <a class="dl" href="darmowe/tek-warstwa.lsp" download>⬇ pobierz .lsp</a>
       </div>
     </div>
-    <p class="free-note rv">Darmowe skrypty możesz używać bez ograniczeń w pracy zawodowej. Jeśli któryś oszczędzi Ci czas — wróć po <a href="#profil">PROFIL</a> i <a href="#stalja">STAL</a>.</p>
+    <p class="free-note rv">Darmowe skrypty możesz używać bez ograniczeń w pracy zawodowej. Jeśli któryś oszczędzi Ci czas — wróć po <a href="#profil">TEK-PROFIL</a> i <a href="#stalja">TEK-STAL</a>.</p>
   </div>
 </section>
 
@@ -715,7 +717,7 @@
                  {"img":"img/instrukcja_03.jpg","caption":"3/5 — wskazujesz plik i klikasz Load","duration":3000},
                  {"img":"img/instrukcja_04.jpg","caption":"4/5 — opcjonalnie: Startup Suite, skrypt wczyta się przy każdym starcie","duration":3200},
                  {"img":"img/instrukcja_05.jpg","caption":"5/6 — wpisujesz komendę skryptu i pracujesz","duration":3200},
-                 {"img":"img/instrukcja_06.jpg","caption":"6/6 — KTMENU (jednorazowo): menu K-Tools i pasek ikon — wszystkie komendy pod ręką","duration":3400}
+                 {"img":"img/instrukcja_06.jpg","caption":"6/6 — KTMENU (jednorazowo): menu TEKTORIA i pasek ikon — wszystkie komendy pod ręką","duration":3400}
                ]'>
             <div class="fp-stage"><div class="fp-progress"></div></div>
             <div class="fp-controls">
@@ -729,7 +731,7 @@
       </details>
       <details>
         <summary>Czy eksport zestawienia wymaga zainstalowanego Excela?</summary>
-        <div class="a">Eksport do Excela wymaga Microsoft Excel na tym samym komputerze (komunikacja przez COM, bez pośrednich plików CSV). Alternatywnie STAL wygeneruje tabelkę zestawienia bezpośrednio w rysunku CAD — bez Excela.</div>
+        <div class="a">Eksport do Excela wymaga Microsoft Excel na tym samym komputerze (komunikacja przez COM, bez pośrednich plików CSV). Alternatywnie TEK-STAL wygeneruje tabelkę zestawienia bezpośrednio w rysunku CAD — bez Excela.</div>
       </details>
       <details>
         <summary>Czy plik LISP jest bezpieczny dla firmowego komputera?</summary>
@@ -750,8 +752,8 @@
 
     <form class="order rv" action="https://api.web3forms.com/submit" method="POST" id="orderForm">
       <input type="hidden" name="access_key" value="eeee67ec-6c4b-4cbf-9eb5-e0e413849437">
-      <input type="hidden" name="subject" value="K-Tools — nowe zgłoszenie zainteresowania">
-      <input type="hidden" name="redirect" value="https://js-3web.github.io/k-tools/dziekuje.html">
+      <input type="hidden" name="subject" value="TEKTORIA — nowe zgłoszenie zainteresowania">
+      <input type="hidden" name="redirect" value="https://tektoria.pl/dziekuje.html">
       <input type="checkbox" name="botcheck" style="display:none;">
 
       <div class="form-row">
@@ -766,18 +768,18 @@
         <label>Co Cię interesuje</label>
         <div class="checks">
           <label class="check-item">
-            <input type="checkbox" name="produkt" value="PROFIL (k-tools_profil.lsp)" id="chk-profil">
-            <span class="ci-name">PROFIL — k-tools_profil.lsp</span>
+            <input type="checkbox" name="produkt" value="TEK-PROFIL (tek-profil.lsp)" id="chk-profil">
+            <span class="ci-name">TEK-PROFIL — tek-profil.lsp</span>
             <span class="ci-price">219 zł</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" name="produkt" value="STAL (k-tools_stal.lsp)" id="chk-stalja">
-            <span class="ci-name">STAL — k-tools_stal.lsp</span>
+            <input type="checkbox" name="produkt" value="TEK-STAL (tek-stal.lsp)" id="chk-stalja">
+            <span class="ci-name">TEK-STAL — tek-stal.lsp</span>
             <span class="ci-price">219 zł</span>
           </label>
           <label class="check-item">
-            <input type="checkbox" name="produkt" value="Komplet K-Tools Stal" id="chk-komplet">
-            <span class="ci-name">Komplet K-Tools Stal</span>
+            <input type="checkbox" name="produkt" value="TEK-KOMPLET" id="chk-komplet">
+            <span class="ci-name">TEK-KOMPLET</span>
             <span class="ci-price">349 zł</span>
           </label>
         </div>
@@ -810,7 +812,7 @@
 
 <footer>
   <div class="wrap">
-    <span>K-TOOLS · narzędzia LISP dla ZWCAD · inżynier z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń</span>
+    <span>TEKTORIA · narzędzia CAD i obliczeniowe dla konstruktorów · inżynier z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń</span>
     <span>zgodność testowana: ZWCAD 2022 Standard · build 22.20_2023.10.12</span>
   </div>
 </footer>
