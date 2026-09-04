@@ -299,6 +299,43 @@
   }
   .compat::before{content:"✓ ";}
 
+  /* ---------- TEK-CALC: wideo + cennik modułowy ---------- */
+  .calc-video{margin-top:40px;border:1px solid var(--panel-line);border-radius:6px;
+    background:#0b141c;overflow:hidden;}
+  .calc-video video{display:block;width:100%;height:auto;background:#0b141c;}
+  .calc-video .vcap{
+    font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--txt-dim);
+    padding:9px 12px;background:#0d1620;border-top:1px solid var(--panel-line);
+  }
+  .modprice{margin-top:46px;border:1px solid var(--panel-line);border-radius:6px;
+    background:var(--bg2);overflow:hidden;}
+  .modprice .mp-head{
+    display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    padding:16px 18px;border-bottom:1px solid var(--panel-line);background:var(--panel);
+  }
+  .modprice .mp-head h3{font-size:1.12rem;}
+  .modprice .mp-head span{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--txt-dim);}
+  .mp-row{
+    display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1.5fr) auto;
+    gap:14px;align-items:baseline;padding:11px 18px;
+    border-bottom:1px dashed var(--panel-line);font-size:.9rem;
+  }
+  .mp-row:last-child{border-bottom:none;}
+  .mp-row .mp-n{font-weight:600;}
+  .mp-row .mp-d{color:var(--txt-dim);font-size:.83rem;}
+  .mp-row .mp-p{font-family:'JetBrains Mono',monospace;color:var(--amber);
+    font-size:.92rem;font-weight:700;text-align:right;white-space:nowrap;}
+  .mp-sum{
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    padding:13px 18px;background:var(--panel);border-top:1px solid var(--panel-line);
+    font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--txt-dim);
+  }
+  .mp-sum b{color:var(--txt);}
+  @media(max-width:720px){
+    .mp-row{grid-template-columns:1fr auto;}
+    .mp-row .mp-d{grid-column:1 / -1;}
+  }
+
   /* frame player (screeny) */
   .frame-player{border:1px solid var(--panel-line);border-radius:6px;background:var(--bg2);overflow:hidden;}
   .fp-stage{position:relative;aspect-ratio:16/9;background:#0b141c;overflow:hidden;}
@@ -427,6 +464,9 @@
     font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--txt-dim);
   }
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  footer .fauthor{flex-basis:100%;padding-top:14px;margin-top:2px;border-top:1px solid var(--panel-line);}
+  footer .fauthor a{color:var(--txt-dim);text-decoration:none;border-bottom:1px solid var(--panel-line);}
+  footer .fauthor a:hover{color:var(--cyan);border-bottom-color:var(--cyan);}
 
   .setup-note{
     padding:12px 24px;background:#2b230b;border-bottom:1px solid #6d5a1c;
@@ -454,6 +494,7 @@
     <a href="#profil">TEK-PROFIL</a>
     <a href="#stalja">TEK-STAL</a>
     <a href="#komplet">TEK-KOMPLET</a>
+    <a href="#calc">TEK-CALC</a>
     <a href="#darmowe">DARMOWE</a>
     <a href="#faq">FAQ</a>
     <a href="#zamow" class="cta">ZAMAWIAM</a>
@@ -658,6 +699,106 @@
   </div>
 </section>
 
+
+<!-- ================= TEK-CALC ================= -->
+<section id="calc" style="background:var(--bg2);border-top:1px solid var(--panel-line);">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">produkt 03 · aplikacja desktop</div>
+      <h2 class="sec">TEK-CALC — kalkulatory konstrukcyjne wg Eurokodów</h2>
+      <p class="sec-lead">Program na Windows, nie nakładka na CAD. Wymiarowanie płyt i tarcz żelbetowych, połączenia stalowe, zestawienie obciążeń, dobór śrub, kotew i krat pomostowych — wszystko wg Eurokodów z załącznikami krajowymi. Każdy moduł pokazuje, z jakiego punktu normy pochodzi wzór, żebyś mógł to sprawdzić, a nie przyjąć na wiarę.</p>
+    </div>
+
+    <div class="calc-video rv">
+      <video controls preload="metadata" playsinline poster="video/tek-calc-demo-poster.jpg">
+        <source src="video/tek-calc-demo.mp4" type="video/mp4">
+        <source src="video/tek-calc-demo.webm" type="video/webm">
+        Twoja przeglądarka nie odtworzy tego filmu — <a href="video/tek-calc-demo.mp4">pobierz plik MP4</a>.
+      </video>
+      <div class="vcap">demo · 1 min 48 s · bez dźwięku · nagranie działającego programu, nie animacja</div>
+    </div>
+
+    <div class="prod">
+      <div class="rv">
+        <span class="cmd-chip">TEK-CALC.exe · Windows 10 / 11 · 64-bit</span>
+        <h3>Liczysz w programie, nie w arkuszu, który sam sobie napisałeś</h3>
+        <div class="file">TEK-CALC 1.2 · build V1.2_03.09.2026 · ok. 3 MB</div>
+        <ul class="feats">
+          <li>10 modułów wg PN-EN 1990, 1991, 1992-1-1 i 1993-1-8 z załącznikami krajowymi</li>
+          <li>Żywe schematy statyczne — rysunek zmienia się przy wpisywaniu danych</li>
+          <li>Przy każdym wyniku źródło algorytmu i punkt normy do weryfikacji</li>
+          <li>Zestawienie obciążeń z eksportem do Excela — gotowe do opisu technicznego</li>
+          <li>Zapis i wczytywanie projektu (.json), wydruk raportu do PDF</li>
+          <li>Działa w całości offline: bez konta, bez logowania, bez wysyłania danych</li>
+          <li>Licencja bezterminowa na jedno stanowisko — kupujesz raz, nie abonament</li>
+        </ul>
+        <div class="priceline">
+          <div class="price">999 zł<small>komplet 10 modułów · licencja bezterminowa · 1 stanowisko</small></div>
+          <a href="#zamow" class="btn btn-primary" onclick="preselect('calc')">Chcę TEK-CALC</a>
+        </div>
+        <div class="doc-links">
+          <a class="doc-link" href="docs/EULA_TEKTORIA.pdf">⬇ EULA (PDF)</a>
+        </div>
+        <div class="compat">program działa offline — nie łączy się z internetem i nie wysyła danych projektowych</div>
+      </div>
+
+      <div class="rv">
+        <div class="frame-player"
+             data-frames='[
+               {"img":"img/calc_01.jpg","caption":"1/6 — launcher: uruchamiasz pełny program albo pojedynczy moduł","duration":3000},
+               {"img":"img/calc_02.jpg","caption":"2/6 — płyty żelbetowe: schemat statyczny rysuje się na żywo, wytężenie 80,4%","duration":3400},
+               {"img":"img/calc_03.jpg","caption":"3/6 — zasady konstrukcyjne zbrojenia z punktami normy do samodzielnej weryfikacji","duration":3400},
+               {"img":"img/calc_04.jpg","caption":"4/6 — połączenia stalowe: rozwijane „Objaśnienia i źródła” z punktami EC3-1-8","duration":3400},
+               {"img":"img/calc_05.jpg","caption":"5/6 — zestawienie obciążeń: pola żółte to dane, zielone to wyniki do projektowania","duration":3400},
+               {"img":"img/calc_06.jpg","caption":"6/6 — kraty pomostowe: dobór najlżejszej kraty i rzut z góry","duration":3200}
+             ]'>
+          <div class="fp-stage"><div class="fp-progress"></div></div>
+          <div class="fp-controls">
+            <button class="fp-prev" type="button">‹</button>
+            <span class="fp-frame-idx">1 / 6</span>
+            <button class="fp-play" type="button">⏸</button>
+            <button class="fp-next" type="button">›</button>
+          </div>
+        </div>
+        <div class="compat" style="margin-top:14px;">zrzuty z działającego programu — bez retuszu</div>
+      </div>
+    </div>
+
+    <div class="modprice rv">
+      <div class="mp-head">
+        <h3>Nie potrzebujesz wszystkiego? Kup pojedynczy moduł.</h3>
+        <span>klucz licencyjny obejmuje wybrane moduły · dokupienie kolejnych bez utraty danych</span>
+      </div>
+      <div class="mp-row"><span class="mp-n">Zestawienie obciążeń</span><span class="mp-d">dach, stropy, wiatr, podciąg, słup, ściany, podsumowania ława/stopa · eksport do Excela</span><span class="mp-p">229 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Połączenia stalowe</span><span class="mp-d">8 zakładek: spoiny pachwinowe i czołowe, śruby na ścinanie i rozciąganie (T-stub), płyta podstawy, doczołowe, blacha węzłowa, klasyfikacja</span><span class="mp-p">229 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Płyty żelbetowe</span><span class="mp-d">4 schematy: swobodnie podparta, krzyżowo zbrojona, ciągła, wspornik · SGN + SGU + zarysowanie</span><span class="mp-p">299 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Tarcze żelbetowe</span><span class="mp-d">model strut-and-tie, 4 warianty obciążenia + atlas zbrojenia obwódek otworów</span><span class="mp-p">399 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Kotwy</span><span class="mp-d">rozkład sił na grupę 4 kotew, interakcja rozciąganie–ścinanie wg ETA, stożek betonowy</span><span class="mp-p">149 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Dobór śrub</span><span class="mp-d">długość, symbole DIN 933/931/7990/6914, wytężenie, połączenia sprężone, baza śrub</span><span class="mp-p">119 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Kraty pomostowe</span><span class="mp-d">dobór najlżejszej kraty spełniającej SGN i SGU + porównanie wariantów</span><span class="mp-p">119 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Temperatura krytyczna</span><span class="mp-d">nośność stali w pożarze wg EN 1993-1-2 (bez wyboczenia i zwichrzenia)</span><span class="mp-p">79 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Katalogi materiałów</span><span class="mp-d">tablice znormalizowane (profile EN 10365, drewno, beton) + Twoje PDF-y producentów</span><span class="mp-p">59 zł</span></div>
+      <div class="mp-row"><span class="mp-n">Normy i przepisy</span><span class="mp-d">spis PN-EN i aktów prawnych z zakresem i powiązaniem z kalkulatorami</span><span class="mp-p">59 zł</span></div>
+      <div class="mp-sum">
+        <span>wszystkie moduły osobno: <b>1740 zł</b></span>
+        <span>komplet: <b>999 zł</b> — oszczędzasz <b>741 zł</b></span>
+      </div>
+    </div>
+
+    <div id="calc-komplet" class="bundle rv">
+      <div>
+        <span class="save">OSZCZĘDZASZ 741 ZŁ</span>
+        <h3>TEK-CALC KOMPLET</h3>
+        <p>Wszystkie 10 modułów jednym kluczem, jedna aktualizacja, jedna instalacja. U dużych polskich producentów oprogramowania konstrukcyjnego pojedynczy program obliczeniowy kosztuje kilkaset złotych netto, a pakiet eurokodowy kilka do kilkunastu tysięcy. TEK-CALC to jedno biuro i jeden autor — i cena, która ma to odzwierciedlać.</p>
+      </div>
+      <div>
+        <div class="bprice">999 zł<small>zamiast 1740 zł za moduły osobno</small></div>
+        <a href="#zamow" class="btn btn-primary" style="margin-top:14px;" onclick="preselect('calc')">Chcę TEK-CALC KOMPLET</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= DARMOWE LISPY ================= -->
 <section id="darmowe" style="border-top:1px solid var(--panel-line);">
   <div class="wrap">
@@ -782,6 +923,16 @@
             <span class="ci-name">TEK-KOMPLET</span>
             <span class="ci-price">349 zł</span>
           </label>
+          <label class="check-item">
+            <input type="checkbox" name="produkt" value="TEK-CALC KOMPLET (10 modułów)" id="chk-calc">
+            <span class="ci-name">TEK-CALC — komplet 10 modułów</span>
+            <span class="ci-price">999 zł</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" name="produkt" value="TEK-CALC — wybrane moduły (lista w wiadomości)" id="chk-calcmod">
+            <span class="ci-name">TEK-CALC — wybrane moduły</span>
+            <span class="ci-price">od 59 zł</span>
+          </label>
         </div>
       </div>
       <div class="form-row">
@@ -799,7 +950,7 @@
       </div>
       <div class="form-row">
         <label for="msg">Wiadomość (opcjonalnie)</label>
-        <textarea id="msg" name="wiadomość" placeholder="Np. jaka wersja ZWCAD, jakie pytania"></textarea>
+        <textarea id="msg" name="wiadomość" placeholder="Np. jaka wersja ZWCAD; przy TEK-CALC — które moduły Cię interesują"></textarea>
       </div>
       <p class="form-note">Deklaracja nie jest zamówieniem z płatnością i do niczego nie zobowiązuje — sprawdzam skalę zainteresowania przed uruchomieniem sprzedaży.</p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;">
@@ -814,6 +965,7 @@
   <div class="wrap">
     <span>TEKTORIA · narzędzia CAD i obliczeniowe dla konstruktorów · inżynier z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń</span>
     <span>zgodność testowana: ZWCAD 2022 Standard · build 22.20_2023.10.12</span>
+    <span class="fauthor">autor: <a href="https://js-3web.github.io/js-wizytowka/" target="_blank" rel="noopener">Jarosław Sarafin — wizytówka</a> · projektant konstrukcji i inspektor nadzoru, Lublin</span>
   </div>
 </footer>
 
@@ -974,8 +1126,9 @@ document.querySelectorAll('.frame-player').forEach(initFramePlayer);
 
 /* ===== formularz ===== */
 function preselect(which){
-  ['profil','stalja','komplet'].forEach(function(k){
-    document.getElementById('chk-'+k).checked = (k===which);
+  ['profil','stalja','komplet','calc','calcmod'].forEach(function(k){
+    var el = document.getElementById('chk-'+k);
+    if(el) el.checked = (k===which);
   });
 }
 document.getElementById('orderForm').addEventListener('submit', function(e){
