@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TEKTORIA — narzędzia LISP dla ZWCAD i kalkulatory inżynierskie | profile stalowe, zestawienia stali, darmowe LISP-y</title>
-<meta name="description" content="TEKTORIA — rosnąca biblioteka skryptów LISP dla ZWCAD i kalkulatorów inżynierskich: wstawianie przekrojów profili stalowych (IPN, IPE, HEA/HEB, UPN, kątowniki, rury, SHS/RHS), zestawienia stali z eksportem do Excela, darmowe skrypty do pobrania. Działa na ZWCAD Standard.">
-<meta name="keywords" content="TEKTORIA, LISP ZWCAD, skrypt LISP profile stalowe, wstawianie przekroju stalowego CAD, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulatory inżynierskie">
+<title>TEKTORIA — LISP do ZWCAD i kalkulatory konstrukcyjne wg Eurokodów | profile stalowe, zestawienia stali</title>
+<meta name="description" content="TEKTORIA — narzędzia dla konstruktorów: skrypty LISP do ZWCAD (przekroje profili stalowych, zestawienia stali do Excela) oraz programy na Windows: TEK-CALC z 10 kalkulatorami wg Eurokodów (płyty i tarcze żelbetowe, połączenia stalowe, zestawienie obciążeń, dobór śrub, kotew i krat) i TEK-SKARPA do analizy stateczności skarp, wykopów i nasypów metodami równowagi granicznej. Licencje bezterminowe, działa offline.">
+<meta name="keywords" content="TEKTORIA, TEK-CALC, LISP ZWCAD, skrypt LISP profile stalowe, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulator płyt żelbetowych, kalkulator tarcz żelbetowych, wymiarowanie płyty Eurokod, połączenia stalowe EC3, zestawienie obciążeń Eurokod, dobór śrub PN-EN 1993-1-8, program dla konstruktora, TEK-SKARPA, stateczność skarpy program, stateczność zbocza obliczenia, metoda Bishopa, metoda Spencera, równowaga graniczna skarpa, Eurokod 7 stateczność">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tektoria.pl/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="TEKTORIA — narzędzia LISP dla ZWCAD i kalkulatory inżynierskie">
-<meta property="og:description" content="TEKTORIA — skrypty LISP dla ZWCAD i kalkulatory inżynierskie: profile stalowe, zestawienia do Excela, darmowe narzędzia. Pisane przez inżyniera konstruktora.">
+<meta property="og:title" content="TEKTORIA — LISP do ZWCAD i kalkulatory konstrukcyjne wg Eurokodów">
+<meta property="og:description" content="Skrypty LISP do ZWCAD i TEK-CALC — 10 kalkulatorów konstrukcyjnych wg Eurokodów na Windows. Licencje bezterminowe, działanie offline. Pisane przez czynnego konstruktora z uprawnieniami.">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:url" content="https://tektoria.pl/">
 <meta property="og:site_name" content="TEKTORIA">
@@ -43,6 +43,30 @@
       "offers": { "@type": "Offer", "price": "219", "priceCurrency": "PLN" }
     },
     {
+      "@type": "SoftwareApplication",
+      "name": "TEK-CALC — kalkulatory konstrukcyjne",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+      "softwareVersion": "1.2",
+      "description": "Program na Windows z 10 modułami obliczeniowymi wg Eurokodów z załącznikami krajowymi: płyty żelbetowe (4 schematy statyczne, SGN i SGU), tarcze żelbetowe (strut-and-tie), połączenia stalowe wg PN-EN 1993-1-8, zestawienie obciążeń z eksportem do Excela, dobór śrub, kotew i krat pomostowych, temperatura krytyczna stali, katalogi materiałów, spis norm. Działa offline, licencja bezterminowa na jedno stanowisko.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "PLN",
+        "lowPrice": "59",
+        "highPrice": "999",
+        "offerCount": "11"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "TEK-SKARPA — stateczność skarp i zboczy",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+      "softwareVersion": "1.0.0",
+      "description": "Program na Windows do analizy stateczności skarp, wykopów i nasypów metodami równowagi granicznej (LEM) w przekroju 2D. Metody Fellenius, Bishop uproszczona, Janbu skorygowana i Spencer, kołowe powierzchnie poślizgu, przeszukiwanie siatki środków obrotu, warunki wodne (zwierciadło swobodne, linia piezometryczna, r_u), wzmocnienia, obciążenie naziomu, siła pseudostatyczna, tryb współczynników częściowych wg PN-EN 1997-1. Raport PDF i Word, eksport JSON i CSV. Wbudowana walidacja na zadaniu ACADS 1(a). Licencja bezterminowa, działa offline.",
+      "offers": { "@type": "Offer", "price": "699", "priceCurrency": "PLN" }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -69,6 +93,21 @@
           "@type": "Question",
           "name": "Czy plik LISP jest bezpieczny dla firmowego komputera?",
           "acceptedAnswer": { "@type": "Answer", "text": "Kod to jawny, czytelny plik tekstowy .lsp — dział IT może go zweryfikować przed wdrożeniem. Skrypt nie łączy się z internetem i nie modyfikuje systemu." }
+        },
+        {
+          "@type": "Question",
+          "name": "Czym TEK-CALC i TEK-SKARPA różnią się od skryptów LISP i co trzeba mieć, żeby je uruchomić?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Skrypty LISP działają wewnątrz ZWCAD. TEK-CALC i TEK-SKARPA to samodzielne programy na Windows 10 lub 11 w wersji 64-bit — nie potrzebują żadnego CAD-a ani licencji ZWCAD. Uruchamiasz plik .exe, bez instalatora i bez uprawnień administratora. TEK-CALC korzysta ze składnika Microsoft Edge WebView2, standardowo obecnego w systemie. Przy pierwszym uruchomieniu Windows może pokazać ostrzeżenie SmartScreen o nieznanym wydawcy — pliki nie mają jeszcze certyfikatu wydawcy." }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy programy łączą się z internetem i co się dzieje z licencją, gdy zmienię komputer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nie łączą się z internetem. Nie ma konta, logowania ani wysyłania danych projektowych — aktywacja i obliczenia działają w całości offline. Licencja jest bezterminowa i imienna, na jedno stanowisko; nie jest przypisana do sprzętu, więc po zmianie komputera albo konta Windows po prostu wczytujesz ten sam klucz jeszcze raz. Dane robocze i ustawienia zapisują się lokalnie na Twoim komputerze." }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy wynik z programu mogę wstawić do projektu i kto odpowiada za obliczenia?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Raport z programu (PDF, Word, arkusz) jest załącznikiem obliczeniowym do dokumentacji — tak samo jak wydruk z każdego innego programu. Odpowiedzialność za przyjęte założenia, dane wejściowe i interpretację wyników ponosi projektant wykonujący samodzielną funkcję techniczną, zgodnie z art. 20 Prawa budowlanego. Programy są narzędziem pomocniczym i nie zastępują osądu inżynierskiego ani rozpoznania geotechnicznego. Dlatego przy każdym wyniku podaję źródło algorytmu i punkt normy — żebyś mógł to sprawdzić, a nie przyjąć na wiarę." }
         }
       ]
     }
@@ -331,8 +370,10 @@
     font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--txt-dim);
   }
   .mp-sum b{color:var(--txt);}
+  .modprice.limits .mp-row{grid-template-columns:minmax(0,1.05fr) minmax(0,2fr);}
   @media(max-width:720px){
     .mp-row{grid-template-columns:1fr auto;}
+    .modprice.limits .mp-row{grid-template-columns:1fr;}
     .mp-row .mp-d{grid-column:1 / -1;}
   }
 
@@ -349,7 +390,7 @@
   .fp-placeholder-frame .n{font-size:1.7rem;font-weight:700;color:var(--orange);}
   .fp-caption{
     position:absolute;left:0;right:0;bottom:0;padding:10px 14px 12px;
-    background:linear-gradient(0deg, rgba(11,20,28,.95), rgba(11,20,28,0));
+    background:linear-gradient(0deg, rgba(11,20,28,.97) 0%, rgba(11,20,28,.93) 58%, rgba(11,20,28,0) 100%);
     color:var(--txt);font-family:'JetBrains Mono',monospace;font-size:.72rem;
   }
   .fp-progress{position:absolute;top:0;left:0;right:0;display:flex;gap:3px;padding:8px 10px 0;}
@@ -495,6 +536,7 @@
     <a href="#stalja">TEK-STAL</a>
     <a href="#komplet">TEK-KOMPLET</a>
     <a href="#calc">TEK-CALC</a>
+    <a href="#skarpa">TEK-SKARPA</a>
     <a href="#darmowe">DARMOWE</a>
     <a href="#faq">FAQ</a>
     <a href="#zamow" class="cta">ZAMAWIAM</a>
@@ -799,6 +841,77 @@
   </div>
 </section>
 
+
+<!-- ================= TEK-SKARPA ================= -->
+<section id="skarpa" style="border-top:1px solid var(--panel-line);">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">produkt 04 · aplikacja desktop</div>
+      <h2 class="sec">TEK-SKARPA — stateczność skarp i zboczy</h2>
+      <p class="sec-lead">Analiza stateczności skarp, wykopów i nasypów metodami równowagi granicznej. Przekrój 2D na metr szerokości, kołowe powierzchnie poślizgu, cztery metody pasków i tryb współczynników częściowych wg Eurokodu 7. Program pokazuje warunki równowagi każdej metody i nie ukrywa rozwiązań niedopuszczalnych — jeśli Spencer nie zbiega, dostajesz o tym informację, a nie po cichu wynik Bishopa.</p>
+    </div>
+
+    <div class="prod">
+      <div class="rv">
+        <span class="cmd-chip">TEK-SKARPA.exe · Windows 10 / 11 · 64-bit</span>
+        <h3>Cztery metody, jeden przekrój, wynik, który da się obronić</h3>
+        <div class="file">TEK-SKARPA 1.0.0 · licencja offline w pliku .teklic</div>
+        <ul class="feats">
+          <li>Metody: Fellenius, Bishop uproszczona, Janbu skorygowana, Spencer — każda z własną powierzchnią krytyczną</li>
+          <li>Przeszukiwanie siatki środków obrotu z lokalnym zagęszczeniem; raportowana liczba rozwiązań bez zbieżności i niedopuszczalnych</li>
+          <li>Woda: zwierciadło swobodne, linia piezometryczna z osobną linią nasycenia, współczynnik r<sub>u</sub></li>
+          <li>Wzmocnienia z siłą ograniczoną oporem wyciągania, obciążenie naziomu, siła pseudostatyczna k<sub>h</sub></li>
+          <li>Tryb współczynników częściowych wg PN-EN 1997-1 z edytowalnym zestawem i obwiednią wariantów obciążeń</li>
+          <li>Raport PDF i Word, eksport JSON i CSV — gotowy załącznik obliczeniowy do dokumentacji</li>
+          <li>Licencja bezterminowa, offline, bez przypisania do komputera — przenosisz ją na nowy sprzęt jednym plikiem</li>
+        </ul>
+        <div class="priceline">
+          <div class="price">699 zł<small>licencja bezterminowa · 1 stanowisko</small></div>
+          <a href="#zamow" class="btn btn-primary" onclick="preselect('skarpa')">Chcę TEK-SKARPA</a>
+        </div>
+        <div class="compat">walidacja na zadaniu ACADS 1(a): Bishop, Janbu i Spencer zgodne z opublikowanymi wynikami Slide2 w granicach 0,3%</div>
+      </div>
+
+      <div class="rv">
+        <div class="frame-player"
+             data-frames='[
+               {"img":"img/skarpa_01.jpg","caption":"1/6 — geometria, warstwy gruntu i woda w jednym widoku","duration":3400},
+               {"img":"img/skarpa_02.jpg","caption":"2/6 — schemat 2D z siatką środków obrotu przeszukiwanych powierzchni poślizgu","duration":3200},
+               {"img":"img/skarpa_03.jpg","caption":"3/6 — wynik: FS = 1,911 przy wymaganym 1,30, mapa potencjalnych odłamów","duration":3400},
+               {"img":"img/skarpa_04.jpg","caption":"4/6 — walidacja ACADS 1(a): zgodność z opublikowanymi wynikami Slide2","duration":3600},
+               {"img":"img/skarpa_05.jpg","caption":"5/6 — „Teoria w pigułce”: warunki równowagi każdej metody wypisane wprost","duration":3400},
+               {"img":"img/skarpa_06.jpg","caption":"6/6 — źródła i zakres: Eurokod 7, przepisy krajowe, literatura metodyczna","duration":3400}
+             ]'>
+          <div class="fp-stage"><div class="fp-progress"></div></div>
+          <div class="fp-controls">
+            <button class="fp-prev" type="button">‹</button>
+            <span class="fp-frame-idx">1 / 6</span>
+            <button class="fp-play" type="button">⏸</button>
+            <button class="fp-next" type="button">›</button>
+          </div>
+        </div>
+        <div class="compat" style="margin-top:14px;">zrzuty z działającego programu — bez retuszu</div>
+      </div>
+    </div>
+
+    <div class="modprice limits rv">
+      <div class="mp-head">
+        <h3>Granice modelu — piszę je wprost, zanim zapłacisz</h3>
+        <span>geotechnika nie znosi niedopowiedzeń · pełny opis w zakładce „Źródła” w programie</span>
+      </div>
+      <div class="mp-row"><span class="mp-n">Model 2D</span><span class="mp-d">przekrój na metr szerokości; nie zastępuje analizy przestrzennej. Widok 3D w programie jest ilustracją przekroju, a nie modelem obliczeniowym.</span></div>
+      <div class="mp-row"><span class="mp-n">Powierzchnie kołowe</span><span class="mp-d">dolne łuki okręgów przecinające teren w dwóch punktach; brak powierzchni niekołowych i klinowych</span></div>
+      <div class="mp-row"><span class="mp-n">Bez przemieszczeń</span><span class="mp-d">metoda równowagi granicznej daje współczynnik stateczności, nie osiadania ani odkształcenia — do tego służy MES</span></div>
+      <div class="mp-row"><span class="mp-n">Eurokod 7, pierwsza generacja</span><span class="mp-d">zestaw referencyjny współczynników wg załącznika krajowego do PN-EN 1997-1; wersja 1.0 nie wdraża drugiej generacji Eurokodu 7</span></div>
+      <div class="mp-row"><span class="mp-n">Minimum lokalne</span><span class="mp-d">wynik to najniższa znaleziona wartość w zadanej siatce, a nie dowód minimum globalnego — dlatego program raportuje zakres przeszukiwania</span></div>
+      <div class="mp-sum">
+        <span>wersja 1.0.0 · pierwsze wydanie Windows</span>
+        <span>walidacja: <b>ACADS 1(a)</b> wobec opublikowanych wyników Slide2</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= DARMOWE LISPY ================= -->
 <section id="darmowe" style="border-top:1px solid var(--panel-line);">
   <div class="wrap">
@@ -878,6 +991,18 @@
         <summary>Czy plik LISP jest bezpieczny dla firmowego komputera?</summary>
         <div class="a">Kod to jawny, czytelny plik tekstowy .lsp — dział IT może go zweryfikować przed wdrożeniem. Skrypt nie łączy się z internetem i nie modyfikuje systemu.</div>
       </details>
+      <details>
+        <summary>Czym TEK-CALC i TEK-SKARPA różnią się od skryptów LISP i co trzeba mieć, żeby je uruchomić?</summary>
+        <div class="a">Skrypty LISP działają wewnątrz ZWCAD. TEK-CALC i TEK-SKARPA to samodzielne programy na Windows 10 lub 11 w wersji 64-bit — nie potrzebują żadnego CAD-a ani licencji ZWCAD. Uruchamiasz plik .exe, bez instalatora i bez uprawnień administratora. TEK-CALC korzysta ze składnika Microsoft Edge WebView2, standardowo obecnego w systemie. Przy pierwszym uruchomieniu Windows może pokazać ostrzeżenie SmartScreen o nieznanym wydawcy — pliki nie mają jeszcze certyfikatu wydawcy.</div>
+      </details>
+      <details>
+        <summary>Czy programy łączą się z internetem i co się dzieje z licencją, gdy zmienię komputer?</summary>
+        <div class="a">Nie łączą się z internetem. Nie ma konta, logowania ani wysyłania danych projektowych — aktywacja i obliczenia działają w całości offline. Licencja jest bezterminowa i imienna, na jedno stanowisko; nie jest przypisana do sprzętu, więc po zmianie komputera albo konta Windows po prostu wczytujesz ten sam klucz jeszcze raz. Dane robocze i ustawienia zapisują się lokalnie na Twoim komputerze.</div>
+      </details>
+      <details>
+        <summary>Czy wynik z programu mogę wstawić do projektu i kto odpowiada za obliczenia?</summary>
+        <div class="a">Raport z programu (PDF, Word, arkusz) jest załącznikiem obliczeniowym do dokumentacji — tak samo jak wydruk z każdego innego programu. Odpowiedzialność za przyjęte założenia, dane wejściowe i interpretację wyników ponosi projektant wykonujący samodzielną funkcję techniczną, zgodnie z art. 20 Prawa budowlanego. Programy są narzędziem pomocniczym i nie zastępują osądu inżynierskiego ani rozpoznania geotechnicznego. Dlatego przy każdym wyniku podaję źródło algorytmu i punkt normy — żebyś mógł to sprawdzić, a nie przyjąć na wiarę.</div>
+      </details>
     </div>
   </div>
 </section>
@@ -932,6 +1057,11 @@
             <input type="checkbox" name="produkt" value="TEK-CALC — wybrane moduły (lista w wiadomości)" id="chk-calcmod">
             <span class="ci-name">TEK-CALC — wybrane moduły</span>
             <span class="ci-price">od 59 zł</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" name="produkt" value="TEK-SKARPA (stateczność skarp i zboczy)" id="chk-skarpa">
+            <span class="ci-name">TEK-SKARPA — stateczność skarp</span>
+            <span class="ci-price">699 zł</span>
           </label>
         </div>
       </div>
@@ -1075,6 +1205,10 @@ function initFramePlayer(root){
     if(f.img){
       layer = document.createElement('img');
       layer.className = 'fp-img';
+      /* UWAGA: loading i decoding MUSZĄ być ustawione PRZED src —
+         inaczej przeglądarka zaczyna pobierać, zanim dowie się, że ma być leniwa. */
+      layer.loading = 'lazy';
+      layer.decoding = 'async';
       layer.src = f.img;
       layer.alt = f.caption;
     } else {
@@ -1126,7 +1260,7 @@ document.querySelectorAll('.frame-player').forEach(initFramePlayer);
 
 /* ===== formularz ===== */
 function preselect(which){
-  ['profil','stalja','komplet','calc','calcmod'].forEach(function(k){
+  ['profil','stalja','komplet','calc','calcmod','skarpa'].forEach(function(k){
     var el = document.getElementById('chk-'+k);
     if(el) el.checked = (k===which);
   });
