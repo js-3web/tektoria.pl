@@ -8,13 +8,22 @@
 <meta name="keywords" content="TEKTORIA, TEK-CALC, LISP ZWCAD, skrypt LISP profile stalowe, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulator płyt żelbetowych, kalkulator tarcz żelbetowych, wymiarowanie płyty Eurokod, połączenia stalowe EC3, zestawienie obciążeń Eurokod, dobór śrub PN-EN 1993-1-8, program dla konstruktora, TEK-SKARPA, stateczność skarpy program, stateczność zbocza obliczenia, metoda Bishopa, metoda Spencera, równowaga graniczna skarpa, Eurokod 7 stateczność">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tektoria.pl/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#0a1016">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="TEKTORIA — LISP do ZWCAD i kalkulatory konstrukcyjne wg Eurokodów">
-<meta property="og:description" content="Skrypty LISP do ZWCAD i TEK-CALC — 10 kalkulatorów konstrukcyjnych wg Eurokodów na Windows. Licencje bezterminowe, działanie offline. Pisane przez czynnego konstruktora z uprawnieniami.">
+<meta property="og:description" content="Skrypty LISP do ZWCAD oraz programy na Windows: TEK-CALC (10 kalkulatorów wg Eurokodów) i TEK-SKARPA (stateczność skarp metodami równowagi granicznej). Licencje bezterminowe, działanie offline. Pisane przez czynnego konstruktora z uprawnieniami.">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:url" content="https://tektoria.pl/">
 <meta property="og:site_name" content="TEKTORIA">
+<meta property="og:image" content="https://tektoria.pl/img/og-tektoria.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TEKTORIA — narzedzia CAD i obliczeniowe dla konstruktorow">
+<meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
 {
@@ -23,6 +32,8 @@
     {
       "@type": "Organization",
       "name": "TEKTORIA",
+      "url": "https://tektoria.pl/",
+      "logo": "https://tektoria.pl/img/og-tektoria.png",
       "description": "Biblioteka skryptów LISP do ZWCAD i kalkulatorów inżynierskich, tworzona przez inżyniera z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń.",
       "areaServed": "PL"
     },
@@ -32,7 +43,7 @@
       "applicationCategory": "DesignApplication",
       "operatingSystem": "ZWCAD 2022+",
       "description": "Skrypt LISP do ZWCAD automatycznie wstawiający przekroje profili stalowych (IPN, IPE, HEA/HEB/HEM, UPN, kątowniki, rury, SHS, RHS) wraz z tabelką parametrów.",
-      "offers": { "@type": "Offer", "price": "219", "priceCurrency": "PLN" }
+      "offers": { "@type": "Offer", "price": "219", "priceCurrency": "PLN", "availability": "https://schema.org/PreOrder", "url": "https://tektoria.pl/#zamow" }
     },
     {
       "@type": "SoftwareApplication",
@@ -40,7 +51,7 @@
       "applicationCategory": "DesignApplication",
       "operatingSystem": "ZWCAD 2022+",
       "description": "Skrypt LISP do ZWCAD tworzący zestawienie profili stalowych z rysunku z eksportem do Excela.",
-      "offers": { "@type": "Offer", "price": "219", "priceCurrency": "PLN" }
+      "offers": { "@type": "Offer", "price": "219", "priceCurrency": "PLN", "availability": "https://schema.org/PreOrder", "url": "https://tektoria.pl/#zamow" }
     },
     {
       "@type": "SoftwareApplication",
@@ -54,7 +65,9 @@
         "priceCurrency": "PLN",
         "lowPrice": "59",
         "highPrice": "999",
-        "offerCount": "11"
+        "offerCount": "11",
+        "availability": "https://schema.org/PreOrder",
+        "url": "https://tektoria.pl/#zamow"
       }
     },
     {
@@ -64,7 +77,7 @@
       "operatingSystem": "Windows 10, Windows 11 (64-bit)",
       "softwareVersion": "1.0.0",
       "description": "Program na Windows do analizy stateczności skarp, wykopów i nasypów metodami równowagi granicznej (LEM) w przekroju 2D. Metody Fellenius, Bishop uproszczona, Janbu skorygowana i Spencer, kołowe powierzchnie poślizgu, przeszukiwanie siatki środków obrotu, warunki wodne (zwierciadło swobodne, linia piezometryczna, r_u), wzmocnienia, obciążenie naziomu, siła pseudostatyczna, tryb współczynników częściowych wg PN-EN 1997-1. Raport PDF i Word, eksport JSON i CSV. Wbudowana walidacja na zadaniu ACADS 1(a). Licencja bezterminowa, działa offline.",
-      "offers": { "@type": "Offer", "price": "699", "priceCurrency": "PLN" }
+      "offers": { "@type": "Offer", "price": "699", "priceCurrency": "PLN", "availability": "https://schema.org/PreOrder", "url": "https://tektoria.pl/#zamow" }
     },
     {
       "@type": "FAQPage",
@@ -108,6 +121,21 @@
           "@type": "Question",
           "name": "Czy wynik z programu mogę wstawić do projektu i kto odpowiada za obliczenia?",
           "acceptedAnswer": { "@type": "Answer", "text": "Raport z programu (PDF, Word, arkusz) jest załącznikiem obliczeniowym do dokumentacji — tak samo jak wydruk z każdego innego programu. Odpowiedzialność za przyjęte założenia, dane wejściowe i interpretację wyników ponosi projektant wykonujący samodzielną funkcję techniczną, zgodnie z art. 20 Prawa budowlanego. Programy są narzędziem pomocniczym i nie zastępują osądu inżynierskiego ani rozpoznania geotechnicznego. Dlatego przy każdym wyniku podaję źródło algorytmu i punkt normy — żebyś mógł to sprawdzić, a nie przyjąć na wiarę." }
+        },
+        {
+          "@type": "Question",
+          "name": "Kiedy ruszy sprzedaż, jak zapłacę i czy dostanę fakturę?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sprzedaż jeszcze nie ruszyła — na tej stronie zbieram deklaracje zainteresowania i uruchomię ją, gdy zbierze się ich wystarczająco dużo. Do każdej osoby, która zostawiła zgłoszenie, napiszę wtedy z potwierdzoną ceną, sposobem płatności, dokumentem sprzedaży i regulaminem. Deklaracja z formularza nie jest zamówieniem, nie wiąże się z żadną płatnością i do niczego Cię nie zobowiązuje — na tym etapie nie zbieram nawet danych adresowych ani rozliczeniowych." }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy mogę zrezygnować po zakupie?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Kupując na firmę nie masz ustawowego prawa odstąpienia od umowy — przysługuje ono konsumentom. Jako konsument masz 14 dni na odstąpienie, ale przy treściach cyfrowych dostarczanych bez nośnika materialnego prawo to wygasa, jeżeli wyraźnie zgodzisz się na natychmiastowe dostarczenie pliku i potwierdzisz, że przyjmujesz do wiadomości utratę prawa odstąpienia (art. 38 ust. 1 pkt 13 ustawy o prawach konsumenta). Dlatego zależy mi, żebyś ocenił narzędzie przed zakupem, a nie po: darmowe skrypty LISP pobierzesz bez rejestracji i bez podawania e-maila, a zrzuty i film w tej ofercie pochodzą z rzeczywiście działających programów, bez retuszu. Pełne zasady opiszę w regulaminie i umowie licencyjnej udostępnianych przed uruchomieniem sprzedaży." }
+        },
+        {
+          "@type": "Question",
+          "name": "Co dostaję po zakupie i jak wygląda wsparcie?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Plik programu albo skryptu, instrukcję instalacji, umowę licencyjną i imienny klucz licencyjny — wszystko pocztą elektroniczną, bez nośnika materialnego. Licencja jest bezterminowa, na jedno stanowisko, bez abonamentu. Usuwanie błędów w kupionej wersji jest po mojej stronie i nie wiąże się z dopłatą. Pytania techniczne kierujesz na kontakt@tektoria.pl — odpowiada ten sam człowiek, który napisał kod, a nie pierwsza linia wsparcia." }
         }
       ]
     }
@@ -115,9 +143,40 @@
 }
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+  /* ---------- fonty hostowane lokalnie (SIL OFL, pliki w /fonts) ----------
+     Powod: brak polaczenia z serwerami Google przy kazdym wejsciu = brak
+     przekazywania adresu IP odwiedzajacego podmiotowi trzeciemu (RODO). */
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;font-display:swap;
+    src:url('fonts/space-grotesk-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;font-display:swap;
+    src:url('fonts/space-grotesk-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;
+    src:url('fonts/space-grotesk-latin-ext-500-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;
+    src:url('fonts/space-grotesk-latin-500-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;font-display:swap;
+    src:url('fonts/space-grotesk-latin-ext-600-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;font-display:swap;
+    src:url('fonts/space-grotesk-latin-600-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;
+    src:url('fonts/space-grotesk-latin-ext-700-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;
+    src:url('fonts/space-grotesk-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;
+    src:url('fonts/jetbrains-mono-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;
+    src:url('fonts/jetbrains-mono-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;
+    src:url('fonts/jetbrains-mono-latin-ext-500-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;
+    src:url('fonts/jetbrains-mono-latin-500-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:700;font-display:swap;
+    src:url('fonts/jetbrains-mono-latin-ext-700-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:700;font-display:swap;
+    src:url('fonts/jetbrains-mono-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+
   :root{
     --bg:#0a1016;
     --bg2:#0d151d;
@@ -326,6 +385,7 @@
   }
   .priceline .price small{font-size:.66rem;color:var(--txt-dim);display:block;font-weight:400;}
   .doc-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;}
+  .doc-soon{color:var(--txt-dim);opacity:.75;border-style:dashed;cursor:default;}
   .doc-link{
     font-family:'JetBrains Mono',monospace;font-size:.72rem;
     padding:8px 12px;border:1px solid var(--panel-line);border-radius:3px;
@@ -498,6 +558,11 @@
   .ci-name{font-family:'JetBrains Mono',monospace;font-size:.84rem;}
   .ci-price{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--amber);}
   .form-note{font-size:.8rem;color:var(--txt-dim);margin:-4px 0 22px;}
+  .form-note.rodo{font-size:.74rem;line-height:1.6;margin-top:-14px;padding-top:14px;border-top:1px solid var(--panel-line);}
+  .form-note a{color:var(--cyan);}
+  .check-consent{align-items:flex-start;}
+  .check-consent input{margin-top:3px;flex-shrink:0;}
+  .check-consent .ci-name{font-family:'Space Grotesk',system-ui,sans-serif;font-size:.85rem;line-height:1.55;text-transform:none;letter-spacing:normal;color:var(--txt);}
   .form-status{font-family:'JetBrains Mono',monospace;font-size:.76rem;margin-left:14px;}
 
   footer{
@@ -505,6 +570,9 @@
     font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--txt-dim);
   }
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  footer .fcontact{flex-basis:100%;padding-top:10px;}
+  footer .fcontact a{color:var(--cyan);text-decoration:none;border-bottom:1px solid var(--cyan-dim);}
+  footer .fcontact a:hover{border-bottom-color:var(--cyan);}
   footer .fauthor{flex-basis:100%;padding-top:14px;margin-top:2px;border-top:1px solid var(--panel-line);}
   footer .fauthor a{color:var(--txt-dim);text-decoration:none;border-bottom:1px solid var(--panel-line);}
   footer .fauthor a:hover{color:var(--cyan);border-bottom-color:var(--cyan);}
@@ -547,15 +615,16 @@
 <section class="hero cadgrid">
   <div class="hero-inner">
     <div>
-      <h1><span class="strike">Rysowanie profili ręcznie</span><br>to strata Twoich pieniędzy. <span class="hl">Wpisz komendę.</span></h1>
-      <p class="lead">TEKTORIA to rosnąca biblioteka narzędzi dla konstruktorów: skrypty LISP do ZWCAD i kalkulatory inżynierskie. Na start: gotowe przekroje profili stalowych z tabelką parametrów, zestawienie stali prosto do Excela i darmowe narzędzia do pobrania. Pisane przez czynnego konstruktora z uprawnieniami — nie przez firmę od wtyczek.</p>
+      <h1><span class="strike">Ręczne przekroje i własne arkusze</span><br>kosztują Cię godziny. <span class="hl">Są na to narzędzia.</span></h1>
+      <p class="lead">TEKTORIA to rosnąca biblioteka narzędzi dla konstruktorów, w dwóch liniach. <b>Skrypty LISP do ZWCAD</b>: przekroje profili stalowych z tabelką parametrów i zestawienie stali prosto do Excela. <b>Programy na Windows</b>, bez CAD-a i bez instalatora: TEK-CALC z 10 kalkulatorami wg Eurokodów i TEK-SKARPA do stateczności skarp. Pisane przez czynnego konstruktora z uprawnieniami — nie przez firmę od wtyczek.</p>
       <div class="ctas">
         <a href="#zamow" class="btn btn-primary">Zgłoś zainteresowanie</a>
-        <a href="#profil" class="btn btn-ghost">Zobacz w akcji ↓</a>
+        <a href="#profil" class="btn btn-ghost">Zobacz produkty ↓</a>
       </div>
       <div class="hero-badges">
-        <span>ZWCAD 2022 Standard i nowsze</span>
-        <span>czysty LISP — zero instalatorów</span>
+        <span>LISP: ZWCAD 2022 Standard i nowsze</span>
+        <span>programy: Windows 10/11, bez CAD-a i bez instalatora</span>
+        <span>licencje bezterminowe — bez abonamentu</span>
         <span>uprawnienia konstrukcyjno-budowlane bez ograniczeń</span>
       </div>
     </div>
@@ -609,9 +678,9 @@
 <!-- ================= STATS ================= -->
 <div class="stats">
   <div class="wrap">
-    <div class="stat rv"><div class="n" data-count="800" data-suffix="+">0</div><div class="l">rozmiarów profili w bazie — od IPN po RHS</div></div>
-    <div class="stat rv"><div class="n" data-count="40" data-suffix=" s">0</div><div class="l">tyle trwa zestawienie stali w Excelu</div></div>
-    <div class="stat rv"><div class="n" data-count="1" data-suffix=" plik">0</div><div class="l">.lsp — instalacja przez APPLOAD, zero zależności</div></div>
+    <div class="stat rv"><div class="n" data-count="800" data-suffix="+">0</div><div class="l">rozmiarów profili w bazie TEK-PROFIL — od IPN po RHS</div></div>
+    <div class="stat rv"><div class="n" data-count="10" data-suffix="">0</div><div class="l">modułów obliczeniowych TEK-CALC wg Eurokodów</div></div>
+    <div class="stat rv"><div class="n" data-count="4" data-suffix="">0</div><div class="l">metody pasków w TEK-SKARPA: Fellenius, Bishop, Janbu, Spencer</div></div>
     <div class="stat rv"><div class="n" data-count="0" data-suffix=" zł/rok">0</div><div class="l">licencja bezterminowa, bez abonamentu</div></div>
   </div>
 </div>
@@ -643,7 +712,7 @@
         </div>
         <div class="doc-links">
           <a class="doc-link" href="docs/Instrukcja_instalacji_TEK-PROFIL.pdf">⬇ Instrukcja instalacji (PDF)</a>
-          <a class="doc-link" href="docs/EULA_TEKTORIA.pdf">⬇ EULA (PDF)</a>
+          <span class="doc-link doc-soon">umowa licencyjna (EULA) — wzór wysyłam na życzenie, przed zakupem</span>
         </div>
         <div class="compat">testowano na build 22.20_2023.10.12(#8730-af782e2d2ee)_x64_S</div>
       </div>
@@ -720,7 +789,7 @@
         </div>
         <div class="doc-links">
           <a class="doc-link" href="docs/Instrukcja_instalacji_TEK-STAL.pdf">⬇ Instrukcja instalacji (PDF)</a>
-          <a class="doc-link" href="docs/EULA_TEKTORIA.pdf">⬇ EULA (PDF)</a>
+          <span class="doc-link doc-soon">umowa licencyjna (EULA) — wzór wysyłam na życzenie, przed zakupem</span>
         </div>
         <div class="compat">testowano na build 22.20_2023.10.12(#8730-af782e2d2ee)_x64_S</div>
       </div>
@@ -779,7 +848,7 @@
           <a href="#zamow" class="btn btn-primary" onclick="preselect('calc')">Chcę TEK-CALC</a>
         </div>
         <div class="doc-links">
-          <a class="doc-link" href="docs/EULA_TEKTORIA.pdf">⬇ EULA (PDF)</a>
+          <span class="doc-link doc-soon">umowa licencyjna (EULA) — wzór wysyłam na życzenie, przed zakupem</span>
         </div>
         <div class="compat">program działa offline — nie łączy się z internetem i nie wysyła danych projektowych</div>
       </div>
@@ -868,6 +937,9 @@
         <div class="priceline">
           <div class="price">699 zł<small>licencja bezterminowa · 1 stanowisko</small></div>
           <a href="#zamow" class="btn btn-primary" onclick="preselect('skarpa')">Chcę TEK-SKARPA</a>
+        </div>
+        <div class="doc-links">
+          <span class="doc-link doc-soon">umowa licencyjna (EULA) — wzór wysyłam na życzenie, przed zakupem</span>
         </div>
         <div class="compat">walidacja na zadaniu ACADS 1(a): Bishop, Janbu i Spencer zgodne z opublikowanymi wynikami Slide2 w granicach 0,3%</div>
       </div>
@@ -966,10 +1038,10 @@
           Jeden plik .lsp wczytywany poleceniem APPLOAD. Do każdego skryptu dołączona jest instrukcja PDF krok po kroku, w tym dodanie do autostartu ZWCAD. Tak to wygląda:
           <div class="frame-player" style="margin-top:14px;"
                data-frames='[
-                 {"img":"img/instrukcja_01.jpg","caption":"1/5 — zapisujesz plik .lsp na dysku","duration":3000},
-                 {"img":"img/instrukcja_02.jpg","caption":"2/5 — w ZWCAD wpisujesz APPLOAD","duration":3000},
-                 {"img":"img/instrukcja_03.jpg","caption":"3/5 — wskazujesz plik i klikasz Load","duration":3000},
-                 {"img":"img/instrukcja_04.jpg","caption":"4/5 — opcjonalnie: Startup Suite, skrypt wczyta się przy każdym starcie","duration":3200},
+                 {"img":"img/instrukcja_01.jpg","caption":"1/6 — zapisujesz plik .lsp na dysku","duration":3000},
+                 {"img":"img/instrukcja_02.jpg","caption":"2/6 — w ZWCAD wpisujesz APPLOAD","duration":3000},
+                 {"img":"img/instrukcja_03.jpg","caption":"3/6 — wskazujesz plik i klikasz Load","duration":3000},
+                 {"img":"img/instrukcja_04.jpg","caption":"4/6 — opcjonalnie: Startup Suite, skrypt wczyta się przy każdym starcie","duration":3200},
                  {"img":"img/instrukcja_05.jpg","caption":"5/6 — wpisujesz komendę skryptu i pracujesz","duration":3200},
                  {"img":"img/instrukcja_06.jpg","caption":"6/6 — KTMENU (jednorazowo): menu TEKTORIA i pasek ikon — wszystkie komendy pod ręką","duration":3400}
                ]'>
@@ -1002,6 +1074,18 @@
       <details>
         <summary>Czy wynik z programu mogę wstawić do projektu i kto odpowiada za obliczenia?</summary>
         <div class="a">Raport z programu (PDF, Word, arkusz) jest załącznikiem obliczeniowym do dokumentacji — tak samo jak wydruk z każdego innego programu. Odpowiedzialność za przyjęte założenia, dane wejściowe i interpretację wyników ponosi projektant wykonujący samodzielną funkcję techniczną, zgodnie z art. 20 Prawa budowlanego. Programy są narzędziem pomocniczym i nie zastępują osądu inżynierskiego ani rozpoznania geotechnicznego. Dlatego przy każdym wyniku podaję źródło algorytmu i punkt normy — żebyś mógł to sprawdzić, a nie przyjąć na wiarę.</div>
+      </details>
+      <details>
+        <summary>Kiedy ruszy sprzedaż, jak zapłacę i czy dostanę fakturę?</summary>
+        <div class="a">Sprzedaż jeszcze nie ruszyła — na tej stronie zbieram deklaracje zainteresowania i uruchomię ją, gdy zbierze się ich wystarczająco dużo. Do każdej osoby, która zostawiła zgłoszenie, napiszę wtedy z potwierdzoną ceną, sposobem płatności, dokumentem sprzedaży i regulaminem. Deklaracja z formularza nie jest zamówieniem, nie wiąże się z żadną płatnością i do niczego Cię nie zobowiązuje — na tym etapie nie zbieram nawet danych adresowych ani rozliczeniowych.</div>
+      </details>
+      <details>
+        <summary>Czy mogę zrezygnować po zakupie?</summary>
+        <div class="a">Kupując na firmę nie masz ustawowego prawa odstąpienia od umowy — przysługuje ono konsumentom. Jako konsument masz 14 dni na odstąpienie, ale przy treściach cyfrowych dostarczanych bez nośnika materialnego prawo to wygasa, jeżeli wyraźnie zgodzisz się na natychmiastowe dostarczenie pliku i potwierdzisz, że przyjmujesz do wiadomości utratę prawa odstąpienia (art. 38 ust. 1 pkt 13 ustawy o prawach konsumenta). Dlatego zależy mi, żebyś ocenił narzędzie przed zakupem, a nie po: darmowe skrypty LISP pobierzesz bez rejestracji i bez podawania e-maila, a zrzuty i film w tej ofercie pochodzą z rzeczywiście działających programów, bez retuszu. Pełne zasady opiszę w regulaminie i umowie licencyjnej udostępnianych przed uruchomieniem sprzedaży.</div>
+      </details>
+      <details>
+        <summary>Co dostaję po zakupie i jak wygląda wsparcie?</summary>
+        <div class="a">Plik programu albo skryptu, instrukcję instalacji, umowę licencyjną i imienny klucz licencyjny — wszystko pocztą elektroniczną, bez nośnika materialnego. Licencja jest bezterminowa, na jedno stanowisko, bez abonamentu. Usuwanie błędów w kupionej wersji jest po mojej stronie i nie wiąże się z dopłatą. Pytania techniczne kierujesz na kontakt@tektoria.pl — odpowiada ten sam człowiek, który napisał kod, a nie pierwsza linia wsparcia.</div>
       </details>
     </div>
   </div>
@@ -1079,10 +1163,20 @@
         </div>
       </div>
       <div class="form-row">
+        <label>Zgoda na kontakt</label>
+        <div class="checks">
+          <label class="check-item check-consent">
+            <input type="checkbox" name="zgoda" value="TAK — zgoda na kontakt e-mail i informację o starcie sprzedaży" id="chk-zgoda" required>
+            <span class="ci-name">Zgadzam się na kontakt e-mail w sprawie tego zgłoszenia oraz na przesłanie mi informacji o uruchomieniu sprzedaży. Wiem, że zgodę mogę wycofać w każdej chwili jednym mailem.</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-row">
         <label for="msg">Wiadomość (opcjonalnie)</label>
         <textarea id="msg" name="wiadomość" placeholder="Np. jaka wersja ZWCAD; przy TEK-CALC — które moduły Cię interesują"></textarea>
       </div>
       <p class="form-note">Deklaracja nie jest zamówieniem z płatnością i do niczego nie zobowiązuje — sprawdzam skalę zainteresowania przed uruchomieniem sprzedaży.</p>
+      <p class="form-note rodo">Administratorem Twoich danych jest Jarosław Sarafin, kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a>. Podanie danych jest dobrowolne, a służą wyłącznie odpowiedzi na to zgłoszenie, ocenie zainteresowania ofertą i poinformowaniu Cię o starcie sprzedaży. Formularz obsługuje zewnętrzny dostawca (Web3Forms), który przetwarza dane na moje zlecenie. Nie przekazuję danych innym administratorom i nie profiluję ich. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia i sprzeciwu, a także wniesienia skargi do Prezesa UODO. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;">
         <button type="submit" class="btn btn-primary">Wyślij zgłoszenie</button>
         <span class="form-status" id="formStatus"></span>
@@ -1095,7 +1189,8 @@
   <div class="wrap">
     <span>TEKTORIA · narzędzia CAD i obliczeniowe dla konstruktorów · inżynier z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń</span>
     <span>zgodność testowana: ZWCAD 2022 Standard · build 22.20_2023.10.12</span>
-    <span class="fauthor">autor: <a href="https://js-3web.github.io/js-wizytowka/" target="_blank" rel="noopener">Jarosław Sarafin — wizytówka</a> · projektant konstrukcji i inspektor nadzoru, Lublin</span>
+    <span class="fcontact">kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a> &nbsp;·&nbsp; <a href="polityka-prywatnosci.html">polityka prywatności</a></span>
+    <span class="fauthor">autor i administrator danych: <a href="https://js-3web.github.io/js-wizytowka/" target="_blank" rel="noopener">Jarosław Sarafin — wizytówka</a> · projektant konstrukcji i inspektor nadzoru, Lublin</span>
   </div>
 </footer>
 
