@@ -3,26 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TEKTORIA — LISP do ZWCAD i kalkulatory konstrukcyjne wg Eurokodów | profile stalowe, zestawienia stali</title>
-<meta name="description" content="TEKTORIA — narzędzia dla konstruktorów: skrypty LISP do ZWCAD (przekroje profili stalowych, zestawienia stali do Excela) oraz programy na Windows: TEK-CALC z 10 kalkulatorami wg Eurokodów (płyty i tarcze żelbetowe, połączenia stalowe, zestawienie obciążeń, dobór śrub, kotew i krat) i TEK-SKARPA do analizy stateczności skarp, wykopów i nasypów metodami równowagi granicznej. Licencje bezterminowe, działa offline.">
-<meta name="keywords" content="TEKTORIA, TEK-CALC, LISP ZWCAD, skrypt LISP profile stalowe, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulator płyt żelbetowych, kalkulator tarcz żelbetowych, wymiarowanie płyty Eurokod, połączenia stalowe EC3, zestawienie obciążeń Eurokod, dobór śrub PN-EN 1993-1-8, program dla konstruktora, TEK-SKARPA, stateczność skarpy program, stateczność zbocza obliczenia, metoda Bishopa, metoda Spencera, równowaga graniczna skarpa, Eurokod 7 stateczność">
+<title>TEKTORIA — LISP do ZWCAD, kalkulatory wg Eurokodów i aplikacje dla kierownika budowy</title>
+<meta name="description" content="TEKTORIA — oprogramowanie dla inżynierów budownictwa: skrypty LISP do ZWCAD (profile stalowe, zestawienia stali), programy obliczeniowe TEK-CALC i TEK-SKARPA wg Eurokodów oraz aplikacje dla kierownika budowy w pilotażu: TEK-BIURO BUDOWY (uwagi na rzutach, raporty, narady) i TEK-BHP (dokumentacja BHP podwykonawców).">
+<meta name="keywords" content="TEKTORIA, TEK-CALC, LISP ZWCAD, skrypt LISP profile stalowe, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulator płyt żelbetowych, kalkulator tarcz żelbetowych, wymiarowanie płyty Eurokod, połączenia stalowe EC3, zestawienie obciążeń Eurokod, dobór śrub PN-EN 1993-1-8, program dla konstruktora, TEK-SKARPA, stateczność skarpy program, stateczność zbocza obliczenia, metoda Bishopa, metoda Spencera, równowaga graniczna skarpa, Eurokod 7 stateczność, aplikacja dla kierownika budowy, uwagi na rzutach, rejestr usterek budowa, raport dzienny z budowy, protokół robót zanikowych, dokumentacja BHP podwykonawców, IBWR, plan BIOZ">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tektoria.pl/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<meta name="theme-color" content="#0a1016">
+<meta name="theme-color" content="#0b1622">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="TEKTORIA — LISP do ZWCAD i kalkulatory konstrukcyjne wg Eurokodów">
-<meta property="og:description" content="Skrypty LISP do ZWCAD oraz programy na Windows: TEK-CALC (10 kalkulatorów wg Eurokodów) i TEK-SKARPA (stateczność skarp metodami równowagi granicznej). Licencje bezterminowe, działanie offline. Pisane przez czynnego konstruktora z uprawnieniami.">
+<meta property="og:title" content="TEKTORIA — oprogramowanie dla inżynierów: CAD, obliczenia, biuro budowy">
+<meta property="og:description" content="Skrypty LISP do ZWCAD, programy obliczeniowe TEK-CALC i TEK-SKARPA oraz aplikacje dla kierownika budowy w pilotażu: TEK-BIURO BUDOWY i TEK-BHP. Pisane przez konstruktora z uprawnieniami.">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:url" content="https://tektoria.pl/">
 <meta property="og:site_name" content="TEKTORIA">
 <meta property="og:image" content="https://tektoria.pl/img/og-tektoria.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="TEKTORIA — narzedzia CAD i obliczeniowe dla konstruktorow">
+<meta property="og:image:alt" content="Logo TEKTORIA w sześciokącie — oprogramowanie dla inżynierów, CAD i aplikacje dla projektantów i kierowników">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -33,8 +33,8 @@
       "@type": "Organization",
       "name": "TEKTORIA",
       "url": "https://tektoria.pl/",
-      "logo": "https://tektoria.pl/img/og-tektoria.png",
-      "description": "Biblioteka skryptów LISP do ZWCAD i kalkulatorów inżynierskich, tworzona przez inżyniera z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń.",
+      "logo": "https://tektoria.pl/img/tektoria-znak.png",
+      "description": "Oprogramowanie dla inżynierów budownictwa: skrypty LISP do ZWCAD, programy obliczeniowe wg Eurokodów i aplikacje dla kierowników budów, tworzone przez inżyniera z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń.",
       "areaServed": "PL"
     },
     {
@@ -136,6 +136,11 @@
           "@type": "Question",
           "name": "Co dostaję po zakupie i jak wygląda wsparcie?",
           "acceptedAnswer": { "@type": "Answer", "text": "Plik programu albo skryptu, instrukcję instalacji, umowę licencyjną i imienny klucz licencyjny — wszystko pocztą elektroniczną, bez nośnika materialnego. Licencja jest bezterminowa, na jedno stanowisko, bez abonamentu. Usuwanie błędów w kupionej wersji jest po mojej stronie i nie wiąże się z dopłatą. Pytania techniczne kierujesz na kontakt@tektoria.pl — odpowiada ten sam człowiek, który napisał kod, a nie pierwsza linia wsparcia." }
+        },
+        {
+          "@type": "Question",
+          "name": "Czym są TEK-BIURO BUDOWY i TEK-BHP i dlaczego nie mają ceny?",
+          "acceptedAnswer": { "@type": "Answer", "text": "To aplikacje dla kierownika budowy i biura budowy: TEK-BIURO BUDOWY porządkuje uwagi z obchodów, narady, raporty dzienne, protokoły i terminy kontraktowe, a TEK-BHP — dokumentację BHP podwykonawców. Obie są w fazie pilotażu: udostępniam je bez opłat kilku budowom do testów, a cenę i model licencji ustalę po pilotażu. Nie zastępują dziennika budowy, służby BHP ani obowiązków kierownika budowy — porządkują codzienną pracę i przygotowują dokumenty do sprawdzenia." }
         }
       ]
     }
@@ -185,8 +190,8 @@
     --grid:rgba(72,132,182,.09);
     --txt:#d7e3ec;
     --txt-dim:#8ba3b5;
-    --cyan:#3fe0c5;
-    --cyan-dim:#2a9c8b;
+    --cyan:#22c3e6;        /* cyjan z logo TEKTORIA v4 (28.09.2026) */
+    --cyan-dim:#1a8fad;
     --amber:#ffb24d;
     --orange:#ff6b35;
     --green:#7be07b;
@@ -224,27 +229,23 @@
     display:flex;align-items:center;justify-content:space-between;
     padding:14px 26px;
   }
-  .brand{display:flex;align-items:center;gap:12px;}
-  .brand .mark{
-    width:30px;height:30px;border:1.5px solid var(--cyan);border-radius:3px;
-    display:flex;align-items:center;justify-content:center;
-    font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--cyan);font-size:.95rem;
-  }
-  .brand .name{font-weight:700;font-size:1.1rem;letter-spacing:.04em;}
-  .brand .name span{color:var(--cyan);}
-  .brand .tag{font-family:'JetBrains Mono',monospace;font-size:.64rem;color:var(--txt-dim);letter-spacing:.1em;}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;}
+  .brand .logo{display:block;height:32px;width:auto;}
+  .brand .tag{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--txt-dim);letter-spacing:.1em;
+    border-left:1px solid var(--panel-line);padding-left:14px;line-height:1.35;white-space:nowrap;}
+  @media(max-width:1360px){.brand .tag{display:none;}}
   header.top nav{display:flex;align-items:center;gap:4px;}
   header.top nav a{
     color:var(--txt-dim);text-decoration:none;
     font-family:'JetBrains Mono',monospace;font-size:.74rem;letter-spacing:.04em;
     padding:7px 12px;border-radius:3px;
   }
-  header.top nav a:hover{color:var(--cyan);background:rgba(63,224,197,.07);}
+  header.top nav a:hover{color:var(--cyan);background:rgba(34,195,230,.07);}
   header.top nav a.cta{
     border:1px solid var(--orange);color:var(--orange);margin-left:8px;
   }
   header.top nav a.cta:hover{background:var(--orange);color:#0a1016;}
-  @media(max-width:760px){header.top nav a:not(.cta){display:none;}}
+  @media(max-width:1040px){header.top nav a:not(.cta){display:none;}}
 
   /* ---------- hero: fake ZWCAD viewport ---------- */
   .hero{padding:64px 24px 40px;position:relative;overflow:hidden;}
@@ -266,7 +267,7 @@
   .btn-primary{background:var(--orange);color:#0a1016;font-weight:700;}
   .btn-primary:hover{background:#ff8556;transform:translateY(-2px);box-shadow:0 6px 22px rgba(255,107,53,.28);}
   .btn-ghost{color:var(--cyan);border-color:var(--cyan-dim);}
-  .btn-ghost:hover{border-color:var(--cyan);background:rgba(63,224,197,.08);}
+  .btn-ghost:hover{border-color:var(--cyan);background:rgba(34,195,230,.08);}
   .hero-badges{
     margin-top:34px;display:flex;gap:20px;flex-wrap:wrap;
     font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--txt-dim);
@@ -360,13 +361,14 @@
     margin-top:44px;
   }
   @media(max-width:880px){.prod{grid-template-columns:1fr;}}
-  .prod .cmd-chip{
+  .prod .cmd-chip,.pc-body .cmd-chip{
     display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.7rem;
     background:#0a1219;border:1px solid var(--panel-line);color:var(--green);
     padding:4px 10px;border-radius:3px;margin-bottom:14px;
   }
   .prod h3{font-size:1.5rem;}
-  .prod .file{font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--txt-dim);margin-top:4px;}
+  .pc-body .cmd-chip{align-self:flex-start;}
+  .prod .file,.pc-body .file{font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--txt-dim);margin-top:4px;}
   .prod p.desc{color:var(--txt-dim);margin-top:16px;}
   ul.feats{list-style:none;padding:0;margin:20px 0 0;}
   ul.feats li{
@@ -477,7 +479,7 @@
   }
   .bundle::after{
     content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;
-    border:1px dashed rgba(63,224,197,.25);border-radius:50%;
+    border:1px dashed rgba(34,195,230,.25);border-radius:50%;
   }
   .bundle .save{
     display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.7rem;
@@ -507,7 +509,7 @@
     border:1px solid var(--cyan-dim);border-radius:3px;padding:9px 14px;
     transition:all .15s;
   }
-  .freecard .dl:hover{background:rgba(63,224,197,.1);border-color:var(--cyan);}
+  .freecard .dl:hover{background:rgba(34,195,230,.1);border-color:var(--cyan);}
   .free-note{
     margin-top:22px;font-size:.84rem;color:var(--txt-dim);max-width:70ch;
   }
@@ -577,6 +579,25 @@
   footer .fauthor a{color:var(--txt-dim);text-decoration:none;border-bottom:1px solid var(--panel-line);}
   footer .fauthor a:hover{color:var(--cyan);border-bottom-color:var(--cyan);}
 
+  /* ---------- linia 3: aplikacje dla biura budowy (pilotaż) ---------- */
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:40px;}
+  @media(max-width:900px){.duo{grid-template-columns:1fr;}}
+  .pcard{border:1px solid var(--panel-line);border-radius:6px;background:var(--bg);overflow:hidden;
+    display:flex;flex-direction:column;scroll-margin-top:80px;}
+  .pcard .calc-video{margin-top:0;border:none;border-bottom:1px solid var(--panel-line);border-radius:0;}
+  .pc-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1;}
+  .pc-body h3{font-size:1.4rem;}
+  .pc-body ul.feats{flex:1;}
+  .pc-body ul.feats li{font-size:.9rem;}
+  .pilot-tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.64rem;font-weight:700;
+    letter-spacing:.08em;color:#0a1016;background:var(--orange);padding:2px 8px;border-radius:3px;
+    vertical-align:middle;margin-left:8px;}
+  .pstatus{margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--txt-dim);
+    border-top:1px solid var(--panel-line);padding-top:14px;}
+  .pstatus b{color:var(--amber);font-weight:500;}
+  .pc-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+  .pc-ctas .btn{padding:11px 18px;}
+
   .setup-note{
     padding:12px 24px;background:#2b230b;border-bottom:1px solid #6d5a1c;
     font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#e8cf7a;
@@ -592,19 +613,17 @@
 
 
 <header class="top">
-  <div class="brand">
-    <div class="mark">T</div>
-    <div>
-      <div class="name">TEK<span>TORIA</span></div>
-      <div class="tag">NARZĘDZIA CAD I OBLICZENIOWE DLA KONSTRUKTORÓW</div>
-    </div>
-  </div>
+  <a class="brand" href="#" aria-label="TEKTORIA — początek strony">
+    <img class="logo" src="img/tektoria-logo-poziome_ciemne-tlo.svg" alt="TEKTORIA" width="126" height="32">
+    <span class="tag">CAD · APLIKACJE DLA PROJEKTANTÓW I KIEROWNIKÓW</span>
+  </a>
   <nav>
     <a href="#profil">TEK-PROFIL</a>
     <a href="#stalja">TEK-STAL</a>
-    <a href="#komplet">TEK-KOMPLET</a>
     <a href="#calc">TEK-CALC</a>
     <a href="#skarpa">TEK-SKARPA</a>
+    <a href="#biuro">TEK-BIURO</a>
+    <a href="#bhp">TEK-BHP</a>
     <a href="#darmowe">DARMOWE</a>
     <a href="#faq">FAQ</a>
     <a href="#zamow" class="cta">ZAMAWIAM</a>
@@ -616,7 +635,7 @@
   <div class="hero-inner">
     <div>
       <h1><span class="strike">Ręczne przekroje i własne arkusze</span><br>kosztują Cię godziny. <span class="hl">Są na to narzędzia.</span></h1>
-      <p class="lead">TEKTORIA to rosnąca biblioteka narzędzi dla konstruktorów, w dwóch liniach. <b>Skrypty LISP do ZWCAD</b>: przekroje profili stalowych z tabelką parametrów i zestawienie stali prosto do Excela. <b>Programy na Windows</b>, bez CAD-a i bez instalatora: TEK-CALC z 10 kalkulatorami wg Eurokodów i TEK-SKARPA do stateczności skarp. Pisane przez czynnego konstruktora z uprawnieniami — nie przez firmę od wtyczek.</p>
+      <p class="lead">TEKTORIA to oprogramowanie dla inżynierów budownictwa, w trzech liniach. <b>Skrypty LISP do ZWCAD</b>: przekroje profili stalowych z tabelką parametrów i zestawienie stali prosto do Excela. <b>Programy obliczeniowe na Windows</b>, bez CAD-a i bez instalatora: TEK-CALC z 10 kalkulatorami wg Eurokodów i TEK-SKARPA do stateczności skarp. <b>Aplikacje dla kierownika budowy</b>, w pilotażu: TEK-BIURO BUDOWY i TEK-BHP. Pisane przez konstruktora z uprawnieniami — nie przez firmę od wtyczek.</p>
       <div class="ctas">
         <a href="#zamow" class="btn btn-primary">Zgłoś zainteresowanie</a>
         <a href="#profil" class="btn btn-ghost">Zobacz produkty ↓</a>
@@ -624,7 +643,8 @@
       <div class="hero-badges">
         <span>LISP: ZWCAD 2022 Standard i nowsze</span>
         <span>programy: Windows 10/11, bez CAD-a i bez instalatora</span>
-        <span>licencje bezterminowe — bez abonamentu</span>
+        <span>LISP i programy obliczeniowe: licencje bezterminowe, bez abonamentu</span>
+        <span>aplikacje dla biura budowy: pilotaż 2026</span>
         <span>uprawnienia konstrukcyjno-budowlane bez ograniczeń</span>
       </div>
     </div>
@@ -681,7 +701,7 @@
     <div class="stat rv"><div class="n" data-count="800" data-suffix="+">0</div><div class="l">rozmiarów profili w bazie TEK-PROFIL — od IPN po RHS</div></div>
     <div class="stat rv"><div class="n" data-count="10" data-suffix="">0</div><div class="l">modułów obliczeniowych TEK-CALC wg Eurokodów</div></div>
     <div class="stat rv"><div class="n" data-count="4" data-suffix="">0</div><div class="l">metody pasków w TEK-SKARPA: Fellenius, Bishop, Janbu, Spencer</div></div>
-    <div class="stat rv"><div class="n" data-count="0" data-suffix=" zł/rok">0</div><div class="l">licencja bezterminowa, bez abonamentu</div></div>
+    <div class="stat rv"><div class="n" data-count="0" data-suffix=" zł/rok">0</div><div class="l">abonamentu za LISP-y i programy obliczeniowe — licencja bezterminowa</div></div>
   </div>
 </div>
 
@@ -984,6 +1004,76 @@
   </div>
 </section>
 
+<!-- ================= LINIA 3: APLIKACJE DLA KIEROWNIKA BUDOWY (pilotaż) ================= -->
+<section id="budowa" style="background:var(--bg2);border-top:1px solid var(--panel-line);">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">produkty 05–06 · aplikacje dla biura budowy · pilotaż</div>
+      <h2 class="sec">Dla kierownika budowy: uwagi, raporty i dokumentacja BHP w jednym miejscu</h2>
+      <p class="sec-lead">Trzecia linia TEKTORIA to aplikacje do codziennej pracy biura budowy. Obie są w fazie pilotażu: szukam kierowników budów, którzy sprawdzą je na prawdziwej robocie, zanim ustalę cenę i model licencji. Filmy pokazują działające wersje testowe na danych przykładowych — bez obietnic, których aplikacja dziś nie spełnia.</p>
+    </div>
+
+    <div class="duo">
+      <article id="biuro" class="pcard rv">
+        <div class="calc-video">
+          <video controls preload="none" playsinline muted poster="video/tek-biuro-demo-15s-poster.jpg" aria-label="Krótkie demo aplikacji TEK-BIURO BUDOWY, 15 sekund">
+            <source src="video/tek-biuro-demo-15s.mp4" type="video/mp4">
+            <source src="video/tek-biuro-demo-15s.webm" type="video/webm">
+            Twoja przeglądarka nie odtworzy tego filmu — <a href="video/tek-biuro-demo-15s.mp4">pobierz plik MP4</a>.
+          </video>
+          <div class="vcap">demo · 15 s · bez dźwięku · timelapse na danych przykładowych · prototyp</div>
+        </div>
+        <div class="pc-body">
+          <span class="cmd-chip">przeglądarka Edge / Chrome · komputer + telefon · offline</span>
+          <h3>TEK-BIURO BUDOWY<span class="pilot-tag">PILOTAŻ</span></h3>
+          <div class="file">biuro kierownika budowy w jednym miejscu</div>
+          <ul class="feats">
+            <li>Obchód z telefonem: zdjęcie → znacznik na rzucie → firma i termin → gotowy mail do podwykonawcy</li>
+            <li>Rejestr uwag i raport PDF dla każdej firmy — ze zdjęciami i wycinkiem rzutu</li>
+            <li>Narady, raport dzienny w szablonie PowerPoint Twojej budowy, protokoły robót zanikowych</li>
+            <li>Harmonogram z MS Project (XML), terminy zawiadomień wg FIDIC, rejestr dowodów BREEAM</li>
+            <li>Dane zostają na Twoim komputerze — nie trafiają na serwer autora</li>
+          </ul>
+          <div class="pstatus">status: <b>pilotaż na budowach hal</b> · cena: <b>ustalana po pilotażu</b></div>
+          <div class="pc-ctas">
+            <a href="#zamow" class="btn btn-primary" onclick="preselect('biuro')">Chcę przetestować</a>
+            <a href="biuro-budowy.html" class="btn btn-ghost">Szczegóły i film 60 s →</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="bhp" class="pcard rv">
+        <div class="calc-video">
+          <video controls preload="none" playsinline muted poster="video/tek-bhp-demo-15s-poster.jpg" aria-label="Krótkie demo aplikacji TEK-BHP, 15 sekund">
+            <source src="video/tek-bhp-demo-15s.mp4" type="video/mp4">
+            <source src="video/tek-bhp-demo-15s.webm" type="video/webm">
+            Twoja przeglądarka nie odtworzy tego filmu — <a href="video/tek-bhp-demo-15s.mp4">pobierz plik MP4</a>.
+          </video>
+          <div class="vcap">demo · 15 s · bez dźwięku · fikcyjna budowa i fikcyjne firmy · wersja beta</div>
+        </div>
+        <div class="pc-body">
+          <span class="cmd-chip">TEK-BHP Beta · Windows x64 · jedno stanowisko · offline</span>
+          <h3>TEK-BHP<span class="pilot-tag">BETA</span></h3>
+          <div class="file">dokumentacja BHP podwykonawców pod kontrolą</div>
+          <ul class="feats">
+            <li>Baza podwykonawców z importem z Excela i wymaganiami dopasowanymi do robót każdej firmy</li>
+            <li>Skany dokumentów z oceną: dostarczone, sprawdzone, ważne do — braki widoczne od razu</li>
+            <li>Raport dla całej budowy albo jednej firmy do PDF i edytowalna treść maila</li>
+            <li>IBWR z wzorców branżowych, plan BIOZ z rewizjami, gotowe prompty do Twojego narzędzia AI</li>
+            <li>Działa lokalnie: bez chmury, bez telemetrii, dane w profilu aplikacji na Twoim komputerze</li>
+          </ul>
+          <div class="pstatus">status: <b>pilotaż wersji beta</b> · cena: <b>ustalana po pilotażu</b></div>
+          <div class="pc-ctas">
+            <a href="#zamow" class="btn btn-primary" onclick="preselect('bhp')">Chcę przetestować</a>
+            <a href="tek-bhp.html" class="btn btn-ghost">Szczegóły i film 60 s →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="media-note rv">Aplikacje porządkują dokumenty i przygotowują je do sprawdzenia. Nie zastępują dziennika budowy, służby BHP ani obowiązków kierownika budowy i pracodawcy. Nazwy MS Project, PowerPoint, Excel, FIDIC i BREEAM użyte są wyłącznie opisowo — do wskazania, z czym aplikacja współpracuje.</p>
+  </div>
+</section>
+
 <!-- ================= DARMOWE LISPY ================= -->
 <section id="darmowe" style="border-top:1px solid var(--panel-line);">
   <div class="wrap">
@@ -1087,6 +1177,10 @@
         <summary>Co dostaję po zakupie i jak wygląda wsparcie?</summary>
         <div class="a">Plik programu albo skryptu, instrukcję instalacji, umowę licencyjną i imienny klucz licencyjny — wszystko pocztą elektroniczną, bez nośnika materialnego. Licencja jest bezterminowa, na jedno stanowisko, bez abonamentu. Usuwanie błędów w kupionej wersji jest po mojej stronie i nie wiąże się z dopłatą. Pytania techniczne kierujesz na kontakt@tektoria.pl — odpowiada ten sam człowiek, który napisał kod, a nie pierwsza linia wsparcia.</div>
       </details>
+      <details>
+        <summary>Czym są TEK-BIURO BUDOWY i TEK-BHP i dlaczego nie mają ceny?</summary>
+        <div class="a">To aplikacje dla kierownika budowy i biura budowy: <a href="biuro-budowy.html">TEK-BIURO BUDOWY</a> porządkuje uwagi z obchodów, narady, raporty dzienne, protokoły i terminy kontraktowe, a <a href="tek-bhp.html">TEK-BHP</a> — dokumentację BHP podwykonawców. Obie są w fazie pilotażu: udostępniam je bez opłat kilku budowom do testów, a cenę i model licencji ustalę po pilotażu. Nie zastępują dziennika budowy, służby BHP ani obowiązków kierownika budowy — porządkują codzienną pracę i przygotowują dokumenty do sprawdzenia.</div>
+      </details>
     </div>
   </div>
 </section>
@@ -1095,9 +1189,9 @@
 <section id="zamow" class="order-sec">
   <div class="wrap">
     <div class="rv">
-      <div class="eyebrow">deklaracja zamówienia</div>
+      <div class="eyebrow">deklaracja zamówienia · zgłoszenie do pilotażu</div>
       <h2 class="sec">Zadeklaruj zakup — płatność dopiero, gdy ruszy sprzedaż</h2>
-      <p class="sec-lead">Sprzedaż uruchamiam, gdy zbiorę wystarczające zainteresowanie. Zostaw imię i e-mail, zaznacz co Cię interesuje i czy to deklaracja zakupu, czy wstępne zainteresowanie. Gdy wystartuję, napiszę do Ciebie z ceną potwierdzoną i sposobem płatności — deklaracja do niczego nie zobowiązuje. Zero danych adresowych i rozliczeniowych na tym etapie.</p>
+      <p class="sec-lead">Sprzedaż uruchamiam, gdy zbiorę wystarczające zainteresowanie. Zostaw imię i e-mail, zaznacz co Cię interesuje i czy to deklaracja zakupu, czy wstępne zainteresowanie. Gdy wystartuję, napiszę do Ciebie z ceną potwierdzoną i sposobem płatności — deklaracja do niczego nie zobowiązuje. Przy aplikacjach w pilotażu (TEK-BIURO BUDOWY, TEK-BHP) zgłaszasz się do testów — bez opłat. Zero danych adresowych i rozliczeniowych na tym etapie.</p>
     </div>
 
     <form class="order rv" action="https://api.web3forms.com/submit" method="POST" id="orderForm">
@@ -1147,6 +1241,16 @@
             <span class="ci-name">TEK-SKARPA — stateczność skarp</span>
             <span class="ci-price">699 zł</span>
           </label>
+          <label class="check-item">
+            <input type="checkbox" name="produkt" value="TEK-BIURO BUDOWY — pilotaż na budowie" id="chk-biuro">
+            <span class="ci-name">TEK-BIURO BUDOWY — pilotaż</span>
+            <span class="ci-price">bez opłat</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" name="produkt" value="TEK-BHP Beta — pilotaż" id="chk-bhp">
+            <span class="ci-name">TEK-BHP Beta — pilotaż</span>
+            <span class="ci-price">bez opłat</span>
+          </label>
         </div>
       </div>
       <div class="form-row">
@@ -1160,23 +1264,28 @@
             <input type="radio" name="charakter" value="Wstępne zainteresowanie — proszę o informację o starcie">
             <span class="ci-name">Wstępnie zainteresowany — dajcie znać o starcie</span>
           </label>
+          <label class="check-item">
+            <input type="radio" name="charakter" value="Zgłaszam się do pilotażu (TEK-BIURO BUDOWY / TEK-BHP)" id="rad-pilot">
+            <span class="ci-name">Zgłaszam się do pilotażu</span>
+          </label>
         </div>
       </div>
       <div class="form-row">
         <label>Zgoda na kontakt</label>
         <div class="checks">
           <label class="check-item check-consent">
-            <input type="checkbox" name="zgoda" value="TAK — zgoda na kontakt e-mail i informację o starcie sprzedaży" id="chk-zgoda" required>
-            <span class="ci-name">Zgadzam się na kontakt e-mail w sprawie tego zgłoszenia oraz na przesłanie mi informacji o uruchomieniu sprzedaży. Wiem, że zgodę mogę wycofać w każdej chwili jednym mailem.</span>
+            <input type="checkbox" name="zgoda" value="TAK — zgoda na kontakt e-mail i informację o starcie sprzedaży lub pilotażu" id="chk-zgoda" required>
+            <span class="ci-name">Zgadzam się na kontakt e-mail w sprawie tego zgłoszenia oraz na przesłanie mi informacji o uruchomieniu sprzedaży lub pilotażu. Wiem, że zgodę mogę wycofać w każdej chwili jednym mailem.</span>
           </label>
         </div>
       </div>
       <div class="form-row">
         <label for="msg">Wiadomość (opcjonalnie)</label>
         <textarea id="msg" name="wiadomość" placeholder="Np. jaka wersja ZWCAD; przy TEK-CALC — które moduły Cię interesują"></textarea>
+        <p class="form-note" id="pilotNote" style="display:none;margin:8px 0 0;">Przy zgłoszeniu do pilotażu nie wpisuj nazwy budowy, inwestora ani nie załączaj dokumentów — na tym etapie nie są potrzebne, a często są poufne.</p>
       </div>
       <p class="form-note">Deklaracja nie jest zamówieniem z płatnością i do niczego nie zobowiązuje — sprawdzam skalę zainteresowania przed uruchomieniem sprzedaży.</p>
-      <p class="form-note rodo">Administratorem Twoich danych jest Jarosław Sarafin, kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a>. Podanie danych jest dobrowolne, a służą wyłącznie odpowiedzi na to zgłoszenie, ocenie zainteresowania ofertą i poinformowaniu Cię o starcie sprzedaży. Formularz obsługuje zewnętrzny dostawca (Web3Forms), który przetwarza dane na moje zlecenie. Nie przekazuję danych innym administratorom i nie profiluję ich. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia i sprzeciwu, a także wniesienia skargi do Prezesa UODO. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
+      <p class="form-note rodo">Administratorem Twoich danych jest Jarosław Sarafin, kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a>. Podanie danych jest dobrowolne, a służą wyłącznie odpowiedzi na to zgłoszenie, ocenie zainteresowania ofertą, organizacji pilotażu i poinformowaniu Cię o starcie sprzedaży. Formularz obsługuje zewnętrzny dostawca (Web3Forms), który przetwarza dane na moje zlecenie. Nie przekazuję danych innym administratorom i nie profiluję ich. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia i sprzeciwu, a także wniesienia skargi do Prezesa UODO. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;">
         <button type="submit" class="btn btn-primary">Wyślij zgłoszenie</button>
         <span class="form-status" id="formStatus"></span>
@@ -1187,9 +1296,9 @@
 
 <footer>
   <div class="wrap">
-    <span>TEKTORIA · narzędzia CAD i obliczeniowe dla konstruktorów · inżynier z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń</span>
+    <span>TEKTORIA · oprogramowanie dla inżynierów · CAD i aplikacje dla projektantów i kierowników · inżynier z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń</span>
     <span>zgodność testowana: ZWCAD 2022 Standard · build 22.20_2023.10.12</span>
-    <span class="fcontact">kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a> &nbsp;·&nbsp; <a href="polityka-prywatnosci.html">polityka prywatności</a></span>
+    <span class="fcontact">kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a> &nbsp;·&nbsp; <a href="polityka-prywatnosci.html">polityka prywatności</a> &nbsp;·&nbsp; warunki pilotażu: <a href="eula-tek-biuro-budowy.html">TEK-BIURO BUDOWY</a>, <a href="eula-tek-bhp.html">TEK-BHP</a></span>
     <span class="fauthor">autor i administrator danych: <a href="https://js-3web.github.io/js-wizytowka/" target="_blank" rel="noopener">Jarosław Sarafin — wizytówka</a> · projektant konstrukcji i inspektor nadzoru, Lublin</span>
   </div>
 </footer>
@@ -1354,12 +1463,27 @@ function initFramePlayer(root){
 document.querySelectorAll('.frame-player').forEach(initFramePlayer);
 
 /* ===== formularz ===== */
+var PILOT_HINT = 'Rodzaj budowy (hala magazynowa / produkcyjna / inna), etap robót, liczba osób w biurze budowy, czy harmonogram jest w MS Project; przy TEK-BHP — ilu podwykonawców zwykle prowadzisz i czy biuro ma komputer z Windows 11';
+var DEFAULT_HINT = document.getElementById('msg').getAttribute('placeholder');
+function syncPilot(){
+  var isPilot = ['biuro','bhp'].some(function(k){ var el=document.getElementById('chk-'+k); return el && el.checked; });
+  document.getElementById('msg').setAttribute('placeholder', isPilot ? PILOT_HINT : DEFAULT_HINT);
+  document.getElementById('pilotNote').style.display = isPilot ? 'block' : 'none';
+  if(isPilot){ document.getElementById('rad-pilot').checked = true; }
+}
 function preselect(which){
-  ['profil','stalja','komplet','calc','calcmod','skarpa'].forEach(function(k){
+  ['profil','stalja','komplet','calc','calcmod','skarpa','biuro','bhp'].forEach(function(k){
     var el = document.getElementById('chk-'+k);
     if(el) el.checked = (k===which);
   });
+  syncPilot();
 }
+['chk-biuro','chk-bhp'].forEach(function(id){ document.getElementById(id).addEventListener('change', syncPilot); });
+/* podstrony produktów linkują do index.html?pilot=biuro#zamow */
+(function(){
+  var m = /[?&]pilot=(biuro|bhp)\b/.exec(location.search);
+  if(m) preselect(m[1]);
+})();
 document.getElementById('orderForm').addEventListener('submit', function(e){
   var status = document.getElementById('formStatus');
   var key = this.querySelector('input[name="access_key"]').value;
