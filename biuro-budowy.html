@@ -201,7 +201,7 @@
   .brand .logo{display:block;height:32px;width:auto;}
   .brand .tag{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--txt-dim);letter-spacing:.1em;
     border-left:1px solid var(--panel-line);padding-left:14px;line-height:1.35;white-space:nowrap;}
-  @media(max-width:1360px){.brand .tag{display:none;}}
+  @media(max-width:1480px){.brand .tag{display:none;}}
   header.top nav{display:flex;align-items:center;gap:4px;}
   header.top nav a{
     color:var(--txt-dim);text-decoration:none;
@@ -213,7 +213,7 @@
     border:1px solid var(--orange);color:var(--orange);margin-left:8px;
   }
   header.top nav a.cta:hover{background:var(--orange);color:#0a1016;}
-  @media(max-width:1040px){header.top nav a:not(.cta){display:none;}}
+  @media(max-width:1160px){header.top nav a:not(.cta){display:none;}}
 
   /* ---------- hero: fake ZWCAD viewport ---------- */
   .hero{padding:64px 24px 40px;position:relative;overflow:hidden;}
@@ -548,8 +548,10 @@
   footer .fauthor a:hover{color:var(--cyan);border-bottom-color:var(--cyan);}
 
   /* ---------- linia 3: aplikacje dla biura budowy (pilotaż) ---------- */
-  .duo{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:40px;}
+  .duo{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;}
+  @media(max-width:1240px){.duo{grid-template-columns:1fr 1fr;}}
   @media(max-width:900px){.duo{grid-template-columns:1fr;}}
+  .wrap.wide{max-width:1340px;}
   .pcard{border:1px solid var(--panel-line);border-radius:6px;background:var(--bg);overflow:hidden;
     display:flex;flex-direction:column;scroll-margin-top:80px;}
   .pcard .calc-video{margin-top:0;border:none;border-bottom:1px solid var(--panel-line);border-radius:0;}
@@ -807,7 +809,7 @@
   <div class="wrap">
     <span>TEKTORIA · oprogramowanie dla inżynierów · CAD i aplikacje dla projektantów i kierowników</span>
     <span><a href="index.html" style="color:var(--txt-dim);">‹ wszystkie produkty</a></span>
-    <span class="fcontact">kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a> &nbsp;·&nbsp; <a href="polityka-prywatnosci.html">polityka prywatności</a> &nbsp;·&nbsp; warunki pilotażu: <a href="eula-tek-biuro-budowy.html">TEK-BIURO BUDOWY</a>, <a href="eula-tek-bhp.html">TEK-BHP</a></span>
+    <span class="fcontact">kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a> &nbsp;·&nbsp; <a href="polityka-prywatnosci.html">polityka prywatności</a> &nbsp;·&nbsp; warunki pilotażu: <a href="eula-tek-biuro-budowy.html">TEK-BIURO BUDOWY</a>, <a href="eula-tek-bhp.html">TEK-BHP</a>, <a href="eula-tek-audytor.html">TEK-AUDYTOR</a></span>
     <span class="fcontact" style="padding-top:4px;">Nazwy MS Project, PowerPoint, Excel, FIDIC i BREEAM są oznaczeniami ich właścicieli i zostały użyte wyłącznie opisowo. TEKTORIA nie jest z nimi powiązana.</span>
     <span class="fauthor">autor i administrator danych: <a href="https://js-3web.github.io/js-wizytowka/" target="_blank" rel="noopener">Jarosław Sarafin — wizytówka</a> · projektant konstrukcji i inspektor nadzoru, Lublin</span>
   </div>
