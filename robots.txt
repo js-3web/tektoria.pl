@@ -4,5 +4,7 @@ Allow: /
 
 # strona podziękowania po wysłaniu formularza — nie ma wartości w wynikach wyszukiwania
 Disallow: /dziekuje.html
+Disallow: /js/dziekuje.html
+Disallow: /js/thank-you.html
 
 Sitemap: https://tektoria.pl/sitemap.xml

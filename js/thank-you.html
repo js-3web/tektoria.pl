@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank you — Jarosław Sarafin</title>
+<meta name="robots" content="noindex">
+
+<link rel="stylesheet" href="fonts/fonts.css">
+
+<style>
+:root {
+  --bg: #faf8f3;
+  --bg-2: #f3efe5;
+  --line: #d8d2c2;
+  --text: #1f1d1a;
+  --text-2: #5a5550;
+  --text-3: #8a857c;
+  --accent: #b8732a;
+  --accent-2: #8c5520;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav {
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+.nav-brand {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-brand .dot { color: var(--accent); }
+.nav-link {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-link:hover { color: var(--accent); }
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 32px;
+}
+.thanks {
+  max-width: 600px;
+  text-align: center;
+}
+.thanks-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 32px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  animation: scaleIn 0.5s ease-out;
+}
+.thanks-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  display: block;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.2s forwards;
+}
+.thanks h1 {
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.35s forwards;
+}
+.thanks h1 em { font-style: italic; color: var(--accent); font-weight: 300; }
+.thanks p {
+  color: var(--text-2);
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.5s forwards;
+}
+.thanks-actions {
+  margin-top: 40px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.65s forwards;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  font-size: 13px;
+  font-family: var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.25s;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-2); transform: translateY(-2px); }
+
+.countdown {
+  margin-top: 36px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.8s forwards;
+}
+.countdown span { color: var(--accent); font-weight: 500; }
+
+footer {
+  background: var(--text);
+  color: rgba(250, 248, 243, 0.65);
+  padding: 28px 32px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+footer .dot { color: var(--accent); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  .nav { padding: 14px 20px; }
+  main { padding: 60px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index-en.html" class="nav-brand">JS<span class="dot">.</span> Sarafin</a>
+  <a href="index-en.html" class="nav-link">← Home</a>
+</nav>
+
+<main>
+  <div class="thanks">
+    <div class="thanks-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+
+    <span class="thanks-label">→ Message sent</span>
+
+    <h1>Thank you <em>for your inquiry</em>.</h1>
+
+    <p>
+      Your message has reached me. I will reply within 24 hours at the latest —
+      usually sooner.
+    </p>
+
+    <p>
+      If your matter is urgent, you can also call me: <strong>+48 785 882 208</strong>.
+    </p>
+
+    <div class="thanks-actions">
+      <a href="index-en.html" class="btn btn-primary">Back to home →</a>
+    </div>
+
+    <div class="countdown">
+      Automatic return in <span id="counter">10</span> s
+    </div>
+  </div>
+</main>
+
+<footer>
+  Jarosław Sarafin<span class="dot">.</span> · Projektant konstrukcji
+</footer>
+
+<script>
+  let seconds = 10;
+  const counter = document.getElementById('counter');
+  const interval = setInterval(() => {
+    seconds--;
+    counter.textContent = seconds;
+    if (seconds <= 0) {
+      clearInterval(interval);
+      window.location.href = 'index-en.html';
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>

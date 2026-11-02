@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jarosław Sarafin — Projektant konstrukcji, inspektor nadzoru | Lublin</title>
+<meta name="description" content="Projektowanie konstrukcji budowlanych ze specjalizacją w obiektach przemysłowych. Nadzór inwestorski, ekspertyzy, przeglądy techniczne. Uprawnienia bez ograniczeń. Lublin i okolice (50 km).">
+<meta name="keywords" content="konstruktor Lublin, projektant konstrukcji Lublin, nadzór inwestorski Lublin, hale przemysłowe projekt, ekspertyzy budowlane Lublin, przeglądy techniczne, uprawnienia konstrukcyjne">
+<meta property="og:title" content="Jarosław Sarafin — Projektant konstrukcji">
+<meta property="og:description" content="Specjalizacja: budownictwo przemysłowe. 150+ projektów, 14 lat doświadczenia wykonawczego. Lublin + 50 km.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tektoria.pl/js/assets/hero-budowa.jpg">
+<meta property="og:url" content="https://tektoria.pl/js/">
+<link rel="canonical" href="https://tektoria.pl/js/">
+<link rel="alternate" hreflang="pl" href="https://tektoria.pl/js/">
+<link rel="alternate" hreflang="en" href="https://tektoria.pl/js/index-en.html">
+<link rel="alternate" hreflang="x-default" href="https://tektoria.pl/js/">
+
+<link rel="preload" as="image" href="assets/hero-budowa.webp" media="(min-width: 720px)">
+<link rel="preload" as="image" href="assets/hero-budowa-mobile.webp" media="(max-width: 719px)">
+
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin-wght-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/fraunces-latin-opsz-normal.woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+
+<style>
+/* ========== PALETA JASNA — ARCHITEKTONICZNA ========== */
+:root {
+  --bg: #faf8f3;
+  --bg-2: #f3efe5;
+  --bg-3: #ebe6d8;
+  --surface: #ffffff;
+  --line: #d8d2c2;
+  --line-2: #b8b0a0;
+  --text: #1f1d1a;
+  --text-2: #5a5550;
+  --text-3: #8a857c;
+  --accent: #b8732a;
+  --accent-2: #8c5520;
+  --accent-soft: rgba(184, 115, 42, 0.08);
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  --maxw: 1240px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========== TYPOGRAFIA ========== */
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.015em; line-height: 1.1; color: var(--text); }
+.mono { font-family: var(--mono); }
+.label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+a { color: inherit; text-decoration: none; }
+
+/* ========== UKŁAD ========== */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
+section { position: relative; padding: 120px 0; }
+@media (max-width: 720px) { section { padding: 80px 0; } .wrap { padding: 0 20px; } }
+
+/* ========== NAWIGACJA ========== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 20px 32px;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(250, 248, 243, 0);
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+.nav.scrolled {
+  background: rgba(250, 248, 243, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom-color: var(--line);
+  padding: 14px 32px;
+}
+.nav-brand {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.nav-brand .dot { color: var(--accent); }
+.nav.over-hero .nav-brand { color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+.nav.over-hero .nav-links a { color: rgba(255,255,255,0.92); text-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+.nav.over-hero .nav-cta { color: #fff; border-color: rgba(255,255,255,0.7); text-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+.nav.over-hero .nav-cta:hover { background: rgba(255,255,255,0.15); }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-size: 13px; color: var(--text-2); transition: color 0.2s; }
+.nav-links a:hover { color: var(--accent); }
+.nav-cta {
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 12px;
+  font-family: var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.nav-cta:hover { background: var(--accent); color: var(--bg) !important; }
+.nav-lang {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--mono); font-size: 12px;
+  letter-spacing: 0.05em;
+  margin-left: 18px;
+}
+.nav-lang a { color: var(--text-3); transition: color 0.2s; padding: 2px 2px; }
+.nav-lang a.active { color: var(--accent); font-weight: 500; }
+.nav-lang a:hover { color: var(--accent); }
+.nav-lang .sep { color: var(--line-2); }
+.nav.over-hero .nav-lang a { color: rgba(255,255,255,0.75); text-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+.nav.over-hero .nav-lang a.active { color: #fff; }
+.nav.over-hero .nav-lang .sep { color: rgba(255,255,255,0.5); }
+.nav-right { display: flex; align-items: center; }
+@media (max-width: 720px) { .nav-links { display: none; } .nav { padding: 14px 20px; } }
+
+/* ========== HERO ========== */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: flex-end;
+  padding: 0;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('assets/hero-budowa.jpg');
+  background-image: image-set(
+    url('assets/hero-budowa.webp') 1x,
+    url('assets/hero-budowa.jpg') 1x
+  );
+  background-size: cover;
+  background-position: center 30%;
+  z-index: 0;
+}
+@media (max-width: 720px) {
+  .hero-bg {
+    background-image: url('assets/hero-budowa-mobile.jpg');
+    background-image: image-set(
+      url('assets/hero-budowa-mobile.webp') 1x,
+      url('assets/hero-budowa-mobile.jpg') 1x
+    );
+  }
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(105deg,
+      rgba(250, 248, 243, 0.97) 0%,
+      rgba(250, 248, 243, 0.88) 30%,
+      rgba(250, 248, 243, 0.5) 55%,
+      rgba(250, 248, 243, 0.1) 75%,
+      rgba(250, 248, 243, 0) 100%);
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  .hero-overlay {
+    background:
+      linear-gradient(180deg,
+        rgba(250, 248, 243, 0.96) 0%,
+        rgba(250, 248, 243, 0.9) 50%,
+        rgba(250, 248, 243, 0.75) 100%);
+  }
+}
+.hero-canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+.hero-content {
+  position: relative; z-index: 3;
+  padding: 140px 0 100px;
+  width: 100%;
+}
+.hero-meta {
+  display: flex; gap: 18px; align-items: center;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeInUp 0.8s 0.2s forwards;
+}
+.hero-meta .dash { width: 32px; height: 1px; background: var(--accent); }
+.hero h1 {
+  font-size: clamp(38px, 6vw, 78px);
+  letter-spacing: -0.025em;
+  margin-bottom: 28px;
+  max-width: 880px;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeInUp 0.9s 0.35s forwards;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+}
+.hero-lead {
+  font-size: clamp(16px, 1.3vw, 19px);
+  color: var(--text-2);
+  max-width: 620px;
+  line-height: 1.6;
+  margin-bottom: 44px;
+  opacity: 0;
+  animation: fadeInUp 0.9s 0.5s forwards;
+}
+.hero-cta {
+  display: flex; gap: 14px; flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 0.9s 0.65s forwards;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 26px;
+  font-size: 13px;
+  font-family: var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.25s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-2); transform: translateY(-2px); }
+.btn-ghost {
+  background: rgba(250, 248, 243, 0.5);
+  color: var(--text);
+  border-color: var(--line-2);
+  backdrop-filter: blur(8px);
+}
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+.hero-creds {
+  position: absolute;
+  bottom: 24px; left: 32px;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--text-3);
+  letter-spacing: 0.15em;
+  z-index: 3;
+  opacity: 0;
+  animation: fadeIn 1.2s 1.2s forwards;
+  display: flex; gap: 24px; flex-wrap: wrap;
+}
+.hero-creds .accent { color: var(--accent); }
+@media (max-width: 720px) {
+  .hero-creds { display: none; }
+  .hero-content { padding: 120px 0 80px; }
+}
+
+/* ========== STATS ========== */
+.stats { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.stat { padding: 56px 32px; border-right: 1px solid var(--line); text-align: left; }
+.stat:last-child { border-right: none; }
+.stat-num {
+  font-family: var(--serif);
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.stat-num .plus { font-size: 0.6em; vertical-align: super; opacity: 0.6; }
+.stat-label {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+@media (max-width: 720px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat { padding: 32px 20px; border-bottom: 1px solid var(--line); }
+  .stat:nth-child(2) { border-right: none; }
+  .stat:nth-child(3), .stat:nth-child(4) { border-bottom: none; }
+}
+
+/* ========== SECTION HEADER ========== */
+.section-head { margin-bottom: 64px; max-width: 760px; }
+.section-head .label { display: block; margin-bottom: 20px; }
+.section-head h2 {
+  font-size: clamp(32px, 4vw, 50px);
+  letter-spacing: -0.025em;
+}
+.section-head h2 em { font-style: italic; color: var(--accent); font-weight: 300; }
+.section-head .intro {
+  margin-top: 20px;
+  color: var(--text-2);
+  font-size: 17px;
+  max-width: 620px;
+  line-height: 1.65;
+}
+
+/* ========== USŁUGI ========== */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+@media (max-width: 900px) { .services-grid { grid-template-columns: 1fr; } }
+
+.service {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 40px 32px;
+  position: relative;
+  transition: all 0.3s;
+}
+.service:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -16px rgba(31, 29, 26, 0.15);
+}
+.service-num {
+  position: absolute; top: 24px; right: 28px;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-3); letter-spacing: 0.1em;
+}
+.service-icon { width: 44px; height: 44px; margin-bottom: 26px; color: var(--accent); }
+.service h3 { font-size: 24px; margin-bottom: 14px; }
+.service > p {
+  color: var(--text-2);
+  font-size: 15px;
+  margin-bottom: 22px;
+  line-height: 1.65;
+}
+.service ul { list-style: none; border-top: 1px solid var(--line); padding-top: 18px; }
+.service li {
+  font-size: 13.5px;
+  color: var(--text-2);
+  padding: 7px 0 7px 18px;
+  position: relative;
+}
+.service li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 15px;
+  width: 8px; height: 1px;
+  background: var(--accent);
+}
+
+/* ========== SPECJALIZACJA ========== */
+.spec { background: var(--bg-2); position: relative; overflow: hidden; }
+.spec-pattern {
+  position: absolute; right: -80px; top: 50%; transform: translateY(-50%);
+  width: 540px; height: 540px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+.spec-content {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 900px) { .spec-content { grid-template-columns: 1fr; gap: 48px; } }
+
+.spec-text h2 { font-size: clamp(28px, 3.5vw, 42px); margin-bottom: 24px; letter-spacing: -0.025em; }
+.spec-text h2 em { font-style: italic; color: var(--accent); font-weight: 300; }
+.spec-text p { color: var(--text-2); margin-bottom: 18px; font-size: 16px; line-height: 1.7; }
+.spec-text .lead {
+  font-family: var(--serif);
+  font-size: 22px;
+  color: var(--text);
+  font-style: italic;
+  border-left: 2px solid var(--accent);
+  padding-left: 24px;
+  margin: 28px 0;
+  line-height: 1.45;
+  font-weight: 400;
+}
+.spec-visual { position: relative; aspect-ratio: 4/5; }
+.spec-visual picture, .spec-visual img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--line);
+}
+
+.placeholder {
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+}
+.placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  border: 1px dashed var(--line-2);
+}
+.placeholder-content {
+  text-align: center;
+  padding: 24px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-3);
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
+}
+.placeholder-content .ico { display: block; margin: 0 auto 16px; color: var(--text-3); }
+.placeholder-content .ttl {
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.placeholder-content .desc {
+  text-transform: none;
+  letter-spacing: 0.02em;
+  line-height: 1.55;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+/* ========== O MNIE ========== */
+.about { background: var(--bg); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+.about-photo { aspect-ratio: 4/5; position: sticky; top: 100px; }
+@media (max-width: 900px) { .about-photo { position: static; aspect-ratio: 1/1; } }
+
+/* Monogram autora - placeholder do czasu wstawienia zdjęcia */
+.author-monogram {
+  width: 100%; height: 100%;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.author-monogram::before {
+  content: '';
+  position: absolute;
+  inset: 16px;
+  border: 1px dashed var(--line-2);
+  opacity: 0.5;
+}
+.monogram-circle {
+  width: 130px; height: 130px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+  background: var(--bg);
+}
+.monogram-letters {
+  font-family: var(--serif);
+  font-size: 56px;
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+.monogram-name {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+.monogram-role {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  max-width: 220px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.about-text h2 { font-size: clamp(32px, 4vw, 48px); margin-bottom: 32px; letter-spacing: -0.025em; }
+.about-text h2 em { font-style: italic; color: var(--accent); font-weight: 300; }
+.about-block { margin-bottom: 32px; }
+.about-block-title {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.about-block p { color: var(--text-2); font-size: 16px; line-height: 1.75; margin-bottom: 12px; }
+.about-block .pull {
+  font-family: var(--serif);
+  font-size: 21px;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.4;
+  border-left: 2px solid var(--accent);
+  padding: 4px 0 4px 22px;
+  margin: 4px 0;
+}
+.about-sign {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-3);
+  letter-spacing: 0.05em;
+}
+.about-sign .name {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-style: italic;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+/* ========== PORTFOLIO ========== */
+.portfolio { background: var(--bg-2); }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+@media (max-width: 900px) { .portfolio-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .portfolio-grid { grid-template-columns: 1fr; } }
+
+.project {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.project:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px -16px rgba(31, 29, 26, 0.15);
+}
+.project-img { aspect-ratio: 3/2; background: var(--bg-3); position: relative; overflow: hidden; }
+.project-img picture, .project-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.project:hover .project-img img { transform: scale(1.04); }
+.project .placeholder { border: none; }
+.project-body { padding: 22px 24px; border-top: 1px solid var(--line); }
+.project-tag {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.project h4 { font-size: 19px; margin-bottom: 6px; font-family: var(--serif); font-weight: 400; }
+.project-meta { font-size: 13px; color: var(--text-3); font-family: var(--mono); }
+
+/* ========== DLACZEGO JA ========== */
+.why { background: var(--bg); }
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+.why-points { display: flex; flex-direction: column; gap: 0; }
+.why-point {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 24px;
+}
+.why-point:first-child { padding-top: 0; }
+.why-point:last-child { border-bottom: none; }
+.why-point-num {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  padding-top: 4px;
+  font-weight: 500;
+}
+.why-point h4 { font-size: 22px; margin-bottom: 10px; font-family: var(--serif); font-weight: 400; }
+.why-point p { color: var(--text-2); font-size: 15px; line-height: 1.7; }
+
+/* ========== DLA KOGO ========== */
+.audiences { background: var(--bg-2); }
+.audiences-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+@media (max-width: 720px) { .audiences-grid { grid-template-columns: 1fr; } }
+
+.audience {
+  background: var(--bg);
+  padding: 36px 32px;
+  transition: background 0.3s;
+}
+.audience:hover { background: var(--surface); }
+.audience-icon { width: 30px; height: 30px; color: var(--accent); margin-bottom: 20px; }
+.audience h4 { font-size: 20px; margin-bottom: 12px; font-family: var(--serif); font-weight: 400; }
+.audience h4 .primary {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 3px 8px;
+  letter-spacing: 0.12em;
+  margin-left: 8px;
+  vertical-align: middle;
+  border: 1px solid var(--accent);
+  text-transform: uppercase;
+}
+.audience p { color: var(--text-2); font-size: 14px; line-height: 1.65; }
+
+/* ========== MAPA ========== */
+.map-section { background: var(--bg); }
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+@media (max-width: 900px) { .map-grid { grid-template-columns: 1fr; } }
+
+.map-text h2 { font-size: clamp(28px, 3.5vw, 42px); margin-bottom: 24px; letter-spacing: -0.025em; }
+.map-text h2 em { font-style: italic; color: var(--accent); font-weight: 300; }
+.map-text p { color: var(--text-2); font-size: 16px; line-height: 1.7; margin-bottom: 16px; }
+.map-text .cities { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+.map-text .city {
+  font-family: var(--mono); font-size: 11px;
+  padding: 6px 12px;
+  border: 1px solid var(--line-2);
+  color: var(--text-2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.map-vis {
+  aspect-ratio: 1/1;
+  position: relative;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+}
+
+/* ========== KONTAKT ========== */
+.contact { background: var(--bg-2); border-top: 1px solid var(--line); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+
+.contact-info h2 {
+  font-size: clamp(36px, 5vw, 56px);
+  margin-bottom: 28px;
+  letter-spacing: -0.025em;
+}
+.contact-info h2 em { font-style: italic; color: var(--accent); font-weight: 300; }
+.contact-info .desc { color: var(--text-2); font-size: 16px; margin-bottom: 40px; line-height: 1.7; max-width: 480px; }
+
+.contact-item {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.contact-item .lbl {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--text-3); letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.contact-item .val { font-size: 16px; color: var(--text); }
+.contact-item .val a:hover { color: var(--accent); }
+
+.form { background: var(--surface); border: 1px solid var(--line); padding: 40px; }
+.form-row { margin-bottom: 20px; }
+.form label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-2);
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.form input, .form textarea, .form select {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--text);
+  padding: 13px 16px;
+  font-family: var(--sans);
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+.form input:focus, .form textarea:focus, .form select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.form textarea { min-height: 120px; resize: vertical; }
+.form-consent {
+  display: flex; gap: 12px; align-items: flex-start;
+  margin: 22px 0;
+  font-size: 12px;
+  color: var(--text-3);
+  line-height: 1.55;
+}
+.form-consent input { width: auto; margin-top: 3px; }
+.form-consent a { color: var(--accent); }
+.form button {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.form button:hover { background: var(--accent-2); }
+
+/* ========== STOPKA ========== */
+footer { background: var(--text); color: var(--bg-2); padding: 64px 0 32px; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+@media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; gap: 32px; } }
+
+.footer-brand .logo {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  color: var(--bg);
+}
+.footer-brand .logo .dot { color: var(--accent); }
+.footer-brand p {
+  color: rgba(250, 248, 243, 0.65);
+  font-size: 14px;
+  max-width: 320px;
+  line-height: 1.65;
+}
+.footer-col h5 {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.18em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer-col a, .footer-col p {
+  display: block;
+  color: rgba(250, 248, 243, 0.7);
+  font-size: 14px;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--accent); }
+.footer-bottom {
+  border-top: 1px solid rgba(250, 248, 243, 0.12);
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: rgba(250, 248, 243, 0.5);
+  letter-spacing: 0.1em;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-bottom a:hover { color: var(--accent); }
+
+/* ========== MODAL ========== */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(31, 29, 26, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 200;
+  display: none;
+  align-items: center; justify-content: center;
+  padding: 40px 20px;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  max-width: 760px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 48px;
+  position: relative;
+}
+.modal-close {
+  position: absolute; top: 20px; right: 20px;
+  background: none; border: none; color: var(--text-2);
+  font-size: 28px; cursor: pointer; line-height: 1;
+}
+.modal-close:hover { color: var(--accent); }
+.modal h2 { font-size: 30px; margin-bottom: 24px; }
+.modal h3 { font-size: 16px; margin: 26px 0 10px; color: var(--accent); font-family: var(--mono); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; }
+.modal p, .modal li { font-size: 14px; color: var(--text-2); line-height: 1.7; margin-bottom: 10px; }
+.modal ul { padding-left: 20px; margin-bottom: 14px; }
+
+/* ========== ANIMACJE ========== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+</style>
+</head>
+<body>
+
+<!-- ============ NAWIGACJA ============ -->
+<nav class="nav over-hero" id="nav">
+  <a href="#" class="nav-brand">JS<span class="dot">.</span> Sarafin</a>
+  <div class="nav-links">
+    <a href="#uslugi">Usługi</a>
+    <a href="#specjalizacja">Specjalizacja</a>
+    <a href="#o-mnie">O mnie</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+  <a href="#kontakt" class="nav-cta">Zapytaj o ofertę</a>
+  <div class="nav-right">
+    <span class="nav-lang">
+      <a href="index.html" class="active">PL</a>
+      <span class="sep">|</span>
+      <a href="index-en.html">EN</a>
+    </span>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <canvas id="trussCanvas" class="hero-canvas"></canvas>
+
+  <div class="wrap hero-content">
+    <div class="hero-meta">
+      <span class="dash"></span>
+      <span class="label">Projektant konstrukcji · Inspektor nadzoru</span>
+    </div>
+    <h1>
+      Projektuję konstrukcje<br>
+      przemysłowe <em>z perspektywy</em><br>
+      14 lat doświadczenia<br>
+      wykonawczego.
+    </h1>
+    <p class="hero-lead">
+      Specjalizuję się w halach produkcyjnych, magazynach i obiektach przemysłowych —
+      projektuję również obiekty mieszkalne i użyteczności publicznej. Pełnię nadzór
+      inwestorski, wykonuję ekspertyzy i przeglądy techniczne. Uprawnienia
+      konstrukcyjno-budowlane bez ograniczeń.
+    </p>
+    <div class="hero-cta">
+      <a href="#kontakt" class="btn btn-primary">Porozmawiajmy o projekcie →</a>
+      <a href="#portfolio" class="btn btn-ghost">Zobacz realizacje</a>
+    </div>
+  </div>
+
+  <div class="hero-creds">
+    <span><span class="accent">●</span> LUBLIN</span>
+    <span>UPRAWNIENIA BEZ OGRANICZEŃ</span>
+    <span>SPECJALNOŚĆ KONSTRUKCYJNO-BUDOWLANA</span>
+  </div>
+</section>
+
+<!-- ============ STATYSTYKI ============ -->
+<section class="stats" style="padding: 0;">
+  <div class="stats-grid">
+    <div class="stat">
+      <div class="stat-num" data-count="150"><span class="plus">+</span></div>
+      <div class="stat-label">Projektów konstrukcji</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="150" data-suffix=" tys"><span class="plus">+</span></div>
+      <div class="stat-label">m² powierzchni użytkowej</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="50"></div>
+      <div class="stat-label">Km zasięgu od Lublina</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Uprawnienia bez ograniczeń</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USŁUGI ============ -->
+<section id="uslugi">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">→ Zakres usług</span>
+      <h2>Trzy obszary, <em>jedna odpowiedzialność</em>.</h2>
+      <p class="intro">
+        Działam w pełnym cyklu inwestycyjnym — od pierwszej koncepcji konstrukcyjnej, przez
+        nadzór nad realizacją, po ocenę stanu technicznego istniejących obiektów.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service reveal">
+        <div class="service-num">01</div>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="6" y="6" width="36" height="36"/>
+          <line x1="6" y1="18" x2="42" y2="18"/>
+          <line x1="6" y1="30" x2="42" y2="30"/>
+          <line x1="18" y1="6" x2="18" y2="42"/>
+          <line x1="30" y1="6" x2="30" y2="42"/>
+        </svg>
+        <h3>Projektowanie konstrukcji</h3>
+        <p>
+          Kompletna dokumentacja konstrukcyjna — od koncepcji do projektu wykonawczego.
+          Dostajesz rozwiązania, które wykonawca rozumie i może zrealizować bez telefonów z pytaniami.
+        </p>
+        <ul>
+          <li>Projekty techniczne i wykonawcze</li>
+          <li>Konstrukcje stalowe, żelbetowe, mieszane</li>
+          <li>Obliczenia statyczno-wytrzymałościowe</li>
+          <li>Weryfikacja gotowych projektów</li>
+          <li>Sprawdzenie konstrukcji jako sprawdzający</li>
+        </ul>
+      </div>
+
+      <div class="service reveal">
+        <div class="service-num">02</div>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="24" cy="24" r="18"/>
+          <circle cx="24" cy="24" r="6"/>
+          <line x1="24" y1="6" x2="24" y2="12"/>
+          <line x1="24" y1="36" x2="24" y2="42"/>
+          <line x1="6" y1="24" x2="12" y2="24"/>
+          <line x1="36" y1="24" x2="42" y2="24"/>
+        </svg>
+        <h3>Nadzory i kontrola</h3>
+        <p>
+          Funkcja inspektora nadzoru inwestorskiego oraz okresowe przeglądy techniczne.
+          Ktoś po Twojej stronie, kto wychwytuje błędy zanim staną się kosztowną poprawką.
+        </p>
+        <ul>
+          <li>Nadzór inwestorski (specjalność konstrukcyjna)</li>
+          <li>Przeglądy okresowe (art. 62 PB)</li>
+          <li>Kontrola jakości robót na budowie</li>
+          <li>Odbiory robót zanikających</li>
+          <li>Prowadzenie dziennika budowy</li>
+        </ul>
+      </div>
+
+      <div class="service reveal">
+        <div class="service-num">03</div>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M10 8 L38 8 L38 40 L10 40 Z"/>
+          <line x1="16" y1="16" x2="32" y2="16"/>
+          <line x1="16" y1="24" x2="32" y2="24"/>
+          <line x1="16" y1="32" x2="26" y2="32"/>
+        </svg>
+        <h3>Ekspertyzy i opinie</h3>
+        <p>
+          Niezależna ocena stanu technicznego obiektów przed przebudową, modernizacją
+          lub remontem. Doradztwo techniczne dla inwestorów planujących większą inwestycję.
+        </p>
+        <ul>
+          <li>Ekspertyzy obiektów przebudowywanych</li>
+          <li>Ekspertyzy obiektów remontowanych</li>
+          <li>Oceny stanu technicznego</li>
+          <li>Kosztorysy robót budowlanych</li>
+          <li>Doradztwo techniczne dla inwestorów</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECJALIZACJA ============ -->
+<section id="specjalizacja" class="spec">
+  <svg class="spec-pattern" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#b8732a" stroke-width="2" fill="none">
+      <rect x="100" y="200" width="400" height="250"/>
+      <line x1="100" y1="200" x2="200" y2="100"/>
+      <line x1="500" y1="200" x2="400" y2="100"/>
+      <line x1="200" y1="100" x2="400" y2="100"/>
+      <line x1="150" y1="200" x2="150" y2="450"/>
+      <line x1="250" y1="200" x2="250" y2="450"/>
+      <line x1="350" y1="200" x2="350" y2="450"/>
+      <line x1="450" y1="200" x2="450" y2="450"/>
+    </g>
+  </svg>
+
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">→ Główna specjalizacja</span>
+      <h2>Budownictwo <em>przemysłowe</em>.</h2>
+    </div>
+
+    <div class="spec-content">
+      <div class="spec-text reveal">
+        <p>
+          Najwięcej projektów zrealizowałem w budownictwie przemysłowym — hale produkcyjne,
+          logistyczne, obiekty technologiczne, posadzki przemysłowe,
+          fundamenty pod maszyny i urządzenia.
+        </p>
+
+        <div class="lead">
+          Przez 14 lat zdobywałem doświadczenie w wykonawstwie. Wiem, gdzie projekty się sypią
+          na placu budowy — i projektuję tak, żeby to się nie zdarzało.
+        </div>
+
+        <p>
+          Specjalizacja nie oznacza zamknięcia. Projektuję również obiekty mieszkalne
+          jedno- i wielorodzinne, użyteczności publicznej, drobne formy budowlane —
+          ponad 150 zrealizowanych projektów daje mi solidne doświadczenie w różnych typach
+          konstrukcji.
+        </p>
+
+        <p>
+          Jeśli planujesz budowę hali, modernizację obiektu przemysłowego, lub potrzebujesz
+          inspektora nadzoru z doświadczeniem przemysłowym — to mój chleb powszedni.
+          Jeśli budujesz dom lub modernizujesz mniejszy obiekt — również jesteś we właściwym
+          miejscu.
+        </p>
+      </div>
+
+      <div class="spec-visual reveal">
+        <picture>
+          <source srcset="assets/specjalizacja.webp" type="image/webp">
+          <img src="assets/specjalizacja.jpg" alt="Wnętrze hali przemysłowej — konstrukcja stalowa dachu i słupy żelbetowe" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O MNIE ============ -->
+<section id="o-mnie" class="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">→ Kilka słów o mnie</span>
+      <h2>Człowiek <em>za projektami</em>.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="author-monogram">
+          <div class="monogram-circle">
+            <span class="monogram-letters">JS</span>
+          </div>
+          <div class="monogram-name">Jarosław Sarafin</div>
+          <div class="monogram-role">Projektant konstrukcji · Inspektor nadzoru</div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <div class="about-block reveal">
+          <div class="about-block-title">→ Wykształcenie i droga</div>
+          <p>
+            Jestem absolwentem Politechniki Lubelskiej. Po studiach trafiłem na budowy —
+            łącznie 14 lat zdobywałem doświadczenie w wykonawstwie, w tym jako kierownik
+            budowy. To był mój prawdziwy uniwersytet — tam nauczyłem się, jak projekty żyją
+            po wyjściu z biura.
+          </p>
+        </div>
+
+        <div class="about-block reveal">
+          <div class="about-block-title">→ Co mnie trzyma w tej branży</div>
+          <p>
+            W budownictwie pociąga mnie możliwość tworzenia i doświadczania namacalnych
+            efektów swojej pracy. Można projektować całe życie i mieć po sobie sterty papieru.
+            U mnie zostają hale, magazyny, domy — rzeczy, które stoją i pracują.
+          </p>
+          <div class="pull">
+            "Najbardziej lubię moment, w którym narysowany na kartce schemat materializuje się na placu
+            budowy. To jest dla mnie najlepsza nagroda — widzieć, że to co zaprojektowałem,
+            faktycznie pracuje."
+          </div>
+        </div>
+
+        <div class="about-block reveal">
+          <div class="about-block-title">→ Ludzie, których spotykam</div>
+          <p>
+            Budowanie to przede wszystkim ludzie, których się spotyka. Za każdym razem jest
+            to inna historia, a każda nowa budowa jest jak kolejna książka. Niektóre fragmenty
+            zostają w pamięci na zawsze — i to, paradoksalnie, ma większy wpływ na to, jak teraz
+            projektuję, niż jakikolwiek podręcznik konstrukcji.
+          </p>
+        </div>
+
+        <div class="about-block reveal">
+          <div class="about-block-title">→ Poza pracą</div>
+          <p>
+            Moja pasja to motocykle. Ale najważniejsza część życia to rodzina i nasze wspólne
+            podróże, rowery, muzyka. To one przypominają mi, że projekt
+            ma być na czas, bo w weekend jest plan.
+          </p>
+        </div>
+
+        <div class="about-sign reveal">
+          <span>LUBLIN · POLITECHNIKA LUBELSKA</span>
+          <span class="name">Jarosław Sarafin</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section id="portfolio" class="portfolio">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">→ Wybrane realizacje</span>
+      <h2>Portfolio <em>projektów</em>.</h2>
+      <p class="intro">
+        Reprezentatywny przekrój 150+ zrealizowanych projektów. Większość dokumentacji
+        podlega zachowaniu poufności — szczegóły omawiam indywidualnie.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="project reveal">
+        <div class="project-img">
+          <picture>
+            <source srcset="assets/portfolio-1-hala-prod.webp" type="image/webp">
+            <img src="assets/portfolio-1-hala-prod.jpg" alt="Hala produkcyjna — wnętrze z regałami wysokiego składowania" loading="lazy">
+          </picture>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">PRZEMYSŁ · KONSTRUKCJA STALOWA</div>
+          <h4>Hala produkcyjna</h4>
+          <div class="project-meta">Kierownik budowy · 2020</div>
+        </div>
+      </div>
+
+      <div class="project reveal">
+        <div class="project-img">
+          <picture>
+            <source srcset="assets/portfolio-2-hala-mag.webp" type="image/webp">
+            <img src="assets/portfolio-2-hala-mag.jpg" alt="Hala magazynowa — wnętrze z oknami i widokiem na doki" loading="lazy">
+          </picture>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">PRZEMYSŁ · MAGAZYN</div>
+          <h4>Hala magazynowa</h4>
+          <div class="project-meta">Kierownik budowy · 2024</div>
+        </div>
+      </div>
+
+      <div class="project reveal">
+        <div class="project-img">
+          <picture>
+            <source srcset="assets/portfolio-3-fundament.webp" type="image/webp">
+            <img src="assets/portfolio-3-fundament.jpg" alt="Schemat konstrukcji płyt fundamentowych pod zbiorniki technologiczne" loading="lazy">
+          </picture>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">PRZEMYSŁ · FUNDAMENTY</div>
+          <h4>Fundamenty pod maszyny technologiczne</h4>
+          <div class="project-meta">Projekt wykonawczy · 2023</div>
+        </div>
+      </div>
+
+      <div class="project reveal">
+        <div class="project-img">
+          <picture>
+            <source srcset="assets/portfolio-4-hala-sport.webp" type="image/webp">
+            <img src="assets/portfolio-4-hala-sport.jpg" alt="Hala sportowa — wizualizacja elewacji" loading="lazy">
+          </picture>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">OŚWIATA · ZAMÓWIENIA PUBLICZNE</div>
+          <h4>Hala sportowa</h4>
+          <div class="project-meta">Projekt techniczny · 2023</div>
+        </div>
+      </div>
+
+      <div class="project reveal">
+        <div class="project-img">
+          <picture>
+            <source srcset="assets/portfolio-5-dom.webp" type="image/webp">
+            <img src="assets/portfolio-5-dom.jpg" alt="Dom jednorodzinny — rysunek konstrukcji dachu" loading="lazy">
+          </picture>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">MIESZKALNY · JEDNORODZINNY</div>
+          <h4>Dom jednorodzinny</h4>
+          <div class="project-meta">Projekt techniczny · 2025</div>
+        </div>
+      </div>
+
+      <div class="project reveal">
+        <div class="project-img">
+          <picture>
+            <source srcset="assets/portfolio-6-nadzor.webp" type="image/webp">
+            <img src="assets/portfolio-6-nadzor.jpg" alt="Nadzór inwestorski — remont dachu budynku mieszkalnego" loading="lazy">
+          </picture>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">NADZÓR INWESTORSKI</div>
+          <h4>Nadzór inwestorski — remont</h4>
+          <div class="project-meta">Funkcja inspektora · 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DLACZEGO JA ============ -->
+<section class="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">→ Dlaczego ja</span>
+      <h2>Co mnie <em>wyróżnia</em>.</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="reveal">
+        <p style="font-family: var(--serif); font-size: 24px; line-height: 1.45; color: var(--text); font-style: italic;">
+          Cztery rzeczy, które razem dają coś więcej niż suma pojedynczych usług.
+        </p>
+        <p style="margin-top: 20px; color: var(--text-2); font-size: 15px; line-height: 1.7;">
+          Konstruktorów na rynku jest sporo. Decyzja o wyborze konkretnej osoby
+          rzadko zapada na podstawie ceny — zwykle na podstawie zaufania, które
+          buduje się przez konkretne fakty, nie ogólniki.
+        </p>
+      </div>
+
+      <div class="why-points">
+        <div class="why-point reveal">
+          <div class="why-point-num">01</div>
+          <div>
+            <h4>14 lat doświadczenia w wykonawstwie</h4>
+            <p>
+              Większość konstruktorów projektuje zza biurka. Ja przez 14 lat byłem na placu
+              budowy — w tym jako kierownik — i wiem, gdzie projekty się sypią. To wiedza,
+              której nie da się zdobyć z książek. Każdy projekt, który teraz wykonuję,
+              przechodzi przez ten filtr: "czy wykonawca będzie potrafił to zrobić bez
+              problemów?".
+            </p>
+          </div>
+        </div>
+
+        <div class="why-point reveal">
+          <div class="why-point-num">02</div>
+          <div>
+            <h4>Uprawnienia konstrukcyjno-budowlane bez ograniczeń</h4>
+            <p>
+              Mogę projektować i kierować robotami budowlanymi przy każdym obiekcie — bez
+              limitów kubatury, wysokości czy kondygnacji. To realny wyróżnik: w praktyce niezwykle
+              pomocna jest obsługa od samej koncepcji, aż do uzyskania pozwolenia na użytkowanie. Ja mogę
+              prowadzić projekt od początku do końca.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-point reveal">
+          <div class="why-point-num">03</div>
+          <div>
+            <h4>150+ projektów w portfolio</h4>
+            <p>
+              Hale, magazyny, fundamenty pod maszyny, budynki mieszkalne, obiekty użyteczności
+              publicznej. Spektrum jest szerokie, ale serce specjalizacji jest jedno —
+              budownictwo przemysłowe. Z taką bazą doświadczenia rzadko trafiam na problem,
+              którego nie widziałem w innym wariancie.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-point reveal">
+          <div class="why-point-num">04</div>
+          <div>
+            <h4>Reaguję szybko i rozumiem branżę</h4>
+            <p>
+              Na pytania odpowiadam tego samego dnia. Rozumiem kontekst zarówno inwestora
+              indywidualnego, jak i architekta, dewelopera czy firmy project management.
+              Z każdym z nich mówię ich językiem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DLA KOGO ============ -->
+<section id="dla-kogo" class="audiences">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">→ Z kim współpracuję</span>
+      <h2>Dla kogo <em>pracuję</em>.</h2>
+    </div>
+
+    <div class="audiences-grid">
+      <div class="audience reveal">
+        <svg class="audience-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M4 28V12l12-8 12 8v16M4 28h24M12 28v-8h8v8"/>
+        </svg>
+        <h4>Deweloperzy i inwestorzy przemysłowi <span class="primary">Główny segment</span></h4>
+        <p>
+          Hale produkcyjne, obiekty technologiczne, magazyny, modernizacje zakładów.
+          Pełna dokumentacja konstrukcyjna lub jej weryfikacja. Inspektor nadzoru
+          z doświadczeniem budowlanym, który mówi językiem inwestora.
+        </p>
+      </div>
+
+      <div class="audience reveal">
+        <svg class="audience-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="4" y="4" width="24" height="24"/>
+          <line x1="4" y1="12" x2="28" y2="12"/>
+          <line x1="12" y1="4" x2="12" y2="28"/>
+          <line x1="20" y1="12" x2="20" y2="28"/>
+        </svg>
+        <h4>Architekci i biura projektowe</h4>
+        <p>
+          Branża konstrukcyjna do projektów architektonicznych. Szanuję koncepcję
+          architektoniczną i szukam rozwiązań konstrukcyjnych wspierających zamysł.
+          Szybko reaguję na zmiany w fazie projektowej.
+        </p>
+      </div>
+
+      <div class="audience reveal">
+        <svg class="audience-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="16" cy="16" r="12"/>
+          <path d="M16 4v24M4 16h24"/>
+        </svg>
+        <h4>Firmy project management</h4>
+        <p>
+          Inspektor branżowy do długoterminowych nadzorów dużych inwestycji.
+          Doświadczenie kierownika budowy plus uprawnienia bez ograniczeń —
+          profil dokładnie taki, jakiego wymagają firmy zarządzające projektami.
+        </p>
+      </div>
+
+      <div class="audience reveal">
+        <svg class="audience-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M16 4l12 8v16H4V12z"/>
+          <path d="M12 28v-8h8v8"/>
+        </svg>
+        <h4>Generalni wykonawcy</h4>
+        <p>
+          Wsparcie projektowe na etapie realizacji, weryfikacja dokumentacji,
+          konsultacje techniczne, rozwiązania problemów wykonawczych.
+          Były kierownik budowy rozumie, czego potrzebuje wykonawca.
+        </p>
+      </div>
+
+      <div class="audience reveal">
+        <svg class="audience-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 26V14l10-8 10 8v12"/>
+          <path d="M6 26h20M14 26v-6h4v6"/>
+        </svg>
+        <h4>Inwestorzy indywidualni</h4>
+        <p>
+          Domy jednorodzinne, rozbudowy, modernizacje, garaże, budynki gospodarcze.
+          Konsultacje techniczne dla osób kupujących nieruchomość lub planujących
+          większą inwestycję prywatną.
+        </p>
+      </div>
+
+      <div class="audience reveal">
+        <svg class="audience-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="6" y="4" width="20" height="24"/>
+          <line x1="6" y1="12" x2="26" y2="12"/>
+          <line x1="11" y1="18" x2="21" y2="18"/>
+          <line x1="11" y1="22" x2="21" y2="22"/>
+          <circle cx="22" cy="8" r="1" fill="currentColor"/>
+        </svg>
+        <h4>Biura projektowe konstrukcyjne</h4>
+        <p>
+          Podwykonawstwo elementów większych projektów konstrukcji.
+          Pełnienie funkcji sprawdzającego dokumentację projektową.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAPA ZASIĘGU ============ -->
+<section class="map-section">
+  <div class="wrap">
+    <div class="map-grid">
+      <div class="map-text reveal">
+        <span class="label">→ Zasięg działania</span>
+        <h2 style="margin-top: 20px;">Lublin <em>+ 50 km</em>.</h2>
+        <p>
+          Bazuję w Lublinie. Obsługuję inwestycje w promieniu 50 kilometrów —
+          to obejmuje większość województwa lubelskiego oraz część wschodniej Polski.
+        </p>
+        <p>
+          Dla projektów konstrukcyjnych odległość ma znaczenie ograniczone — większość
+          pracy odbywa się zdalnie, a dokumentacja jest przekazywana cyfrowo.
+          Lokalizacja w zasięgu liczy się przede wszystkim przy nadzorach i przeglądach,
+          gdzie wymagana jest fizyczna obecność na obiekcie.
+        </p>
+        <div class="cities">
+          <span class="city">Lublin</span>
+          <span class="city">Świdnik</span>
+          <span class="city">Łęczna</span>
+          <span class="city">Lubartów</span>
+          <span class="city">Piaski</span>
+          <span class="city">Bełżyce</span>
+          <span class="city">Bychawa</span>
+          <span class="city">Nałęczów</span>
+          <span class="city">Kraśnik</span>
+        </div>
+      </div>
+
+      <div class="map-vis reveal">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+          <defs>
+            <radialGradient id="zoneGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#b8732a" stop-opacity="0.18"/>
+              <stop offset="70%" stop-color="#b8732a" stop-opacity="0.06"/>
+              <stop offset="100%" stop-color="#b8732a" stop-opacity="0"/>
+            </radialGradient>
+            <pattern id="mapgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d8d2c2" stroke-width="0.5"/>
+            </pattern>
+          </defs>
+          <rect width="400" height="400" fill="url(#mapgrid)"/>
+
+          <!-- Strefa zasięgu 50 km -->
+          <circle cx="200" cy="200" r="120" fill="url(#zoneGrad)"/>
+          <circle cx="200" cy="200" r="120" fill="none" stroke="#b8732a" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.7"/>
+
+          <!-- Linie pomocnicze (krzyż kierunkowy) -->
+          <line x1="200" y1="60" x2="200" y2="340" stroke="#d8d2c2" stroke-width="0.5" stroke-dasharray="2 4"/>
+          <line x1="60" y1="200" x2="340" y2="200" stroke="#d8d2c2" stroke-width="0.5" stroke-dasharray="2 4"/>
+
+          <!-- Etykieta promienia -->
+          <text x="200" y="335" fill="#b8732a" font-family="JetBrains Mono" font-size="10" text-anchor="middle" letter-spacing="2" font-weight="500">PROMIEŃ 50 KM</text>
+
+          <!-- Pinezka Lublin -->
+          <circle cx="200" cy="200" r="6" fill="#b8732a"/>
+          <circle cx="200" cy="200" r="12" fill="none" stroke="#b8732a" stroke-width="1.2" opacity="0.5"/>
+          <text x="200" y="218" fill="#1f1d1a" font-family="Inter" font-size="13" font-weight="600" text-anchor="middle">LUBLIN</text>
+
+          <!-- Miasta w promieniu 50 km, z prawidłowymi kierunkami geograficznymi -->
+          <g fill="#5a5550" font-family="JetBrains Mono" font-size="9">
+            <circle cx="222" cy="200" r="2.5" fill="#b8732a" opacity="0.8"/>
+            <text x="228" y="203">Świdnik</text>
+
+            <circle cx="256" cy="179" r="2.5" fill="#b8732a" opacity="0.8"/>
+            <text x="262" y="182">Łęczna</text>
+
+            <circle cx="188" cy="132" r="2.5" fill="#b8732a" opacity="0.8"/>
+            <text x="194" y="135">Lubartów</text>
+
+            <circle cx="244" cy="237" r="2.5" fill="#b8732a" opacity="0.7"/>
+            <text x="250" y="240">Piaski</text>
+
+            <circle cx="142" cy="200" r="2.5" fill="#b8732a" opacity="0.7"/>
+            <text x="100" y="203">Bełżyce</text>
+
+            <circle cx="188" cy="266" r="2.5" fill="#b8732a" opacity="0.7"/>
+            <text x="194" y="269">Bychawa</text>
+
+            <circle cx="145" cy="161" r="2.5" fill="#b8732a" opacity="0.7"/>
+            <text x="93" y="164">Nałęczów</text>
+
+            <circle cx="115" cy="285" r="2.5" fill="#b8732a" opacity="0.7"/>
+            <text x="62" y="288">Kraśnik</text>
+          </g>
+
+          <!-- Kompas -->
+          <g transform="translate(355, 45)">
+            <line x1="0" y1="-18" x2="0" y2="18" stroke="#8a857c" stroke-width="0.8"/>
+            <polygon points="0,-18 -4,-10 4,-10" fill="#b8732a"/>
+            <line x1="-18" y1="0" x2="18" y2="0" stroke="#8a857c" stroke-width="0.6" opacity="0.7"/>
+            <text x="0" y="-22" fill="#b8732a" font-family="JetBrains Mono" font-size="10" text-anchor="middle" font-weight="600">N</text>
+            <text x="0" y="29" fill="#8a857c" font-family="JetBrains Mono" font-size="9" text-anchor="middle">S</text>
+            <text x="24" y="3" fill="#8a857c" font-family="JetBrains Mono" font-size="9" text-anchor="middle">E</text>
+            <text x="-24" y="3" fill="#8a857c" font-family="JetBrains Mono" font-size="9" text-anchor="middle">W</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt" class="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="label">→ Kontakt</span>
+        <h2 style="margin-top: 20px;">Porozmawiajmy <em>o projekcie</em>.</h2>
+        <p class="desc">
+          Najszybsza droga to telefon. Na e-maile odpowiadam tego samego dnia.
+          Chętnie porozmawiam o Twoim projekcie — niezobowiązująco.
+        </p>
+
+        <div class="contact-item">
+          <div class="lbl">Telefon</div>
+          <div class="val"><a href="tel:+48785882208">+48 785 882 208</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="lbl">E-mail</div>
+          <div class="val"><a href="mailto:j.sarafin@outlook.com">j.sarafin@outlook.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="lbl">Lokalizacja</div>
+          <div class="val">Lublin, woj. lubelskie</div>
+        </div>
+        <div class="contact-item">
+          <div class="lbl">Dostępność</div>
+          <div class="val">Odpowiadam w ciągu 24 godzin</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form class="form" id="form-pl" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="9c2a01ff-bfff-41e3-ac9c-db86350d0b0c">
+          <input type="hidden" name="subject" value="Nowe zapytanie ze strony (PL) — Jarosław Sarafin">
+          <input type="hidden" name="from_name" value="Strona sarafin">
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+          <div class="form-row">
+            <label for="name">Imię i nazwisko *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Telefon *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-row">
+            <label for="topic">Czego dotyczy zapytanie</label>
+            <select id="topic" name="topic">
+              <option value="">— wybierz —</option>
+              <option>Projekt konstrukcji</option>
+              <option>Nadzór inwestorski</option>
+              <option>Ekspertyza techniczna</option>
+              <option>Przegląd okresowy</option>
+              <option>Kosztorys</option>
+              <option>Konsultacja / inne</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Krótki opis projektu</label>
+            <textarea id="message" name="message" placeholder="Np. hala produkcyjna ok. 1500 m², lokalizacja Świdnik, planowany start Q3 2026..."></textarea>
+          </div>
+          <div class="form-consent">
+            <input type="checkbox" id="rodo" name="rodo" required>
+            <label for="rodo" style="font-family: var(--sans); letter-spacing: 0; text-transform: none;">
+              Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie,
+              zgodnie z <a href="#" onclick="openModal('privacy'); return false;">polityką prywatności</a>.
+            </label>
+          </div>
+          <button type="submit">Wyślij zapytanie →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STOPKA ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Jarosław Sarafin<span class="dot">.</span></div>
+        <p>
+          Projektant konstrukcji, inspektor nadzoru. Uprawnienia konstrukcyjno-budowlane
+          bez ograniczeń. Lublin i okolice.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5>Nawigacja</h5>
+        <a href="#uslugi">Usługi</a>
+        <a href="#specjalizacja">Specjalizacja</a>
+        <a href="#o-mnie">O mnie</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-col">
+        <h5>Kontakt</h5>
+        <a href="tel:+48785882208">+48 785 882 208</a>
+        <a href="mailto:j.sarafin@outlook.com">j.sarafin@outlook.com</a>
+        <p>Lublin, woj. lubelskie</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>Jarosław Sarafin · 2026</div>
+      <div>
+        <a href="#" onclick="openModal('privacy'); return false;">Polityka prywatności</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODAL: POLITYKA PRYWATNOŚCI ============ -->
+<div class="modal-overlay" id="modal-privacy">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('privacy')">×</button>
+    <h2>Polityka prywatności</h2>
+    <p><strong>Ostatnia aktualizacja:</strong> 2026</p>
+
+    <h3>Kto przetwarza dane</h3>
+    <p>Twoje dane osobowe przetwarza Jarosław Sarafin, projektant konstrukcji budowlanych, zamieszkały w Lublinie. Kontakt w sprawach danych osobowych: j.sarafin@outlook.com.</p>
+
+    <h3>Jakie dane są zbierane</h3>
+    <p>Wyłącznie te, które sam podajesz w formularzu kontaktowym:</p>
+    <ul>
+      <li>imię i nazwisko</li>
+      <li>numer telefonu</li>
+      <li>adres e-mail (jeśli go podasz)</li>
+      <li>treść Twojej wiadomości</li>
+    </ul>
+
+    <h3>W jakim celu</h3>
+    <p>Twoje dane wykorzystuję wyłącznie po to, żeby odpowiedzieć na Twoje zapytanie i ewentualnie umówić się na dalszą rozmowę. Nie wysyłam newsletterów, nie sprzedaję danych, nie przekazuję ich nikomu innemu.</p>
+
+    <h3>Podstawa prawna</h3>
+    <p>Art. 6 ust. 1 lit. a RODO (Twoja zgoda wyrażona poprzez wysłanie formularza) oraz art. 6 ust. 1 lit. f RODO (mój uzasadniony interes — odpowiedź na zapytanie).</p>
+
+    <h3>Jak długo przechowuję dane</h3>
+    <p>Do czasu zakończenia naszej korespondencji, a w przypadku nawiązania współpracy — przez okres niezbędny do jej realizacji oraz wynikający z przepisów (rachunkowych, podatkowych).</p>
+
+    <h3>Twoje prawa</h3>
+    <p>Możesz w każdej chwili:</p>
+    <ul>
+      <li>poprosić o dostęp do swoich danych</li>
+      <li>poprosić o ich sprostowanie lub usunięcie</li>
+      <li>ograniczyć ich przetwarzanie</li>
+      <li>wycofać zgodę</li>
+      <li>złożyć skargę do Prezesa UODO</li>
+    </ul>
+    <p>Wystarczy napisać na j.sarafin@outlook.com.</p>
+
+    <h3>Pliki cookies</h3>
+    <p>Strona nie korzysta z cookies śledzących. Może wykorzystywać techniczne cookies niezbędne do działania.</p>
+  </div>
+</div>
+
+<script>
+// NAWIGACJA
+const nav = document.getElementById('nav');
+const heroSection = document.querySelector('.hero');
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY > 50;
+  if (scrolled) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+  const heroBottom = heroSection.offsetTop + heroSection.offsetHeight - 80;
+  if (window.scrollY < heroBottom) nav.classList.add('over-hero');
+  else nav.classList.remove('over-hero');
+});
+
+// REVEAL ON SCROLL
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// COUNT-UP
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.getAttribute('data-count'));
+      const suffix = el.getAttribute('data-suffix') || '';
+      if (!target) return;
+      const plus = el.querySelector('.plus');
+      const duration = 1600;
+      const start = performance.now();
+      const tick = (now) => {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(eased * target);
+        el.textContent = current + suffix;
+        if (plus) el.appendChild(plus.cloneNode(true));
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      countObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.4 });
+document.querySelectorAll('.stat-num[data-count]').forEach(el => countObserver.observe(el));
+
+// MODALE
+function openModal(name) {
+  document.getElementById('modal-' + name).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(name) {
+  document.getElementById('modal-' + name).classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+  });
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
+    document.body.style.overflow = '';
+  }
+});
+
+// ANIMACJA CAD - kratownica rysowana sekwencyjnie
+(function() {
+  const canvas = document.getElementById('trussCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W = 0, H = 0;
+  let time = 0;
+  let scanX = 0;
+  let elements = [];
+  let truss = null;
+
+  function resize() {
+    const rect = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    W = rect.width;
+    H = rect.height;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    ctx.setTransform(1,0,0,1,0,0);
+    ctx.scale(dpr, dpr);
+    buildTruss();
+    buildElements();
+  }
+
+  function buildTruss() {
+    const isMobile = W <= 900;
+    if (isMobile) {
+      truss = { x0: W * 0.05, x1: W * 0.95, yBottom: H * 0.22, yTopBase: H * 0.13, camber: H * 0.018, panels: 7 };
+    } else {
+      truss = { x0: W * 0.42, x1: W * 0.96, yBottom: H * 0.42, yTopBase: H * 0.20, camber: H * 0.025, panels: 7 };
+    }
+    truss.panelW = (truss.x1 - truss.x0) / truss.panels;
+    truss.bottomNodes = [];
+    truss.topNodes = [];
+    for (let i = 0; i <= truss.panels; i++) {
+      const x = truss.x0 + i * truss.panelW;
+      truss.bottomNodes.push({ x: x, y: truss.yBottom });
+      const t = i / truss.panels;
+      const camberOffset = -truss.camber * 4 * t * (1 - t);
+      truss.topNodes.push({ x: x, y: truss.yTopBase + camberOffset });
+    }
+  }
+
+  function buildElements() {
+    elements = [];
+    let t = 0.8;
+    const step = 0.12;
+    elements.push({ type: 'chord-bottom', appearAt: t, duration: 1.0 });
+    t += 1.0;
+    elements.push({ type: 'chord-top', appearAt: t, duration: 1.0 });
+    t += 1.1;
+    for (let i = 0; i <= truss.panels; i++) {
+      elements.push({ type: 'vertical', index: i, appearAt: t, duration: 0.25 });
+      t += step;
+    }
+    t += 0.2;
+    for (let i = 0; i < truss.panels; i++) {
+      let fromBottom, toTop;
+      if (i < truss.panels / 2) { fromBottom = i; toTop = i + 1; }
+      else { fromBottom = i + 1; toTop = i; }
+      elements.push({ type: 'diagonal', fromBottom: fromBottom, toTop: toTop, appearAt: t, duration: 0.3 });
+      t += step * 0.9;
+    }
+    t += 0.4;
+    if (W > 900) {
+      elements.push({ type: 'dim-h', x1: truss.x0, x2: truss.x1, y: truss.yBottom + H * 0.06, label: 'L = 24,000 mm', appearAt: t, duration: 0.9 });
+      t += 1.1;
+      elements.push({ type: 'dim-v', x: truss.x1 + W * 0.025, y1: truss.yTopBase, y2: truss.yBottom, label: 'h = 2,500 mm', appearAt: t, duration: 0.9 });
+      t += 1.1;
+      elements.push({ type: 'label-node', atNode: 'top', index: 0, label: 'A', offsetX: -14, offsetY: -8, appearAt: t, duration: 0.5 });
+      t += 0.3;
+      elements.push({ type: 'label-node', atNode: 'top', index: truss.panels, label: 'B', offsetX: 8, offsetY: -8, appearAt: t, duration: 0.5 });
+    } else {
+      elements.push({ type: 'dim-h', x1: truss.x0, x2: truss.x1, y: truss.yBottom + H * 0.04, label: 'L = 24,000 mm', appearAt: t, duration: 0.9 });
+    }
+  }
+
+  function drawLineAnimated(x1, y1, x2, y2, progress, lineWidth) {
+    const drawX = x1 + (x2 - x1) * progress;
+    const drawY = y1 + (y2 - y1) * progress;
+    ctx.lineWidth = lineWidth || 1.5;
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(drawX, drawY);
+    ctx.stroke();
+  }
+
+  function tick() {
+    time += 0.016;
+    scanX = (scanX + 0.6) % (W + 100);
+    ctx.clearRect(0, 0, W, H);
+    if (!truss) { requestAnimationFrame(tick); return; }
+
+    const gradX = scanX - 60;
+    const grad = ctx.createLinearGradient(gradX - 60, 0, gradX, 0);
+    grad.addColorStop(0, 'rgba(184, 115, 42, 0)');
+    grad.addColorStop(1, 'rgba(184, 115, 42, 0.05)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(gradX - 60, 0, 60, H);
+    ctx.strokeStyle = 'rgba(184, 115, 42, 0.15)';
+    ctx.lineWidth = 0.5;
+    ctx.beginPath();
+    ctx.moveTo(gradX, 0);
+    ctx.lineTo(gradX, H);
+    ctx.stroke();
+
+    for (const el of elements) {
+      if (time < el.appearAt) continue;
+      const dur = el.duration || 0.8;
+      const progress = Math.min((time - el.appearAt) / dur, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const alpha = eased;
+      const accentColor = `rgba(184, 115, 42, ${0.85 * alpha})`;
+      ctx.strokeStyle = accentColor;
+      ctx.fillStyle = accentColor;
+      ctx.lineWidth = 1.4;
+
+      if (el.type === 'chord-bottom' || el.type === 'chord-top') {
+        const nodes = el.type === 'chord-bottom' ? truss.bottomNodes : truss.topNodes;
+        const total = nodes.length - 1;
+        const drawIdx = total * eased;
+        const fullSegments = Math.floor(drawIdx);
+        const partial = drawIdx - fullSegments;
+        ctx.lineWidth = 1.6;
+        ctx.beginPath();
+        ctx.moveTo(nodes[0].x, nodes[0].y);
+        for (let i = 1; i <= fullSegments; i++) { ctx.lineTo(nodes[i].x, nodes[i].y); }
+        if (fullSegments < total) {
+          const px = nodes[fullSegments].x + (nodes[fullSegments+1].x - nodes[fullSegments].x) * partial;
+          const py = nodes[fullSegments].y + (nodes[fullSegments+1].y - nodes[fullSegments].y) * partial;
+          ctx.lineTo(px, py);
+        }
+        ctx.stroke();
+      }
+      if (el.type === 'vertical') {
+        const bot = truss.bottomNodes[el.index];
+        const top = truss.topNodes[el.index];
+        drawLineAnimated(bot.x, bot.y, top.x, top.y, eased, 1.3);
+      }
+      if (el.type === 'diagonal') {
+        const from = truss.bottomNodes[el.fromBottom];
+        const to = truss.topNodes[el.toTop];
+        drawLineAnimated(from.x, from.y, to.x, to.y, eased, 1.2);
+      }
+      if (el.type === 'dim-h') {
+        const x1 = el.x1; const x2 = el.x2; const y = el.y;
+        const drawTo = x1 + (x2 - x1) * eased;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(x1, y); ctx.lineTo(drawTo, y); ctx.stroke();
+        if (progress > 0.3) {
+          ctx.strokeStyle = `rgba(184, 115, 42, ${0.5 * alpha})`;
+          ctx.lineWidth = 0.8;
+          ctx.beginPath();
+          ctx.moveTo(x1, y - 16); ctx.lineTo(x1, y + 5);
+          ctx.moveTo(x2, y - 16); ctx.lineTo(x2, y + 5);
+          ctx.stroke();
+        }
+        if (progress > 0.7) {
+          ctx.strokeStyle = accentColor;
+          ctx.lineWidth = 1.4;
+          const arrowSize = 8;
+          ctx.beginPath();
+          ctx.moveTo(x1, y - arrowSize/2); ctx.lineTo(x1, y + arrowSize/2);
+          ctx.moveTo(x2, y - arrowSize/2); ctx.lineTo(x2, y + arrowSize/2);
+          ctx.stroke();
+        }
+        if (progress > 0.85) {
+          const labelAlpha = (progress - 0.85) / 0.15;
+          ctx.font = '500 12px "JetBrains Mono", monospace';
+          ctx.textAlign = 'center';
+          const metrics = ctx.measureText(el.label);
+          const padding = 8;
+          ctx.fillStyle = `rgba(250, 248, 243, ${0.95 * labelAlpha})`;
+          ctx.fillRect((x1+x2)/2 - metrics.width/2 - padding, y - 9, metrics.width + padding*2, 18);
+          ctx.fillStyle = `rgba(184, 115, 42, ${labelAlpha})`;
+          ctx.fillText(el.label, (x1+x2)/2, y + 4);
+        }
+      }
+      if (el.type === 'dim-v') {
+        const x = el.x; const y1 = el.y1; const y2 = el.y2;
+        const drawTo = y1 + (y2 - y1) * eased;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(x, y1); ctx.lineTo(x, drawTo); ctx.stroke();
+        if (progress > 0.3) {
+          ctx.strokeStyle = `rgba(184, 115, 42, ${0.5 * alpha})`;
+          ctx.lineWidth = 0.8;
+          ctx.beginPath();
+          ctx.moveTo(x - 5, y1); ctx.lineTo(x + 16, y1);
+          ctx.moveTo(x - 5, y2); ctx.lineTo(x + 16, y2);
+          ctx.stroke();
+        }
+        if (progress > 0.7) {
+          ctx.strokeStyle = accentColor;
+          ctx.lineWidth = 1.4;
+          const arrowSize = 8;
+          ctx.beginPath();
+          ctx.moveTo(x - arrowSize/2, y1); ctx.lineTo(x + arrowSize/2, y1);
+          ctx.moveTo(x - arrowSize/2, y2); ctx.lineTo(x + arrowSize/2, y2);
+          ctx.stroke();
+        }
+        if (progress > 0.85) {
+          const labelAlpha = (progress - 0.85) / 0.15;
+          ctx.save();
+          ctx.translate(x + 14, (y1+y2)/2);
+          ctx.rotate(-Math.PI/2);
+          ctx.font = '500 12px "JetBrains Mono", monospace';
+          ctx.textAlign = 'center';
+          const metrics = ctx.measureText(el.label);
+          const padding = 8;
+          ctx.fillStyle = `rgba(250, 248, 243, ${0.95 * labelAlpha})`;
+          ctx.fillRect(-metrics.width/2 - padding, -9, metrics.width + padding*2, 18);
+          ctx.fillStyle = `rgba(184, 115, 42, ${labelAlpha})`;
+          ctx.fillText(el.label, 0, 4);
+          ctx.restore();
+        }
+      }
+      if (el.type === 'label-node') {
+        const node = el.atNode === 'top' ? truss.topNodes[el.index] : truss.bottomNodes[el.index];
+        const x = node.x; const y = node.y;
+        ctx.fillStyle = `rgba(184, 115, 42, ${alpha})`;
+        ctx.beginPath();
+        ctx.arc(x, y, 4 * eased, 0, Math.PI * 2);
+        ctx.fill();
+        const pulse = (Math.sin(time * 2.5) + 1) / 2;
+        ctx.strokeStyle = `rgba(184, 115, 42, ${0.5 * alpha * (1 - pulse * 0.6)})`;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.arc(x, y, 4 + pulse * 10, 0, Math.PI * 2);
+        ctx.stroke();
+        if (progress > 0.5) {
+          const labelAlpha = (progress - 0.5) / 0.5;
+          ctx.font = '600 13px "JetBrains Mono", monospace';
+          ctx.textAlign = 'center';
+          const metrics = ctx.measureText(el.label);
+          ctx.fillStyle = `rgba(250, 248, 243, ${0.85 * labelAlpha})`;
+          ctx.fillRect(x + el.offsetX - metrics.width/2 - 4, y + el.offsetY - 9, metrics.width + 8, 18);
+          ctx.fillStyle = `rgba(184, 115, 42, ${labelAlpha})`;
+          ctx.fillText(el.label, x + el.offsetX, y + el.offsetY + 4);
+        }
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+  tick();
+})();
+
+// OBSŁUGA FORMULARZA (Web3Forms) — wysyłka + przekierowanie na stronę podziękowania
+(function() {
+  const form = document.getElementById('form-pl');
+  if (!form) return;
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const button = form.querySelector('button[type="submit"]');
+    const originalText = button.textContent;
+    button.textContent = 'Wysyłanie…';
+    button.disabled = true;
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+      const data = await response.json();
+      if (data.success) {
+        window.location.href = 'dziekuje.html';
+      } else {
+        button.textContent = originalText;
+        button.disabled = false;
+        alert('Wystąpił problem z wysłaniem. Spróbuj ponownie lub zadzwoń: +48 785 882 208');
+      }
+    } catch (error) {
+      button.textContent = originalText;
+      button.disabled = false;
+      alert('Wystąpił problem z połączeniem. Spróbuj ponownie lub zadzwoń: +48 785 882 208');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
