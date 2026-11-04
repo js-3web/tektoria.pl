@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TEKTORIA — LISP do ZWCAD, kalkulatory wg Eurokodów i aplikacje dla kierownika budowy</title>
-<meta name="description" content="TEKTORIA — oprogramowanie dla inżynierów budownictwa: skrypty LISP do ZWCAD (profile stalowe, zestawienia stali), programy obliczeniowe TEK-CALC i TEK-SKARPA wg Eurokodów oraz aplikacje dla wykonawstwa w pilotażu: TEK-BIURO BUDOWY (uwagi na rzutach, raporty, narady), TEK-BHP (dokumentacja BHP podwykonawców) i TEK-AUDYTOR (audyt dokumentacji wspomagany przez AI).">
+<meta name="description" content="TEKTORIA — oprogramowanie dla inżynierów budownictwa: skrypty LISP do ZWCAD (profile stalowe, zestawienia stali), programy obliczeniowe TEK-CALC i TEK-SKARPA wg Eurokodów oraz aplikacje dla wykonawstwa w pilotażu: TEK-BIURO BUDOWY (uwagi na rzutach, raporty, narady), TEK-BHP (dokumentacja BHP podwykonawców), TEK-AUDYTOR (audyt dokumentacji wspomagany przez AI), TEK-RAPORT (raporty z obchodów) i TEK-INW (inwentaryzacja obiektów istniejących).">
 <meta name="keywords" content="TEKTORIA, TEK-CALC, LISP ZWCAD, skrypt LISP profile stalowe, zestawienie stali Excel LISP, AutoLISP konstrukcje stalowe, ZWCAD Standard dodatek, darmowe LISP ZWCAD, kalkulator płyt żelbetowych, kalkulator tarcz żelbetowych, wymiarowanie płyty Eurokod, połączenia stalowe EC3, zestawienie obciążeń Eurokod, dobór śrub PN-EN 1993-1-8, program dla konstruktora, TEK-SKARPA, stateczność skarpy program, stateczność zbocza obliczenia, metoda Bishopa, metoda Spencera, równowaga graniczna skarpa, Eurokod 7 stateczność, aplikacja dla kierownika budowy, uwagi na rzutach, rejestr usterek budowa, raport dzienny z budowy, protokół robót zanikowych, dokumentacja BHP podwykonawców, IBWR, plan BIOZ, audyt dokumentacji budowlanej, anonimizacja PDF, weryfikacja projektu AI">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tektoria.pl/">
@@ -15,7 +15,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="TEKTORIA — oprogramowanie dla inżynierów: CAD, obliczenia, biuro budowy">
-<meta property="og:description" content="Skrypty LISP do ZWCAD, programy obliczeniowe TEK-CALC i TEK-SKARPA oraz aplikacje dla wykonawstwa w pilotażu: TEK-BIURO BUDOWY, TEK-BHP i TEK-AUDYTOR. Pisane przez konstruktora z uprawnieniami.">
+<meta property="og:description" content="Skrypty LISP do ZWCAD, programy obliczeniowe TEK-CALC i TEK-SKARPA oraz aplikacje dla wykonawstwa w pilotażu: TEK-BIURO BUDOWY, TEK-BHP, TEK-AUDYTOR, TEK-RAPORT i TEK-INW. Pisane przez konstruktora z uprawnieniami.">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:url" content="https://tektoria.pl/">
 <meta property="og:site_name" content="TEKTORIA">
@@ -139,8 +139,8 @@
         },
         {
           "@type": "Question",
-          "name": "Czym są TEK-BIURO BUDOWY, TEK-BHP i TEK-AUDYTOR i dlaczego nie mają ceny?",
-          "acceptedAnswer": { "@type": "Answer", "text": "To aplikacje dla wykonawstwa: TEK-BIURO BUDOWY porządkuje uwagi z obchodów, narady, raporty dzienne, protokoły i terminy kontraktowe, TEK-BHP — dokumentację BHP podwykonawców, a TEK-AUDYTOR prowadzi przegląd dokumentacji budowlanej z pomocą AI: od zasłonięcia danych wrażliwych po raport z wagami uwag. Wszystkie są w fazie pilotażu: udostępniam je bez opłat do testów, a cenę i model licencji ustalę po pilotażu. Nie zastępują dziennika budowy, służby BHP, sprawdzenia projektu przez osobę z uprawnieniami ani obowiązków kierownika budowy — porządkują pracę i przygotowują dokumenty do weryfikacji." }
+          "name": "Czym są aplikacje dla wykonawstwa (TEK-BIURO BUDOWY, TEK-BHP, TEK-AUDYTOR, TEK-RAPORT, TEK-INW) i dlaczego nie mają ceny?",
+          "acceptedAnswer": { "@type": "Answer", "text": "To aplikacje dla wykonawstwa: TEK-BIURO BUDOWY porządkuje uwagi z obchodów, narady, raporty dzienne, protokoły i terminy kontraktowe, TEK-BHP — dokumentację BHP podwykonawców, TEK-AUDYTOR prowadzi przegląd dokumentacji budowlanej z pomocą AI: od zasłonięcia danych wrażliwych po raport z wagami uwag, TEK-RAPORT zamienia zdjęcia z obchodu w raporty PDF i maile dla podwykonawców, a TEK-INW wiąże zdjęcia i pomiary z inwentaryzacji z miejscem na rzucie i tworzy fotodokumentację. Wszystkie są w fazie pilotażu: udostępniam je bez opłat do testów, a cenę i model licencji ustalę po pilotażu. Nie zastępują dziennika budowy, służby BHP, sprawdzenia projektu przez osobę z uprawnieniami ani obowiązków kierownika budowy — porządkują pracę i przygotowują dokumenty do weryfikacji." }
         }
       ]
     }
@@ -245,7 +245,8 @@
     border:1px solid var(--orange);color:var(--orange);margin-left:8px;
   }
   header.top nav a.cta:hover{background:var(--orange);color:#0a1016;}
-  @media(max-width:1160px){header.top nav a:not(.cta){display:none;}}
+  header.top nav a{white-space:nowrap;}
+  @media(max-width:1340px){header.top nav a:not(.cta){display:none;}}
 
   /* ---------- hero: fake ZWCAD viewport ---------- */
   .hero{padding:64px 24px 40px;position:relative;overflow:hidden;}
@@ -627,6 +628,8 @@
     <a href="#biuro">TEK-BIURO</a>
     <a href="#bhp">TEK-BHP</a>
     <a href="#audytor">TEK-AUDYTOR</a>
+    <a href="#raport">TEK-RAPORT</a>
+    <a href="#inw">TEK-INW</a>
     <a href="#darmowe">DARMOWE</a>
     <a href="#faq">FAQ</a>
     <a href="#zamow" class="cta">ZAMAWIAM</a>
@@ -638,7 +641,7 @@
   <div class="hero-inner">
     <div>
       <h1><span class="strike">Ręczne przekroje i własne arkusze</span><br>kosztują Cię godziny. <span class="hl">Są na to narzędzia.</span></h1>
-      <p class="lead">TEKTORIA to oprogramowanie dla inżynierów budownictwa, w trzech liniach. <b>Skrypty LISP do ZWCAD</b>: przekroje profili stalowych z tabelką parametrów i zestawienie stali prosto do Excela. <b>Programy obliczeniowe na Windows</b>, bez CAD-a i bez instalatora: TEK-CALC z 10 kalkulatorami wg Eurokodów i TEK-SKARPA do stateczności skarp. <b>Aplikacje dla wykonawstwa</b>, w pilotażu: TEK-BIURO BUDOWY, TEK-BHP i TEK-AUDYTOR. Pisane przez konstruktora z uprawnieniami — nie przez firmę od wtyczek.</p>
+      <p class="lead">TEKTORIA to oprogramowanie dla inżynierów budownictwa, w trzech liniach. <b>Skrypty LISP do ZWCAD</b>: przekroje profili stalowych z tabelką parametrów i zestawienie stali prosto do Excela. <b>Programy obliczeniowe na Windows</b>, bez CAD-a i bez instalatora: TEK-CALC z 10 kalkulatorami wg Eurokodów i TEK-SKARPA do stateczności skarp. <b>Aplikacje dla wykonawstwa</b>, w pilotażu: TEK-BIURO BUDOWY, TEK-BHP, TEK-AUDYTOR, TEK-RAPORT i TEK-INW. Pisane przez konstruktora z uprawnieniami — nie przez firmę od wtyczek.</p>
       <div class="ctas">
         <a href="#zamow" class="btn btn-primary">Zgłoś zainteresowanie</a>
         <a href="#profil" class="btn btn-ghost">Zobacz produkty ↓</a>
@@ -1011,9 +1014,9 @@
 <section id="budowa" style="background:var(--bg2);border-top:1px solid var(--panel-line);">
   <div class="wrap wide">
     <div class="rv">
-      <div class="eyebrow">produkty 05–07 · aplikacje dla wykonawstwa · pilotaż</div>
-      <h2 class="sec" style="max-width:30ch;">Dla wykonawstwa: biuro budowy, dokumentacja BHP i audyt dokumentacji</h2>
-      <p class="sec-lead">Trzecia linia TEKTORIA to aplikacje do pracy po stronie wykonawcy — na budowie i przy przygotowaniu oferty. Wszystkie są w fazie pilotażu: szukam kierowników budów i inżynierów, którzy sprawdzą je na prawdziwej robocie, zanim ustalę cenę i model licencji. Filmy pokazują działające wersje testowe na danych przykładowych — bez obietnic, których aplikacja dziś nie spełnia.</p>
+      <div class="eyebrow">produkty 05–09 · aplikacje dla wykonawstwa · pilotaż</div>
+      <h2 class="sec" style="max-width:34ch;">Dla wykonawstwa: biuro budowy, BHP, audyt dokumentacji, raporty z obchodów i inwentaryzacja</h2>
+      <p class="sec-lead">Trzecia linia TEKTORIA to aplikacje do pracy po stronie wykonawcy — na budowie, przy przygotowaniu oferty i przy inwentaryzacji obiektów istniejących. Wszystkie są w fazie pilotażu: szukam kierowników budów i inżynierów, którzy sprawdzą je na prawdziwej robocie, zanim ustalę cenę i model licencji. Filmy pokazują działające wersje testowe na danych przykładowych — bez obietnic, których aplikacja dziś nie spełnia.</p>
     </div>
 
     <div class="duo">
@@ -1099,8 +1102,63 @@
           </div>
         </div>
       </article>
+      <article id="raport" class="pcard rv">
+        <div class="calc-video">
+          <video controls preload="none" playsinline muted poster="video/tek-raport-demo-15s-poster.jpg" aria-label="Krótkie demo aplikacji TEK-RAPORT, 15 sekund">
+            <source src="video/tek-raport-demo-15s.mp4" type="video/mp4">
+            <source src="video/tek-raport-demo-15s.webm" type="video/webm">
+            Twoja przeglądarka nie odtworzy tego filmu — <a href="video/tek-raport-demo-15s.mp4">pobierz plik MP4</a>.
+          </video>
+          <div class="vcap">demo · 15 s · bez dźwięku · timelapse na danych przykładowych · w filmie bez AI</div>
+        </div>
+        <div class="pc-body">
+          <span class="cmd-chip">TEK-RAPORT 0.5 · przeglądarka · telefon + komputer · konto online</span>
+          <h3>TEK-RAPORT<span class="pilot-tag">PILOTAŻ</span></h3>
+          <div class="file">raporty z obchodów: od zdjęcia do PDF i maila</div>
+          <ul class="feats">
+            <li>Obchód z telefonem: każde zdjęcie to osobna uwaga z lokalizacją, odpowiedzialnym i terminem</li>
+            <li>Kategorie: uwaga do podwykonawcy, usterka, sprawa wewnętrzna GW — każda z własną instrukcją dla AI</li>
+            <li>Szkic dokumentu przygotowuje AI albo powstaje offline z Twoich notatek — zawsze do sprawdzenia i zatwierdzenia</li>
+            <li>Osobny raport PDF dla każdej firmy i mail EML z załącznikiem — nic nie wysyła się samo</li>
+            <li>Konto online z synchronizacją telefon–komputer; po zalogowaniu działa też bez zasięgu</li>
+          </ul>
+          <div class="pstatus">status: <b>pilotaż wersji 0.5, na zaproszenie</b> · cena: <b>ustalana po pilotażu</b></div>
+          <div class="pc-ctas">
+            <a href="#zamow" class="btn btn-primary" onclick="preselect('raport')">Chcę przetestować</a>
+            <a href="tek-raport.html" class="btn btn-ghost">Szczegóły i film 60 s →</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="inw" class="pcard rv">
+        <div class="calc-video">
+          <video controls preload="none" playsinline muted poster="video/tek-inw-demo-15s-poster.jpg" aria-label="Krótkie demo aplikacji TEK-INW, 15 sekund">
+            <source src="video/tek-inw-demo-15s.mp4" type="video/mp4">
+            <source src="video/tek-inw-demo-15s.webm" type="video/webm">
+            Twoja przeglądarka nie odtworzy tego filmu — <a href="video/tek-inw-demo-15s.mp4">pobierz plik MP4</a>.
+          </video>
+          <div class="vcap">demo · 15 s · bez dźwięku · timelapse na projekcie przykładowym · prototyp</div>
+        </div>
+        <div class="pc-body">
+          <span class="cmd-chip">TEK-INW 0.4 · przeglądarka · iPad w terenie + laptop · offline</span>
+          <h3>TEK-INW<span class="pilot-tag">PILOTAŻ</span></h3>
+          <div class="file">inwentaryzacja obiektów istniejących na rzucie z ZWCAD</div>
+          <ul class="feats">
+            <li>Podkład DXF we współrzędnych rysunku albo skalibrowany PDF, z przyciąganiem do narożników i osi</li>
+            <li>Zdjęcie przypięte do miejsca na rzucie, razem z kierunkiem ujęcia</li>
+            <li>Wymiar z dalmierza obok wymiaru z rysunku i różnica od razu; nowe elementy, braki, uwagi i szkice</li>
+            <li>Fotodokumentacja PDF z klikalnymi punktami na planie docelowym, zdjęcia, CSV i DXF zmian w warstwach INW-*</li>
+            <li>Dane zostają na urządzeniu — przenosisz je kopią projektu w pliku ZIP</li>
+          </ul>
+          <div class="pstatus">status: <b>pilotaż prototypu 0.4</b> · cena: <b>ustalana po pilotażu</b></div>
+          <div class="pc-ctas">
+            <a href="#zamow" class="btn btn-primary" onclick="preselect('inw')">Chcę przetestować</a>
+            <a href="tek-inw.html" class="btn btn-ghost">Szczegóły i film 60 s →</a>
+          </div>
+        </div>
+      </article>
     </div>
-    <p class="media-note rv">Aplikacje porządkują dokumenty i przygotowują je do sprawdzenia. Nie zastępują dziennika budowy, służby BHP, sprawdzenia projektu przez osobę z uprawnieniami ani obowiązków kierownika budowy i pracodawcy. Nazwy MS Project, PowerPoint, Excel, FIDIC i BREEAM użyte są wyłącznie opisowo — do wskazania, z czym aplikacja współpracuje.</p>
+    <p class="media-note rv">Aplikacje porządkują dokumenty i przygotowują je do sprawdzenia. Nie zastępują dziennika budowy, służby BHP, sprawdzenia projektu ani opracowania inwentaryzacji przez osobę z uprawnieniami, ani obowiązków kierownika budowy i pracodawcy. Nazwy MS Project, PowerPoint, Excel, FIDIC, BREEAM, ZWCAD, iPad i Google Gemini użyte są wyłącznie opisowo — do wskazania, z czym aplikacja współpracuje.</p>
   </div>
 </section>
 
@@ -1208,8 +1266,8 @@
         <div class="a">Plik programu albo skryptu, instrukcję instalacji, umowę licencyjną i imienny klucz licencyjny — wszystko pocztą elektroniczną, bez nośnika materialnego. Licencja jest bezterminowa, na jedno stanowisko, bez abonamentu. Usuwanie błędów w kupionej wersji jest po mojej stronie i nie wiąże się z dopłatą. Pytania techniczne kierujesz na kontakt@tektoria.pl — odpowiada ten sam człowiek, który napisał kod, a nie pierwsza linia wsparcia.</div>
       </details>
       <details>
-        <summary>Czym są TEK-BIURO BUDOWY, TEK-BHP i TEK-AUDYTOR i dlaczego nie mają ceny?</summary>
-        <div class="a">To aplikacje dla wykonawstwa: <a href="biuro-budowy.html">TEK-BIURO BUDOWY</a> porządkuje uwagi z obchodów, narady, raporty dzienne, protokoły i terminy kontraktowe, <a href="tek-bhp.html">TEK-BHP</a> — dokumentację BHP podwykonawców, a <a href="tek-audytor.html">TEK-AUDYTOR</a> prowadzi przegląd dokumentacji budowlanej z pomocą AI: od zasłonięcia danych wrażliwych po raport z wagami uwag. Wszystkie są w fazie pilotażu: udostępniam je bez opłat do testów, a cenę i model licencji ustalę po pilotażu. Nie zastępują dziennika budowy, służby BHP, sprawdzenia projektu przez osobę z uprawnieniami ani obowiązków kierownika budowy — porządkują pracę i przygotowują dokumenty do weryfikacji.</div>
+        <summary>Czym są aplikacje dla wykonawstwa (TEK-BIURO BUDOWY, TEK-BHP, TEK-AUDYTOR, TEK-RAPORT, TEK-INW) i dlaczego nie mają ceny?</summary>
+        <div class="a">To aplikacje dla wykonawstwa: <a href="biuro-budowy.html">TEK-BIURO BUDOWY</a> porządkuje uwagi z obchodów, narady, raporty dzienne, protokoły i terminy kontraktowe, <a href="tek-bhp.html">TEK-BHP</a> — dokumentację BHP podwykonawców, <a href="tek-audytor.html">TEK-AUDYTOR</a> prowadzi przegląd dokumentacji budowlanej z pomocą AI: od zasłonięcia danych wrażliwych po raport z wagami uwag, <a href="tek-raport.html">TEK-RAPORT</a> zamienia zdjęcia z obchodu w raporty PDF i maile dla podwykonawców, a <a href="tek-inw.html">TEK-INW</a> wiąże zdjęcia i pomiary z inwentaryzacji z miejscem na rzucie i tworzy fotodokumentację. Wszystkie są w fazie pilotażu: udostępniam je bez opłat do testów, a cenę i model licencji ustalę po pilotażu. Nie zastępują dziennika budowy, służby BHP, sprawdzenia projektu przez osobę z uprawnieniami ani obowiązków kierownika budowy — porządkują pracę i przygotowują dokumenty do weryfikacji.</div>
       </details>
     </div>
   </div>
@@ -1286,6 +1344,16 @@
             <span class="ci-name">TEK-AUDYTOR — pilotaż</span>
             <span class="ci-price">bez opłat</span>
           </label>
+          <label class="check-item">
+            <input type="checkbox" name="produkt" value="TEK-RAPORT — pilotaż" id="chk-raport">
+            <span class="ci-name">TEK-RAPORT — pilotaż</span>
+            <span class="ci-price">bez opłat</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" name="produkt" value="TEK-INW — pilotaż" id="chk-inw">
+            <span class="ci-name">TEK-INW — pilotaż</span>
+            <span class="ci-price">bez opłat</span>
+          </label>
         </div>
       </div>
       <div class="form-row">
@@ -1300,7 +1368,7 @@
             <span class="ci-name">Wstępnie zainteresowany — dajcie znać o starcie</span>
           </label>
           <label class="check-item">
-            <input type="radio" name="charakter" value="Zgłaszam się do pilotażu (TEK-BIURO BUDOWY / TEK-BHP / TEK-AUDYTOR)" id="rad-pilot">
+            <input type="radio" name="charakter" value="Zgłaszam się do pilotażu (TEK-BIURO BUDOWY / TEK-BHP / TEK-AUDYTOR / TEK-RAPORT / TEK-INW)" id="rad-pilot">
             <span class="ci-name">Zgłaszam się do pilotażu</span>
           </label>
         </div>
@@ -1317,7 +1385,7 @@
       <div class="form-row">
         <label for="msg">Wiadomość (opcjonalnie)</label>
         <textarea id="msg" name="wiadomość" placeholder="Np. jaka wersja ZWCAD; przy TEK-CALC — które moduły Cię interesują"></textarea>
-        <p class="form-note" id="pilotNote" style="display:none;margin:8px 0 0;">Przy zgłoszeniu do pilotażu nie wpisuj nazwy budowy ani inwestora i nie załączaj dokumentów — na tym etapie nie są potrzebne, a często są poufne.</p>
+        <p class="form-note" id="pilotNote" style="display:none;margin:8px 0 0;">Przy zgłoszeniu do pilotażu nie wpisuj nazwy budowy, obiektu ani inwestora i nie załączaj dokumentów — na tym etapie nie są potrzebne, a często są poufne.</p>
       </div>
       <p class="form-note">Deklaracja nie jest zamówieniem z płatnością i do niczego nie zobowiązuje — sprawdzam skalę zainteresowania przed uruchomieniem sprzedaży.</p>
       <p class="form-note rodo">Administratorem Twoich danych jest Jarosław Sarafin, kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a>. Podanie danych jest dobrowolne, a służą wyłącznie odpowiedzi na to zgłoszenie, ocenie zainteresowania ofertą, organizacji pilotażu i poinformowaniu Cię o starcie sprzedaży. Formularz obsługuje zewnętrzny dostawca (Web3Forms), który przetwarza dane na moje zlecenie. Nie przekazuję danych innym administratorom i nie profiluję ich. Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia i sprzeciwu, a także wniesienia skargi do Prezesa UODO. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>
@@ -1333,8 +1401,8 @@
   <div class="wrap">
     <span>TEKTORIA · oprogramowanie dla inżynierów · CAD i aplikacje dla projektantów i kierowników · inżynier z uprawnieniami konstrukcyjno-budowlanymi bez ograniczeń</span>
     <span>zgodność testowana: ZWCAD 2022 Standard · build 22.20_2023.10.12</span>
-    <span class="fcontact">kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a> &nbsp;·&nbsp; <a href="polityka-prywatnosci.html">polityka prywatności</a> &nbsp;·&nbsp; warunki pilotażu: <a href="eula-tek-biuro-budowy.html">TEK-BIURO BUDOWY</a>, <a href="eula-tek-bhp.html">TEK-BHP</a>, <a href="eula-tek-audytor.html">TEK-AUDYTOR</a></span>
-    <span class="fauthor">autor i administrator danych: <a href="https://js-3web.github.io/js-wizytowka/" target="_blank" rel="noopener">Jarosław Sarafin — wizytówka</a> · projektant konstrukcji i inspektor nadzoru, Lublin</span>
+    <span class="fcontact">kontakt: <a href="mailto:kontakt@tektoria.pl">kontakt@tektoria.pl</a> &nbsp;·&nbsp; <a href="polityka-prywatnosci.html">polityka prywatności</a> &nbsp;·&nbsp; warunki pilotażu: <a href="eula-tek-biuro-budowy.html">TEK-BIURO BUDOWY</a>, <a href="eula-tek-bhp.html">TEK-BHP</a>, <a href="eula-tek-audytor.html">TEK-AUDYTOR</a>, <a href="eula-tek-raport.html">TEK-RAPORT</a>, <a href="eula-tek-inw.html">TEK-INW</a></span>
+    <span class="fauthor">autor i administrator danych: <a href="js/">Jarosław Sarafin — wizytówka</a> · projektant konstrukcji i inspektor nadzoru, Lublin</span>
   </div>
 </footer>
 
@@ -1498,25 +1566,25 @@ function initFramePlayer(root){
 document.querySelectorAll('.frame-player').forEach(initFramePlayer);
 
 /* ===== formularz ===== */
-var PILOT_HINT = 'Rodzaj budowy (hala magazynowa / produkcyjna / inna), etap robót, liczba osób w biurze budowy, czy harmonogram jest w MS Project; przy TEK-BHP — ilu podwykonawców zwykle prowadzisz; przy TEK-AUDYTOR — jaką dokumentację chcesz sprawdzać i z jakiego asystenta AI korzystasz';
+var PILOT_HINT = 'Rodzaj budowy (hala magazynowa / produkcyjna / inna), etap robót, liczba osób w biurze budowy, czy harmonogram jest w MS Project; przy TEK-BHP — ilu podwykonawców zwykle prowadzisz; przy TEK-AUDYTOR — jaką dokumentację chcesz sprawdzać i z jakiego asystenta AI korzystasz; przy TEK-RAPORT — ile obchodów w tygodniu i ilu podwykonawców; przy TEK-INW — jaki obiekt, czy masz rzut w DXF i iPada';
 var DEFAULT_HINT = document.getElementById('msg').getAttribute('placeholder');
 function syncPilot(){
-  var isPilot = ['biuro','bhp','audytor'].some(function(k){ var el=document.getElementById('chk-'+k); return el && el.checked; });
+  var isPilot = ['biuro','bhp','audytor','raport','inw'].some(function(k){ var el=document.getElementById('chk-'+k); return el && el.checked; });
   document.getElementById('msg').setAttribute('placeholder', isPilot ? PILOT_HINT : DEFAULT_HINT);
   document.getElementById('pilotNote').style.display = isPilot ? 'block' : 'none';
   if(isPilot){ document.getElementById('rad-pilot').checked = true; }
 }
 function preselect(which){
-  ['profil','stalja','komplet','calc','calcmod','skarpa','biuro','bhp','audytor'].forEach(function(k){
+  ['profil','stalja','komplet','calc','calcmod','skarpa','biuro','bhp','audytor','raport','inw'].forEach(function(k){
     var el = document.getElementById('chk-'+k);
     if(el) el.checked = (k===which);
   });
   syncPilot();
 }
-['chk-biuro','chk-bhp','chk-audytor'].forEach(function(id){ document.getElementById(id).addEventListener('change', syncPilot); });
-/* podstrony produktów linkują do index.html?pilot=biuro#zamow (biuro | bhp | audytor) */
+['chk-biuro','chk-bhp','chk-audytor','chk-raport','chk-inw'].forEach(function(id){ document.getElementById(id).addEventListener('change', syncPilot); });
+/* podstrony produktów linkują do index.html?pilot=biuro#zamow (biuro | bhp | audytor | raport | inw) */
 (function(){
-  var m = /[?&]pilot=(biuro|bhp|audytor)\b/.exec(location.search);
+  var m = /[?&]pilot=(biuro|bhp|audytor|raport|inw)\b/.exec(location.search);
   if(m) preselect(m[1]);
 })();
 document.getElementById('orderForm').addEventListener('submit', function(e){
